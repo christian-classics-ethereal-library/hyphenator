@@ -2,6 +2,7 @@
 import sys
 import yaml
 
+
 def main(argv):
     for fp in argv[1:]:
         with open(fp) as f:
@@ -9,7 +10,8 @@ def main(argv):
         for s in hymn['stanzas']:
             if(s['flextext']):
                 print(s['flextext'])
-    return 0;
+    return 0
+
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv))

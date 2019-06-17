@@ -3,6 +3,7 @@ import fileinput
 import re
 import sys
 
+
 def main(argv):
     for line in fileinput.input():
         line = line.replace('_', ' ')
@@ -24,7 +25,8 @@ def main(argv):
 
         words = [x for x in line.split(' ') if x != '']
         for word in words:
-            print(word.replace('-','').lower() + "\t" + word.lower())
+            print(word.replace('-', '').lower() + "\t" + word.lower())
+
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv))
