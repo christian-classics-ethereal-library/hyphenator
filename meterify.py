@@ -6,7 +6,7 @@ import sys
 def main(argv):
     for line in fileinput.input():
         line = line.replace('_', ' ')
-        line = line.replace('--',' ')
+        line = line.replace('-',' ')
         line = re.sub(r" +", " ", line)
         line = line.replace('\r','')
         line = line.replace('\n','')
