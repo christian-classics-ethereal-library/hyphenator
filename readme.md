@@ -2,6 +2,12 @@
 
 A tool to analyze and create flexText verses.
 
+## Setup
+
+`pip3 install -r requirements.txt`
+
+## Usage
+
 ### getVerses
 
 `./getVerses.sh path/to/*.yaml`
