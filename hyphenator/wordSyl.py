@@ -29,5 +29,5 @@ def main(argv):
             print(word.replace('-', '').lower() + "\t" + word.lower())
 
 
-if __name__ == "__main__": # pragma: no cover
+if __name__ == "__main__":  # pragma: no cover
     sys.exit(main(sys.argv))
