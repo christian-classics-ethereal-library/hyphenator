@@ -5,6 +5,7 @@ import sys
 
 
 def main(argv):
+    """ Takes in flextext and returns lines like "theword\tthe-word". """
     for line in fileinput.input():
         line = line.replace('_', ' ')
         line = re.sub(r"\s*-+\s*", "-", line)
