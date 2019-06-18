@@ -11,7 +11,7 @@ def main(argv):
     """
     prevWord = None
     print("words:")
-    for line in fileinput.input():
+    for line in fileinput.input(argv):
         line = re.sub(r"^ *", "", line)
         line = line.replace(" ", "\t")
         line = line.replace("\n", "")
@@ -26,5 +26,5 @@ def main(argv):
         prevWord = word
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     sys.exit(main(sys.argv))
