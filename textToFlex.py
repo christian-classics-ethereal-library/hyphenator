@@ -14,6 +14,7 @@ def main(argv):
     mst = MultiSylT()
     # TODO: Come up with algorithm to pick syllable options.
     for line in fileinput.input(argv[3:]):
+        line = line.replace("\n", "")
         words = [x for x in line.split(' ') if x != '']
         for word in words:
             sys.stdout.write(' -- '.join(mst.multiTokenize(word)[0]) + " ")
