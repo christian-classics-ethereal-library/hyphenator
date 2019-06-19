@@ -9,17 +9,28 @@ from nltk.tokenize import SyllableTokenizer
 
 def main(argv):
     """ WIP script to convert plain text into flextext. """
-    meter = argv[1]
+    # Make meter an inverted list of the syllable counts so "1.2.3.4" =>
+    # ['4','3','2','1'].
+    meter = argv[1].split('.')[::-1]
     templateFile = argv[2]
     # Read through each line: split each word into syllables
     mst = MultiSylT()
     # TODO: Come up with algorithm to pick syllable options.
     for line in fileinput.input(argv[3:]):
+        length = int(meter.pop())
         line = line.replace("\n", "")
-        words = [x for x in line.split(' ') if x != '']
-        for word in words:
-            sys.stdout.write(' -- '.join(mst.multiTokenize(word)[0]) + " ")
+        print(syllabizeLine(line, length, mst))
     return 0
+
+
+def syllabizeLine(line, n, mst):
+    sentences = []
+    ts = []
+    words = [x for x in line.split(' ') if x != '']
+    for word in words:
+        ts.append(mst.multiTokenize(word))
+    recurse('', ts, n, sentences)
+    return sentences
 
 
 def recurse(string, ts, n, sentences):
