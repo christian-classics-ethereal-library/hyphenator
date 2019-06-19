@@ -6,6 +6,8 @@ import yaml
 from nltk.corpus import cmudict
 from nltk.tokenize import SyllableTokenizer
 
+import wordSyl
+
 
 def main(argv):
     """ WIP script to convert plain text into flextext. """
@@ -13,9 +15,7 @@ def main(argv):
     # ['4','3','2','1'].
     meter = argv[1].split('.')[::-1]
     templateFile = argv[2]
-    # Read through each line: split each word into syllables
     mst = MultiSylT()
-    # TODO: Come up with algorithm to pick syllable options.
     for line in fileinput.input(argv[3:]):
         length = int(meter.pop())
         line = line.replace("\n", "")
@@ -51,8 +51,9 @@ class MultiSylT(object):
             self.dict = yaml.safe_load(f)
         self.d = cmudict.dict()
 
-    def multiTokenize(self, word):
+    def multiTokenize(self, originalWord):
         """ Return options for tokenizing a word. """
+        word = self.deformat(originalWord)
         tokenizations = []
         # If the word exists in our dictionary, return those tokenizations.
         if(word in self.dict['words']):
@@ -75,7 +76,13 @@ class MultiSylT(object):
                              + 'expected:'
                              + " or ".join(map(str, numberOfSyllables)) or "unknown")
             tokenizations.append(tokenized)
-        return tokenizations
+        return map(self.reformat, tokenizations, originalWord)
+
+    def deformat(self, word):
+        return word.lower().strip(wordSyl.puncs)
+
+    def reformat(self, tokenized, template):
+        return tokenized
 
     def nsyl(self, word):
         """ Scan the CMU pronunciation dictionary to get the number of syllables
