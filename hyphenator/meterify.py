@@ -9,7 +9,7 @@ def main(argv):
     separated by a period,
     like "8.6.8.6.".
     """
-    for line in fileinput.input(argv):
+    for line in fileinput.input(argv[1:]):
         line = line.replace('_', ' ')
         line = line.replace('-', ' ')
         line = re.sub(r" +", " ", line)

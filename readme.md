@@ -14,12 +14,12 @@ A tool to analyze and create flexText verses.
 
 ### meterify
 
-`./getVerses.sh path/to/file.yaml | ./meterify.py | sort -u`
+`./getVerses.sh path/to/file.yaml | python3 -m hyphenator.meterify | sort -u`
 
 ### wordSyl
 
-`./getVerses.sh path/to/*.yaml | ./wordSyl.py | sort | uniq -c`
+`./getVerses.sh path/to/*.yaml | python3 -m hyphenator.wordSyl | sort | uniq -c`
 
 ### makeDict
 
-`cat sortedWordSylOutput.txt | ./makeDict.py > dict.yaml`
+`cat sortedWordSylOutput.txt | python3 -m hyphenator.makeDict > dict.yaml`

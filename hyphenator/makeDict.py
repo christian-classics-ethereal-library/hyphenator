@@ -11,7 +11,7 @@ def main(argv):
     """
     prevWord = None
     print("words:")
-    for line in fileinput.input(argv):
+    for line in fileinput.input(argv[1:]):
         line = re.sub(r"^ *", "", line)
         line = line.replace(" ", "\t")
         line = line.replace("\n", "")
