@@ -67,6 +67,8 @@ class MultiSylT(object):
         # If the tokenized version has the same number of syllables as
         # one of the CMU STT pronunciations, return that.
         if(len(tokenized) in sylCounts and tokenized not in tokenizations):
+            # TODO: Don't add this if there is already one with the
+            # same number of syllables.
             tokenizations.append(tokenized)
         if(1 in sylCounts and [word] not in tokenizations):
             tokenizations.append([word])
