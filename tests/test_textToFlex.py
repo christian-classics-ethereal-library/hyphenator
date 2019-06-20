@@ -7,7 +7,8 @@ from hyphenator import flexToText
 
 
 def test_stderr_output_is_YAML(capsys):
-    textToFlex.main(['', '8.6.8.6', '-', 'tests/amazinggraceV2.raw.txt'])
+    textToFlex.main(['', '8.6.8.6', '-', 'tests/dict.yaml',
+                     'tests/amazinggraceV2.raw.txt'])
     captured = capsys.readouterr()
     messages = yaml.safe_load(captured.err)
     # ['re', 'lieved'] isn't in tests/dict.yaml
@@ -22,14 +23,14 @@ def test_stderr_output_is_YAML(capsys):
 
 
 def test_multiTokenize():
-    mst = textToFlex.MultiSylT()
+    mst = textToFlex.MultiSylT('tests/dict.yaml')
     off = list(mst.multiTokenize('offering'))
     assert ['off', 'ering'] in off
     assert ['of', 'fer', 'ing'] in off
 
 
 def test_alternates():
-    mst = textToFlex.MultiSylT()
+    mst = textToFlex.MultiSylT('tests/dict.yaml')
     line = "offering offering"
     assert "off -- ering off -- ering" in textToFlex.syllabizeLine(
         line, 4, mst)

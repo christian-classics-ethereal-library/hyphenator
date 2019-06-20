@@ -15,6 +15,7 @@ def main(argv):
     """ Script to convert plain text into flextext.
     argv[1] is the meter, like 8.6.8.6.
     argv[2] is the file to use as a template, or '-' for no file.
+    argv[3] is the dictionary of hyphenations.
     additional arguments are used as input if they are present
     the flextext is sent to stdout
     stderr is a YAML document including warnings and alternate verses
@@ -23,10 +24,10 @@ def main(argv):
     # ['4','3','2','1'].
     meter = argv[1].split('.')[::-1]
     templateFile = argv[2]
-    mst = MultiSylT()
+    mst = MultiSylT(argv[3])
     success = True
     i = 0
-    for line in fileinput.input(argv[3:]):
+    for line in fileinput.input(argv[4:]):
         i += 1
         length = int(meter.pop())
         line = line.replace("\n", "")
@@ -83,13 +84,10 @@ def warning(msg):
 
 
 class MultiSylT(object):
-    def __init__(self):
+    def __init__(self, dictName):
         self.SSP = SyllableTokenizer()
         self.dict = {"words": []}
         try:
-            dictName = 'dict.yaml'
-            if(sys.argv[0][-6:] == 'pytest'):
-                dictName = 'tests/' + dictName
             with open(dictName) as f:
                 self.dict = yaml.safe_load(f)
         except BaseException:
