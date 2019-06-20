@@ -3,6 +3,12 @@ import fileinput
 import re
 import sys
 
+puncs = r",.:;!?\*()"
+# Smart double-quotes
+puncs += "\u201c\u201d"
+# En Dash and Em Dash
+puncs += "\u2013\u2014"
+
 
 def main(argv):
     """ Takes in flextext and returns lines like "theword\tthe-word". """
@@ -11,15 +17,10 @@ def main(argv):
         line = re.sub(r"\s*-+\s*", "-", line)
         # TODO: Decide how to deal with "~" shared syllables.
         # Remove punctuation
-        puncs = r",.:;!?\*()"
-        # Smart double-quotes
-        puncs += r"\u201c\u201d"
-        # En Dash and Em Dash
-        puncs += r"\u2013\u2014"
         line = re.sub(r"[" + puncs + r"]+\s+", ' ', line)
         line = re.sub(r"\s+[" + puncs + r"]+", ' ', line)
-        line = re.sub(r"[" + puncs + r"]+$", ' ', line)
-        line = re.sub(r"^[" + puncs + r"]+", ' ', line)
+        line = re.sub(r"[" + puncs + r"]+$", '', line)
+        line = re.sub(r"^[" + puncs + r"]+", '', line)
         line = re.sub(r"\s+", ' ', line)
         # TODO: Deal with double quotes.
         # line = line.replace('"', '')
