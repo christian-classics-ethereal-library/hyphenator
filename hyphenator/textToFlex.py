@@ -58,9 +58,9 @@ def recurse(string, ts, n, sentences):
         return
     for tokenization in ts[0]:
         if(len(tokenization) == n):
-            sentences.append(string + ' ' + ' -- '.join(tokenization))
+            sentences.append(string + ' -- '.join(tokenization))
         elif(len(tokenization) < n):
-            newstring = string + ' ' + ' -- '.join(tokenization)
+            newstring = string + ' -- '.join(tokenization) + ' '
             recurse(newstring, ts[1:], n - len(tokenization), sentences)
 
 
@@ -85,8 +85,15 @@ def warning(msg):
 class MultiSylT(object):
     def __init__(self):
         self.SSP = SyllableTokenizer()
-        with open('dict.yaml') as f:
-            self.dict = yaml.safe_load(f)
+        self.dict = {"words": []}
+        try:
+            dictName = 'dict.yaml'
+            if(sys.argv[0][-6:] == 'pytest'):
+                dictName = 'tests/' + dictName
+            with open(dictName) as f:
+                self.dict = yaml.safe_load(f)
+        except BaseException:
+            error("dict.yaml could not be loaded.")
         self.d = cmudict.dict()
 
     def multiTokenize(self, originalWord):
@@ -117,7 +124,7 @@ class MultiSylT(object):
                     + (" or ".join(map(str, sylCounts)) or "???")
                     )
             tokenizations.append(tokenized)
-        return map(self.reformat, tokenizations, originalWord)
+        return list(map(self.reformat, tokenizations, originalWord))
 
     def deformat(self, word):
         return word.lower().strip(wordSyl.puncs)
