@@ -5,6 +5,7 @@ A tool to analyze and create flexText verses.
 ## Setup
 
 `pip3 install -r requirements.txt`
+`python3 -c "import nltk; nltk.download('cmudict')"`
 
 ## Usage
 

@@ -75,7 +75,8 @@ class MultiSylT(object):
 
         # Fallback if there are no tokenizations.
         if(len(tokenizations) == 0):
-            sys.stderr.write(f'{tokenized} has {len(tokenized)} syllables, '
+            sys.stderr.write(str(tokenized)
+                             + "has %d syllables," % len(tokenized)
                              + 'expected:'
                              + " or ".join(map(str, sylCounts)) or "?"
                              )
