@@ -9,7 +9,7 @@ def main(argv):
     separated by a period,
     like "8.6.8.6.".
     """
-    for line in fileinput.input():
+    for line in fileinput.input(argv[1:]):
         line = line.replace('_', ' ')
         line = line.replace('-', ' ')
         line = re.sub(r" +", " ", line)
@@ -23,5 +23,5 @@ def main(argv):
             print(line)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     sys.exit(main(sys.argv))

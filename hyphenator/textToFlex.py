@@ -34,5 +34,5 @@ class MultiSylT(object):
         return [self.SSP.tokenize(word)]
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     sys.exit(main(sys.argv))

@@ -6,7 +6,7 @@ import sys
 
 def main(argv):
     """ Takes in flextext and returns lines like "theword\tthe-word". """
-    for line in fileinput.input():
+    for line in fileinput.input(argv[1:]):
         line = line.replace('_', ' ')
         line = re.sub(r"\s*-+\s*", "-", line)
         # TODO: Decide how to deal with "~" shared syllables.
@@ -29,5 +29,5 @@ def main(argv):
             print(word.replace('-', '').lower() + "\t" + word.lower())
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     sys.exit(main(sys.argv))
