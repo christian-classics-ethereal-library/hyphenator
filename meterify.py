@@ -5,6 +5,10 @@ import sys
 
 
 def main(argv):
+    """ For a paragraph of flextext, will return the syllables in each line,
+    separated by a period,
+    like "8.6.8.6.".
+    """
     for line in fileinput.input():
         line = line.replace('_', ' ')
         line = line.replace('-', ' ')
