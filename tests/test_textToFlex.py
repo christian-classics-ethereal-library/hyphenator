@@ -34,3 +34,6 @@ def test_alternates():
     line = "offering offering"
     assert "off -- ering off -- ering" in textToFlex.syllabizeLine(
         line, 4, mst)
+    off5 = textToFlex.syllabizeLine(line, 5, mst)
+    assert "of -- fer -- ing off -- ering" in off5
+    assert "off -- ering of -- fer -- ing" in off5
