@@ -1,0 +1,11 @@
+words:
+  "believed":
+  - ["be", "lieved"]
+  "offering":
+  - ["of", "fer", "ing"]
+  - ["off", "ering"]
+  "precious":
+  - ["pre", "cious"]
+  # Purposefully excluded from test dictionary to test errors.
+  #"relieved":
+  #- ["re", "lieved"]
