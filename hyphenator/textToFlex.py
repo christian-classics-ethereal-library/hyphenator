@@ -58,7 +58,7 @@ def recurse(string, ts, n, sentences):
     if(n < 0 or len(ts) == 0):
         return
     for tokenization in ts[0]:
-        if(len(tokenization) == n):
+        if(len(tokenization) == n and len(ts) == 1):
             sentences.append(string + ' -- '.join(tokenization))
         elif(len(tokenization) < n):
             newstring = string + ' -- '.join(tokenization) + ' '
