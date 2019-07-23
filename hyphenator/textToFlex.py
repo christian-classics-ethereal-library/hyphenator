@@ -151,9 +151,9 @@ class MultiSylT(object):
             plainTemp = template.strip(wordSyl.puncs)
             if(plainTemp and plainTemp[0].isupper()):
                 tokenized[0] = tokenized[0][0].upper() + tokenized[0][1:]
-            match = re.match(r"^[" + wordSyl.puncs + r"]+", template)
+            match = re.search(r"^[" + wordSyl.puncs + r"]+", template)
             starting = match.group(0) if match else ''
-            match = re.match(r"[" + wordSyl.puncs + r"]+$", template)
+            match = re.search(r"[" + wordSyl.puncs + r"]+$", template)
             ending = match.group(0) if match else ''
             tokenized[0] = starting + tokenized[0]
             tokenized[-1] = tokenized[-1] + ending
