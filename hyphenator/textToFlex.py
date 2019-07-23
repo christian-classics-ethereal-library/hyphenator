@@ -140,23 +140,24 @@ class MultiSylT(object):
                     + (" or ".join(map(str, sylCounts)) or "???")
                     )
             tokenizations.append(hyphenated)
-        return list(map(self.reformat, tokenizations, originalWord))
+        return list(map(self.reformat, tokenizations, [
+                    originalWord for x in range(0, len(tokenizations))]))
 
     def deformat(self, word):
         return word.lower().strip(wordSyl.puncs)
 
-    def reformat(self, tokenized, template):
-        # Since tokenized is mutable, it might have already been adjusted.
-        if(''.join(tokenized) == self.deformat(''.join(tokenized))):
-            plainTemp = template.strip(wordSyl.puncs)
-            if(plainTemp and plainTemp[0].isupper()):
-                tokenized[0] = tokenized[0][0].upper() + tokenized[0][1:]
-            match = re.search(r"^[" + wordSyl.puncs + r"]+", template)
-            starting = match.group(0) if match else ''
-            match = re.search(r"[" + wordSyl.puncs + r"]+$", template)
-            ending = match.group(0) if match else ''
-            tokenized[0] = starting + tokenized[0]
-            tokenized[-1] = tokenized[-1] + ending
+    def reformat(self, oldTokenized, template):
+        # Since tokenized is mutable, create a duplicate of it.
+        tokenized = list(oldTokenized)
+        plainTemp = template.strip(wordSyl.puncs)
+        if(plainTemp and plainTemp[0].isupper()):
+            tokenized[0] = tokenized[0][0].upper() + tokenized[0][1:]
+        match = re.search(r"^[" + wordSyl.puncs + r"]+", template)
+        starting = match.group(0) if match else ''
+        match = re.search(r"[" + wordSyl.puncs + r"]+$", template)
+        ending = match.group(0) if match else ''
+        tokenized[0] = starting + tokenized[0]
+        tokenized[-1] = tokenized[-1] + ending
         return tokenized
 
     def nsyl(self, word):
