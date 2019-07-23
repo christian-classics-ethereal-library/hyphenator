@@ -1,6 +1,6 @@
 import os
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup
 
@@ -24,6 +24,8 @@ setup(
     url="https://gitlab.ccel.org/zdecook/hymn2yaml",
     package_list=['hyphenator'],
     py_modules=moduleslist('./hyphenator'),
+    packages=find_packages(),
+    include_package_data=True,
     install_requires=[
         'nltk',
         'PyYAML',

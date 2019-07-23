@@ -98,7 +98,7 @@ class MultiSylT(object):
         self.pyphen = pyphen.Pyphen(lang='nl_NL')
         self.dict = {"words": []}
         if (dictName == '-'):
-            dictName = os.path.dirname(__file__) + "/../data/dict.yaml"
+            dictName = os.path.dirname(__file__) + "/dict.yaml"
         try:
             with open(dictName) as f:
                 self.dict = yaml.safe_load(f)
