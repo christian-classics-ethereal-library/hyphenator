@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import fileinput
 import json
+import pyphen
 import re
 import sys
 import yaml
@@ -86,6 +87,7 @@ def warning(msg):
 class MultiSylT(object):
     def __init__(self, dictName):
         self.SSP = SyllableTokenizer()
+        self.pyphen = pyphen.Pyphen(lang='nl_NL')
         self.dict = {"words": []}
         try:
             with open(dictName) as f:
@@ -105,6 +107,10 @@ class MultiSylT(object):
         # Otherwise, use an algorithm to get word split up into syllables
         tokenized = self.SSP.tokenize(word)
         sylCounts = self.nsyl(word)
+        splitter = "\t"
+        hyphenated = self.pyphen.inserted(word, splitter).split(splitter)
+        if(len(hyphenated) in sylCounts and hyphenated not in tokenizations):
+            tokenizations.append(hyphenated)
 
         # If the tokenized version has the same number of syllables as
         # one of the CMU STT pronunciations, return that.
@@ -117,11 +123,11 @@ class MultiSylT(object):
 
         # Fallback if there are no tokenizations.
         if(len(tokenizations) == 0):
-            warning("%s has %d syllables," % (str(tokenized), len(tokenized))
+            warning("%s has %d syllables," % (str(hyphenated), len(hyphenated))
                     + ' expected: '
                     + (" or ".join(map(str, sylCounts)) or "???")
                     )
-            tokenizations.append(tokenized)
+            tokenizations.append(hyphenated)
         return list(map(self.reformat, tokenizations, originalWord))
 
     def deformat(self, word):
@@ -130,7 +136,8 @@ class MultiSylT(object):
     def reformat(self, tokenized, template):
         # Since tokenized is mutable, it might have already been adjusted.
         if(''.join(tokenized) == self.deformat(''.join(tokenized))):
-            if(template.strip(wordSyl.puncs)[0].isupper()):
+            plainTemp = template.strip(wordSyl.puncs)
+            if(plainTemp and plainTemp[0].isupper()):
                 tokenized[0] = tokenized[0][0].upper() + tokenized[0][1:]
             match = re.match(r"^[" + wordSyl.puncs + r"]+", template)
             starting = match.group(0) if match else ''

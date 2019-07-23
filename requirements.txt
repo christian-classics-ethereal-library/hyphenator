@@ -1,2 +1,3 @@
 nltk==3.4.3
+Pyphen==0.9.5
 PyYAML==5.1.1
