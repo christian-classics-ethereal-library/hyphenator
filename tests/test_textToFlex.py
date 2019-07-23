@@ -37,3 +37,24 @@ def test_alternates():
     off5 = textToFlex.syllabizeLine(line, 5, mst)
     assert "of -- fer -- ing off -- ering" in off5
     assert "off -- ering of -- fer -- ing" in off5
+
+
+def test_reformat_singular():
+    mst = textToFlex.MultiSylT('tests/dict.yaml')
+    line = "All? all."
+    syllabized = textToFlex.syllabizeLine(line, 2, mst)
+    assert [line] == syllabized
+
+    line2 = "all, All!"
+    syllabized2 = textToFlex.syllabizeLine(line2, 2, mst)
+    assert [line2] == syllabized2
+
+
+def test_deformat_function():
+    mst = textToFlex.MultiSylT('tests/dict.yaml')
+    assert "all" == mst.deformat('All?')
+
+
+def test_reformat_function():
+    mst = textToFlex.MultiSylT('tests/dict.yaml')
+    assert ["All?"] == mst.reformat(["all"], "All?")
