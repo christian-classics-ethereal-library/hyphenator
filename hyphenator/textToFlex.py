@@ -110,7 +110,7 @@ class MultiSylT(object):
         """ Return options for tokenizing a word. """
         word = self.deformat(originalWord)
         tokenizations = []
-        # If the word exists in our dictionary, return those tokenizations.
+        # If the word exists in our dictionary, include those tokenizations.
         if(word in self.dict['words']):
             tokenizations += self.dict['words'][word]
 
@@ -119,15 +119,17 @@ class MultiSylT(object):
         sylCounts = self.nsyl(word)
         splitter = "\t"
         hyphenated = self.pyphen.inserted(word, splitter).split(splitter)
-        if(len(hyphenated) in sylCounts and hyphenated not in tokenizations):
-            tokenizations.append(hyphenated)
 
-        # If the tokenized version has the same number of syllables as
-        # one of the CMU STT pronunciations, return that.
-        if(len(tokenized) in sylCounts and tokenized not in tokenizations):
-            # TODO: Don't add this if there is already one with the
-            # same number of syllables.
+        # If the tokenized or hyphenated version has the same number of
+        # syllables as one of the CMU STT pronunciations, but we don't
+        # already have that syllable-count represented, include it.
+        lh = len(hyphenated)
+        if(lh in sylCounts and lh not in map(len, tokenizations)):
+            tokenizations.append(hyphenated)
+        lt = len(tokenized)
+        if(lt in sylCounts and lt not in map(len, tokenizations)):
             tokenizations.append(tokenized)
+
         if(1 in sylCounts and [word] not in tokenizations):
             tokenizations.append([word])
 
