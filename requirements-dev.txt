@@ -2,3 +2,4 @@ coverage==4.5.3
 pycodestyle==2.5.0
 pytest==4.6.3
 pytest-cov==2.7.1
+setuptools-git==1.2
