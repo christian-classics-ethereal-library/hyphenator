@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import fileinput
 import json
+import os.path
 import pyphen
 import re
 import sys
@@ -21,16 +22,23 @@ def main(argv):
     the flextext is sent to stdout
     stderr is a YAML document including warnings and alternate verses
     """
+    if(len(argv) < 2):
+        error("Usage %s" % main.__doc__)
+        return
     # Make meter an inverted list of the syllable counts so "1.2.3.4" =>
     # ['4','3','2','1'].
     meter = argv[1].split('.')[::-1]
-    templateFile = argv[2]
-    mst = MultiSylT(argv[3])
+    templateFile = argv[2] if len(argv) > 2 else '-'
+    mst = MultiSylT(argv[3] if len(argv) > 3 else '-')
     success = True
     i = 0
     for line in fileinput.input(argv[4:]):
         i += 1
-        length = int(meter.pop())
+        try:
+            length = int(meter.pop())
+        except BaseException:
+            error("Out of lines in meter.")
+            return
         line = line.replace("\n", "")
         syllabized = syllabizeLine(line, length, mst)
         if(syllabized):
@@ -89,11 +97,13 @@ class MultiSylT(object):
         self.SSP = SyllableTokenizer()
         self.pyphen = pyphen.Pyphen(lang='nl_NL')
         self.dict = {"words": []}
+        if (dictName == '-'):
+            dictName = os.path.dirname(__file__) + "/../data/dict.yaml"
         try:
             with open(dictName) as f:
                 self.dict = yaml.safe_load(f)
         except BaseException:
-            error("dict.yaml could not be loaded.")
+            error("%s could not be loaded." % dictName)
         self.d = cmudict.dict()
 
     def multiTokenize(self, originalWord):
