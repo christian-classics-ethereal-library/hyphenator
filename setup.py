@@ -21,7 +21,7 @@ setup(
     description="Split words into syllables based on meter, etc.",
     maintainer="zdecook",
     maintainer_email="zdecook@ccel.org",
-    url="https://gitlab.ccel.org/zdecook/hymn2yaml",
+    url="https://gitlab.ccel.org/zdecook/hyphenator",
     package_list=['hyphenator'],
     py_modules=moduleslist('./hyphenator'),
     packages=find_packages(),
