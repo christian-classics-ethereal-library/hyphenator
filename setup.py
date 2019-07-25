@@ -1,8 +1,6 @@
 import os
-try:
-    from setuptools import setup, find_packages
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup, find_packages
+from setuptools.command.install import install as _install
 
 
 def moduleslist(directory):
@@ -14,6 +12,14 @@ def moduleslist(directory):
             theList.append(basename + '.' + file[0:-3])
     return theList
 
+
+# Override cmdclass with our own install script.
+# https://stackoverflow.com/a/29628540/
+class Install(_install):
+    def run(self):
+        _install.do_egg_install(self)
+        import nltk
+        nltk.download('cmudict')
 
 setup(
     name="Hyphenator",
@@ -31,4 +37,6 @@ setup(
         'Pyphen',
         'PyYAML',
     ],
+    cmdclass={'install': Install},
+    setup_requires=['nltk'],
 )
