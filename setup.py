@@ -21,6 +21,7 @@ class Install(_install):
         import nltk
         nltk.download('cmudict')
 
+
 setup(
     name="Hyphenator",
     version="0.1.0",
