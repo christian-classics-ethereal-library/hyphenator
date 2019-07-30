@@ -10,17 +10,28 @@ def main(argv):
     like "8.6.8.6.".
     """
     for line in fileinput.input(argv[1:]):
-        line = line.replace('_', ' ')
-        line = line.replace('-', ' ')
-        line = re.sub(r" +", " ", line)
-        line = line.replace('\r', '')
-        line = line.replace('\n', '')
-        spaces = line.count(' ')
-        number = len([x for x in line.split(' ') if x != ''])
-        if(spaces and number):
-            sys.stdout.write(str(number) + ".")
-        else:
-            print(line)
+        sys.stdout.write(process_line(line))
+
+
+def meterify(paragraph):
+    meter = ''
+    for line in paragraph.split("\n"):
+        meter += process_line(line)
+    return meter
+
+
+def process_line(line):
+    line = line.replace('_', ' ')
+    line = line.replace('-', ' ')
+    line = re.sub(r" +", " ", line)
+    line = line.replace('\r', '')
+    line = line.replace('\n', '')
+    spaces = line.count(' ')
+    number = len([x for x in line.split(' ') if x != ''])
+    if(spaces and number):
+        return str(number) + "."
+    else:
+        return line + "\n"
 
 
 if __name__ == "__main__":  # pragma: no cover
