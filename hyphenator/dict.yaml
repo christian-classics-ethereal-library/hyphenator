@@ -7217,6 +7217,11 @@ words:
   - ["over"]
   - ["o", "ver"]
   - ["ov", "er"]
+  "overpower":
+  - ["o", "ver", "power"]
+  - ["o", "ver", "pow", "er"]
+  "overpow'r":
+  - ["o", "ver", "pow'r"]
   "overtake":
   - ["o", "ver", "take"]
   "overthrow":
@@ -11069,6 +11074,8 @@ words:
   - ["two"]
   "tyranny":
   - ["tyr", "an", "ny"]
+  "tyrant's":
+  - ["ty", "rant's"]
   "tyrant\u2019s":
   - ["ty", "rant\u2019s"]
   "tyrants\u2019":
