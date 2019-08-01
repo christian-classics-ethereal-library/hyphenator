@@ -153,7 +153,9 @@ class MultiSylT(object):
         # Since tokenized is mutable, create a duplicate of it.
         tokenized = list(oldTokenized)
         plainTemp = template.strip(wordSyl.puncs)
-        if(plainTemp and plainTemp[0].isupper()):
+        if(plainTemp and plainTemp.isupper()):
+            tokenized[0] = tokenized[0].upper()
+        elif(plainTemp and plainTemp[0].isupper()):
             tokenized[0] = tokenized[0][0].upper() + tokenized[0][1:]
         match = re.search(r"^[" + wordSyl.puncs + r"]+", template)
         starting = match.group(0) if match else ''
