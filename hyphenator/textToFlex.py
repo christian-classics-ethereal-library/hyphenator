@@ -58,7 +58,10 @@ def syllabizeLine(line, n, mst):
     ts = []
     words = [x for x in line.split(' ') if x != '']
     for word in words:
-        ts.append(mst.multiTokenize(word))
+        if(word.strip(wordSyl.puncs) == ''):
+            warning("Word '%s' consists only of punctuation" % word)
+        else:
+            ts.append(mst.multiTokenize(word))
     recurse('', ts, n, sentences)
     return sentences
 
