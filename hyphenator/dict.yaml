@@ -517,6 +517,8 @@ words:
   - ["arm"]
   "armed":
   - ["armed"]
+  "arm'd":
+  - ["arm'd"]
   "armor":
   - ["ar", "mor"]
   "arms":
@@ -2762,6 +2764,8 @@ words:
   - ["di", "rect"]
   "direction":
   - ["di", "rec", "tion"]
+  "disarmed":
+  - ['dis', 'armed']
   "disappear":
   - ["dis", "ap", "pear"]
   "disappointments":
@@ -11861,6 +11865,8 @@ words:
   - ["wild"]
   "willed":
   - ["willed"]
+  "will'd":
+  - ["will'd"]
   "willing":
   - ["will", "ing"]
   "wills":
