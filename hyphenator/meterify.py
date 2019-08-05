@@ -16,8 +16,9 @@ def main(argv):
 def meterify(paragraph):
     meter = ''
     for line in paragraph.split("\n"):
-        meter += process_line(line)
-    return meter
+        if line and not re.search(r"[{}=\\%]+", line):
+            meter += process_line(line)
+    return meter.split("\n")
 
 
 def process_line(line):
@@ -31,7 +32,7 @@ def process_line(line):
     if(spaces and number):
         return str(number) + "."
     else:
-        return line + "\n"
+        return "\n"
 
 
 if __name__ == "__main__":  # pragma: no cover
