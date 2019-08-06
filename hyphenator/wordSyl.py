@@ -3,7 +3,9 @@ import fileinput
 import re
 import sys
 
-puncs = r",.:;!?\*()"
+puncs = r",.:;!?\*()_"
+# Include the backslash before the hyphen so it doesn't break regexes.
+puncs += r"\-"
 # Smart double-quotes
 puncs += "\u201c\u201d"
 # En Dash and Em Dash

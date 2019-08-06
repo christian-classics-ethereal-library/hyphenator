@@ -58,7 +58,10 @@ def syllabizeLine(line, n, mst):
     ts = []
     words = [x for x in line.split(' ') if x != '']
     for word in words:
-        ts.append(mst.multiTokenize(word))
+        if(word.strip(wordSyl.puncs) == ''):
+            warning("Word '%s' consists only of punctuation" % word)
+        else:
+            ts.append(mst.multiTokenize(word))
     recurse('', ts, n, sentences)
     return sentences
 
@@ -150,7 +153,9 @@ class MultiSylT(object):
         # Since tokenized is mutable, create a duplicate of it.
         tokenized = list(oldTokenized)
         plainTemp = template.strip(wordSyl.puncs)
-        if(plainTemp and plainTemp[0].isupper()):
+        if(plainTemp and plainTemp.isupper()):
+            tokenized[0] = tokenized[0].upper()
+        elif(plainTemp and plainTemp[0].isupper()):
             tokenized[0] = tokenized[0][0].upper() + tokenized[0][1:]
         match = re.search(r"^[" + wordSyl.puncs + r"]+", template)
         starting = match.group(0) if match else ''

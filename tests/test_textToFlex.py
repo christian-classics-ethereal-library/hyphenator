@@ -58,3 +58,4 @@ def test_deformat_function():
 def test_reformat_function():
     mst = textToFlex.MultiSylT('tests/dict.yaml')
     assert ["All?"] == mst.reformat(["all"], "All?")
+    assert ["ALL?"] == mst.reformat(["all"], "ALL?")

@@ -10,4 +10,4 @@ def test_meterify(capsys):
 
 def test_meterify_function():
     output = meterify.meterify('A -- ma -- zing\r\nGrace How')
-    assert "3.2" == output.strip('.')
+    assert "3.2" == output[0].strip('.')
