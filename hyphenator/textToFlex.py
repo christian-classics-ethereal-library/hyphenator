@@ -147,7 +147,7 @@ class MultiSylT(object):
                     originalWord for x in range(0, len(tokenizations))]))
 
     def deformat(self, word):
-        return word.lower().strip(wordSyl.puncs)
+        return word.lower().strip(wordSyl.puncs).replace("\u2019", "'").replace("\u2018", "'")
 
     def reformat(self, oldTokenized, template):
         # Since tokenized is mutable, create a duplicate of it.
