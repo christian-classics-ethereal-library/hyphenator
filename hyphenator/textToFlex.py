@@ -147,27 +147,42 @@ class MultiSylT(object):
                     originalWord for x in range(0, len(tokenizations))]))
 
     def deformat(self, word):
-        return word.lower().strip(
-            wordSyl.puncs).replace(
-            "\u2019",
-            "'").replace(
-            "\u2018",
-            "'")
+        return re.sub(
+            "[" + wordSyl.smartSingles + "]",
+            "'",
+            word.lower().strip(
+                wordSyl.puncs))
 
     def reformat(self, oldTokenized, template):
         # Since tokenized is mutable, create a duplicate of it.
         tokenized = list(oldTokenized)
+
+        # Match the case
         plainTemp = template.strip(wordSyl.puncs)
         if(plainTemp and plainTemp.isupper()):
             tokenized[0] = tokenized[0].upper()
         elif(plainTemp and plainTemp[0].isupper()):
             tokenized[0] = tokenized[0][0].upper() + tokenized[0][1:]
+
+        # Prepend/append the punctuations
         match = re.search(r"^[" + wordSyl.puncs + r"]+", template)
         starting = match.group(0) if match else ''
         match = re.search(r"[" + wordSyl.puncs + r"]+$", template)
         ending = match.group(0) if match else ''
         tokenized[0] = starting + tokenized[0]
         tokenized[-1] = tokenized[-1] + ending
+
+        # Replace smart single-quotes
+        dumbPlaceholder = "\n"
+        splitter = "\t"
+        templateNoDumb = template.replace("'", dumbPlaceholder)
+        for letter in templateNoDumb:
+            if letter in wordSyl.smartSingles + dumbPlaceholder:
+                tokenized = splitter.join(tokenized).replace(
+                    "'", letter, 1).split(splitter)
+        tokenized = splitter.join(tokenized).replace(
+            dumbPlaceholder, "'").split(splitter)
+
         return tokenized
 
     def nsyl(self, word):

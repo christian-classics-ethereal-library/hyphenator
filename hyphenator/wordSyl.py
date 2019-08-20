@@ -11,6 +11,9 @@ puncs += "\u201c\u201d"
 # En Dash and Em Dash
 puncs += "\u2013\u2014"
 
+# Single quotes
+smartSingles = "\u2018\u2019"
+
 
 def main(argv):
     """ Takes in flextext and returns lines like "theword\tthe-word". """
@@ -23,6 +26,7 @@ def main(argv):
         line = re.sub(r"\s+[" + puncs + r"]+", ' ', line)
         line = re.sub(r"[" + puncs + r"]+$", '', line)
         line = re.sub(r"^[" + puncs + r"]+", '', line)
+        line = re.sub("[" + smartSingles + "]", "'", line)
         line = re.sub(r"\s+", ' ', line)
         # TODO: Deal with double quotes.
         # line = line.replace('"', '')
