@@ -7,18 +7,23 @@ from hyphenator import flexToText
 
 
 def test_stderr_output_is_YAML(capsys):
-    textToFlex.main(['', '8.6.8.6', '-', 'tests/dict.yaml',
+    textToFlex.main(['', '8.16.8.6', '-', 'tests/dict.yaml', '',
                      'tests/amazinggraceV2.raw.txt'])
     captured = capsys.readouterr()
     messages = yaml.safe_load(captured.err)
-    # ['re', 'lieved'] isn't in tests/dict.yaml
-    assert {
-        'warning': "['re', 'lie', 'ved'] has 3 syllables, expected: 2 or 2"
-    } in messages
     assert {
         'error':
-            "Unable to syllabize 'And grace my fears relieved;' to 6 syllables"
+            "Unable to syllabize 'And grace my fears relieved;' to 16 syllables"
     } in messages
+
+
+def test_stderr_output_is_YAML(capsys):
+    textToFlex.main(['', '8.6.8.6', '-', 'tests/dict.yaml', '',
+                     'tests/amazinggraceV2.raw.txt'])
+    captured = capsys.readouterr()
+    messages = yaml.safe_load(captured.err)
+    assert messages == None
+    assert "The hour I first be -- lieved!" in captured.out
     # TODO: Test for the alternates key
 
 

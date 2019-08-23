@@ -18,6 +18,7 @@ def main(argv):
     argv[1] is the meter, like 8.6.8.6.
     argv[2] is the file to use as a template, or '-' for no file.
     argv[3] is the dictionary of hyphenations.
+    argv[4] is the two-letter language code, or '-' for undetermined.
     additional arguments are used as input if they are present
     the flextext is sent to stdout
     stderr is a YAML document including warnings and alternate verses
@@ -29,10 +30,10 @@ def main(argv):
     # ['4','3','2','1'].
     meter = argv[1].split('.')[::-1]
     templateFile = argv[2] if len(argv) > 2 else '-'
-    mst = MultiSylT(argv[3] if len(argv) > 3 else '-')
+    mst = MultiSylT(argv[3] if len(argv) > 3 else '-', argv[4] if len(argv) > 4 else 'en')
     success = True
     i = 0
-    for line in fileinput.input(argv[4:]):
+    for line in fileinput.input(argv[5:]):
         i += 1
         try:
             length = int(meter.pop())
@@ -53,7 +54,9 @@ def main(argv):
     return 0 if success else 1
 
 
-def syllabizeLine(line, n, mst):
+def syllabizeLine(line, n, mst, lang=None):
+    if lang != mst.lang:
+        mst.changeLang(lang)
     sentences = []
     ts = []
     words = [x for x in line.split(' ') if x != '']
@@ -96,9 +99,11 @@ def warning(msg):
 
 
 class MultiSylT(object):
-    def __init__(self, dictName):
+    def __init__(self, dictName, lang=None):
+        # Sonority Sequencing Tokenizer is currently only set up for 26 latin letters,
+        # english pronunciation.
         self.SSP = SyllableTokenizer()
-        self.pyphen = pyphen.Pyphen(lang='nl_NL')
+        self.changeLang(lang)
         self.dict = {"words": []}
         if (dictName == '-'):
             dictName = os.path.dirname(__file__) + "/dict.yaml"
@@ -107,7 +112,15 @@ class MultiSylT(object):
                 self.dict = yaml.safe_load(f)
         except BaseException:
             error("%s could not be loaded." % dictName)
+        # CMU Pronunciation dictionary includes 119K+ words of different languages,
+        # using the latin alphabet, occasionally with punctuation.
         self.d = cmudict.dict()
+
+    def changeLang(self, lang):
+        if lang not in pyphen.LANGUAGES:
+            lang = 'en'
+        self.pyphen = pyphen.Pyphen(lang=lang)
+        self.lang = lang
 
     def multiTokenize(self, originalWord):
         """ Return options for tokenizing a word. """
