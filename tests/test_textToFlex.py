@@ -13,7 +13,7 @@ def test_stderr_output_is_YAML(capsys):
     messages = yaml.safe_load(captured.err)
     assert {
         'error':
-            "Unable to syllabize 'And grace my fears relieved;' to 16 syllables"
+        "Unable to syllabize 'And grace my fears relieved;' to 16 syllables"
     } in messages
 
 
@@ -22,7 +22,7 @@ def test_textToFlex_main(capsys):
                      'tests/amazinggraceV2.raw.txt'])
     captured = capsys.readouterr()
     messages = yaml.safe_load(captured.err)
-    assert messages == None
+    assert messages is None
     assert "The hour I first be -- lieved!" in captured.out
 
 
@@ -64,8 +64,9 @@ def test_reformat_function():
     assert ["All?"] == mst.reformat(["all"], "All?")
     assert ["ALL?"] == mst.reformat(["all"], "ALL?")
 
+
 def test_spanishHyphenate():
-    mst = textToFlex.MultiSylT('tests/dict.yaml',lang='es')
+    mst = textToFlex.MultiSylT('tests/dict.yaml', lang='es')
     # Two strong vowels (see TODO for double-l)
     assert len(["to", "a", "lla"]) == len(mst._spanishHyphenate("toalla"))
     # Weak + Strong vowel
@@ -76,6 +77,7 @@ def test_spanishHyphenate():
     assert ["tí", "o"] == mst._spanishHyphenate("tío")
     # Ending consonant
     assert ["com", "pre", "sar"] == mst._spanishHyphenate("compresar")
+
 
 def test_spanish_syllabize():
     mst = textToFlex.MultiSylT('tests/dict.yaml', lang='es')
