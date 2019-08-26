@@ -55,7 +55,7 @@ def main(argv):
 
 
 def syllabizeLine(line, n, mst, lang=None):
-    if lang != mst.lang:
+    if lang and lang != mst.lang:
         mst.changeLang(lang)
     sentences = []
     ts = []
@@ -112,7 +112,7 @@ class MultiSylT(object):
                 self.dict = yaml.safe_load(f)
         except BaseException:
             error("%s could not be loaded." % dictName)
-        # CMU Pronunciation dictionary includes 119K+ words of different languages,
+        # CMU Pronunciation dictionary includes 119K+ english words and some proper nouns,
         # using the latin alphabet, occasionally with punctuation.
         self.d = cmudict.dict()
 
@@ -132,10 +132,20 @@ class MultiSylT(object):
 
         # Otherwise, use an algorithm to get word split up into syllables
         tokenized = self.SSP.tokenize(word)
-        sylCounts = self.nsyl(word)
         splitter = "\t"
         hyphenated = self.pyphen.inserted(word, splitter).split(splitter)
 
+        if self.lang == 'en':
+            tokenizations = self.addFromPronunciation(word, tokenizations, tokenized, hyphenated)
+        else:
+            tokenizations.append(tokenized)
+            if tokenized != hyphenated:
+                tokenizations.append(hyphenated)
+        return list(map(self.reformat, tokenizations, [
+                    originalWord for x in range(0, len(tokenizations))]))
+
+    def addFromPronunciation(self, word, tokenizations, tokenized, hyphenated):
+        sylCounts = self.nsyl(word)
         # If the tokenized or hyphenated version has the same number of
         # syllables as one of the CMU STT pronunciations, but we don't
         # already have that syllable-count represented, include it.
@@ -145,7 +155,6 @@ class MultiSylT(object):
         lt = len(tokenized)
         if(lt in sylCounts and lt not in map(len, tokenizations)):
             tokenizations.append(tokenized)
-
         if(1 in sylCounts and [word] not in tokenizations):
             tokenizations.append([word])
 
@@ -156,8 +165,7 @@ class MultiSylT(object):
                     + (" or ".join(map(str, sylCounts)) or "???")
                     )
             tokenizations.append(hyphenated)
-        return list(map(self.reformat, tokenizations, [
-                    originalWord for x in range(0, len(tokenizations))]))
+        return tokenizations
 
     def deformat(self, word):
         return word.lower().strip(wordSyl.puncs)

@@ -63,3 +63,11 @@ def test_reformat_function():
     mst = textToFlex.MultiSylT('tests/dict.yaml')
     assert ["All?"] == mst.reformat(["all"], "All?")
     assert ["ALL?"] == mst.reformat(["all"], "ALL?")
+
+def test_spanish_hyphenate():
+    mst = textToFlex.MultiSylT('tests/dict.yaml', lang='es')
+    assert 'es' == mst.lang
+    line = "Santificado sea tu nombre"
+    result = textToFlex.syllabizeLine(line, 10, mst)
+    assert 'es' == mst.lang
+    assert "San -- ti -- fi -- ca -- do se -- a tu nom -- bre" == result
