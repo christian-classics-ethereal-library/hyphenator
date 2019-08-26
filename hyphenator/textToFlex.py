@@ -136,7 +136,13 @@ class MultiSylT(object):
         hyphenated = self.pyphen.inserted(word, splitter).split(splitter)
 
         if self.lang == 'en':
-            tokenizations = self.addFromPronunciation(word, tokenizations, tokenized, hyphenated)
+            tokenizations = self._addFromPronunciation(word, tokenizations, tokenized, hyphenated)
+        elif self.lang == 'es':
+            tokenizations.append(hyphenated)
+            # Sonority Sequencing doesn't work well with strong and weak vowels
+            spanishHyphenate = self._spanishHyphenate(word)
+            if spanishHyphenate != hyphenated:
+                tokenizations.append(spanishHyphenate)
         else:
             tokenizations.append(tokenized)
             if tokenized != hyphenated:
@@ -144,7 +150,7 @@ class MultiSylT(object):
         return list(map(self.reformat, tokenizations, [
                     originalWord for x in range(0, len(tokenizations))]))
 
-    def addFromPronunciation(self, word, tokenizations, tokenized, hyphenated):
+    def _addFromPronunciation(self, word, tokenizations, tokenized, hyphenated):
         sylCounts = self.nsyl(word)
         # If the tokenized or hyphenated version has the same number of
         # syllables as one of the CMU STT pronunciations, but we don't
@@ -166,6 +172,35 @@ class MultiSylT(object):
                     )
             tokenizations.append(hyphenated)
         return tokenizations
+
+    def _spanishHyphenate(self, word):
+        """ Make sure spanish words are hyphenated with the correct number of syllables
+        https://www.spanishdict.com/guide/spanish-syllables-and-syllabification-rules
+        """
+        accentedVowels = "áéíóú" # Accented vowels always get their own syllable.
+        strongVowels = "aeo" # Two strong vowels together are split into different syllables.
+        weakVowels = "iuü" # Weak vowels can blend with each other, or with strong vowels.
+        vowels = accentedVowels + strongVowels + weakVowels
+        hyphenation = ""
+        lastLetter = " "
+        unusedConsonants = ""
+        for letter in word:
+            if letter in accentedVowels:
+                hyphenation += unusedConsonants + letter + "-"
+            elif letter in strongVowels and lastLetter in strongVowels:
+                hyphenation += "-" + unusedConsonants + letter
+            elif letter in vowels and unusedConsonants:
+                hyphenation += "-" + unusedConsonants + letter
+            elif letter in vowels:
+                hyphenation += letter
+            else:
+                # This could be improved for words with multiple consecutive consonants.
+                unusedConsonants += letter
+            if letter in vowels:
+                unusedConsonants = ""
+            lastLetter = letter
+        hyphenation += unusedConsonants
+        return hyphenation.replace('--','-').strip('-').split('-')
 
     def deformat(self, word):
         return word.lower().strip(wordSyl.puncs)

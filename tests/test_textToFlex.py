@@ -64,10 +64,22 @@ def test_reformat_function():
     assert ["All?"] == mst.reformat(["all"], "All?")
     assert ["ALL?"] == mst.reformat(["all"], "ALL?")
 
-def test_spanish_hyphenate():
+def test_spanishHyphenate():
+    mst = textToFlex.MultiSylT('tests/dict.yaml',lang='es')
+    # Two strong vowels
+    assert ["to", "a", "lla"] == mst._spanishHyphenate("toalla")
+    # Weak + Strong vowel
+    assert ["i", "gua", "na"] == mst._spanishHyphenate("iguana")
+    # Two weak vowels
+    assert ["rei", "na"] == mst._spanishHyphenate("reina")
+    # Accented vowel
+    assert ["tí", "o"] == mst._spanishHyphenate("tío")
+    # Ending consonant
+    assert 3 == len(mst._spanishHyphenate("compresar"))
+
+def test_spanish_syllabize():
     mst = textToFlex.MultiSylT('tests/dict.yaml', lang='es')
-    assert 'es' == mst.lang
     line = "Santificado sea tu nombre"
     result = textToFlex.syllabizeLine(line, 10, mst)
     assert 'es' == mst.lang
-    assert "San -- ti -- fi -- ca -- do se -- a tu nom -- bre" == result
+    assert "San -- ti -- fi -- ca -- do se -- a tu nom -- bre" in result
