@@ -140,15 +140,16 @@ class MultiSylT(object):
             tokenizations = self._addMatchingSylCount(
                 word, tokenizations, tokenized, hyphenated)
         elif self.lang == 'es':
-            tokenizations.append(hyphenated)
+            if hyphenated not in tokenizations:
+                tokenizations.append(hyphenated)
             # Sonority Sequencing doesn't work well with strong and weak vowels
-            spanishHyphenate = self._spanishHyphenate(word)
-            if spanishHyphenate != hyphenated:
-                tokenizations.append(spanishHyphenate)
-            messageData(word, tokenizations)
+            esTokenized = self._spanishTokenize(word)
+            if esTokenized not in tokenizations:
+                tokenizations.append(esTokenized)
         else:
-            tokenizations.append(tokenized)
-            if tokenized != hyphenated:
+            if tokenized not in tokenizations:
+                tokenizations.append(tokenized)
+            if hyphenated not in tokenizations:
                 tokenizations.append(hyphenated)
         return list(map(self.reformat, tokenizations, [
                     originalWord for x in range(0, len(tokenizations))]))
@@ -176,7 +177,7 @@ class MultiSylT(object):
             tokenizations.append(hyphenated)
         return tokenizations
 
-    def _spanishHyphenate(self, word):
+    def _spanishTokenize(self, word):
         """ Make sure spanish hyphenated syllable counts are correct
         https://www.spanishdict.com/guide/spanish-syllables-and-syllabification-rules
         """

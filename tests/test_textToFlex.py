@@ -65,18 +65,18 @@ def test_reformat_function():
     assert ["ALL?"] == mst.reformat(["all"], "ALL?")
 
 
-def test_spanishHyphenate():
+def test_spanishTokenize():
     mst = textToFlex.MultiSylT('tests/dict.yaml', lang='es')
     # Two strong vowels (see TODO for double-l)
-    assert len(["to", "a", "lla"]) == len(mst._spanishHyphenate("toalla"))
+    assert len(["to", "a", "lla"]) == len(mst._spanishTokenize("toalla"))
     # Weak + Strong vowel
-    assert ["i", "gua", "na"] == mst._spanishHyphenate("iguana")
+    assert ["i", "gua", "na"] == mst._spanishTokenize("iguana")
     # Two weak vowels
-    assert ["rei", "na"] == mst._spanishHyphenate("reina")
+    assert ["rei", "na"] == mst._spanishTokenize("reina")
     # Accented vowel
-    assert ["tí", "o"] == mst._spanishHyphenate("tío")
+    assert ["tí", "o"] == mst._spanishTokenize("tío")
     # Ending consonant
-    assert ["com", "pre", "sar"] == mst._spanishHyphenate("compresar")
+    assert ["com", "pre", "sar"] == mst._spanishTokenize("compresar")
 
 
 def test_spanish_syllabize():
