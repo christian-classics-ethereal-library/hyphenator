@@ -3,6 +3,8 @@ import fileinput
 import re
 import sys
 
+import hyphenator.flexToText as ftt
+
 
 def main(argv):
     """ For a paragraph of flextext, will return the syllables in each line,
@@ -16,7 +18,8 @@ def main(argv):
 def meterify(paragraph):
     meter = ''
     for line in paragraph.split("\n"):
-        if line and not re.search(r"[{}=\\%]+", line):
+        line = ftt.removeLilyCommands(line)
+        if line:
             meter += process_line(line)
     return meter.split("\n")
 

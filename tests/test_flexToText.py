@@ -19,3 +19,12 @@ def test_textStripped():
 def test_tildeRemoved():
     output = flexToText.flexToText("no -- che de~a -- mor")
     assert "noche de amor" == output
+
+
+def test_removeLilyCommands():
+    output = flexToText.removeLilyCommands(
+        "shall \\set ignoreMelismata = #t praise")
+    assert "shall praise" == output
+    output = flexToText.removeLilyCommands(
+        "art \\unset ignoreMelismata ho -- ly;")
+    assert "art ho -- ly;" == output

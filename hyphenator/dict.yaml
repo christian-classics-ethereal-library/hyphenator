@@ -1051,6 +1051,10 @@ words:
   "blessed":
   - ["blessed"]
   - ["bless", "ed"]
+  "bless\u00e8d":
+  - ["bless", "\u00e8d"]
+  "bless\u00e9d":
+  - ["bless", "\u00e9d"]
   "blessedness":
   - ["bless", "ed", "ness"]
   "blessing":
