@@ -12,6 +12,7 @@ def flexToText(text):
     text = text.replace(' _ ', ' ')
     text = re.sub(r" +", " ", text)
     text = text.replace(' -- ', '')
+    text = text.replace('~', ' ')
     return text.strip()
 
 

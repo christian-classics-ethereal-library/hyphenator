@@ -7,19 +7,23 @@ from hyphenator import flexToText
 
 
 def test_stderr_output_is_YAML(capsys):
-    textToFlex.main(['', '8.6.8.6', '-', 'tests/dict.yaml',
+    textToFlex.main(['', '8.16.8.6', '-', 'tests/dict.yaml', '',
                      'tests/amazinggraceV2.raw.txt'])
     captured = capsys.readouterr()
     messages = yaml.safe_load(captured.err)
-    # ['re', 'lieved'] isn't in tests/dict.yaml
-    assert {
-        'warning': "['re', 'lie', 'ved'] has 3 syllables, expected: 2 or 2"
-    } in messages
     assert {
         'error':
-            "Unable to syllabize 'And grace my fears relieved;' to 6 syllables"
+        "Unable to syllabize 'And grace my fears relieved;' to 16 syllables"
     } in messages
-    # TODO: Test for the alternates key
+
+
+def test_textToFlex_main(capsys):
+    textToFlex.main(['', '8.6.8.6', '-', 'tests/dict.yaml', '',
+                     'tests/amazinggraceV2.raw.txt'])
+    captured = capsys.readouterr()
+    messages = yaml.safe_load(captured.err)
+    assert messages is None
+    assert "The hour I first be -- lieved!" in captured.out
 
 
 def test_multiTokenize():
@@ -67,3 +71,25 @@ def test_reformat_function():
         ["cal", "v'ry's"], "Calv'ry\u2019s")
     ordered = "\u2018'\u2019"
     assert [ordered] == mst.reformat(["'''"], ordered)
+
+
+def test_spanishTokenize():
+    mst = textToFlex.MultiSylT('tests/dict.yaml', lang='es')
+    # Two strong vowels (see TODO for double-l)
+    assert len(["to", "a", "lla"]) == len(mst._spanishTokenize("toalla"))
+    # Weak + Strong vowel
+    assert ["i", "gua", "na"] == mst._spanishTokenize("iguana")
+    # Two weak vowels
+    assert ["rei", "na"] == mst._spanishTokenize("reina")
+    # Accented vowel
+    assert ["tí", "o"] == mst._spanishTokenize("tío")
+    # Ending consonant
+    assert ["com", "pre", "sar"] == mst._spanishTokenize("compresar")
+
+
+def test_spanish_syllabize():
+    mst = textToFlex.MultiSylT('tests/dict.yaml', lang='es')
+    line = "Santificado sea tu nombre"
+    result = textToFlex.syllabizeLine(line, 10, mst)
+    assert 'es' == mst.lang
+    assert "San -- ti -- fi -- ca -- do se -- a tu nom -- bre" in result

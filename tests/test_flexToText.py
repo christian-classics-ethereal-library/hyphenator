@@ -14,3 +14,8 @@ def test_flexToText(capsys):
 def test_textStripped():
     output = flexToText.flexToText(" \tA -- ma -- zing\r\n")
     assert "Amazing" == output
+
+
+def test_tildeRemoved():
+    output = flexToText.flexToText("no -- che de~a -- mor")
+    assert "noche de amor" == output

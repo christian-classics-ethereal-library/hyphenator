@@ -18,6 +18,7 @@ def main(argv):
     argv[1] is the meter, like 8.6.8.6.
     argv[2] is the file to use as a template, or '-' for no file.
     argv[3] is the dictionary of hyphenations.
+    argv[4] is the two-letter language code, or '-' for undetermined.
     additional arguments are used as input if they are present
     the flextext is sent to stdout
     stderr is a YAML document including warnings and alternate verses
@@ -29,10 +30,11 @@ def main(argv):
     # ['4','3','2','1'].
     meter = argv[1].split('.')[::-1]
     templateFile = argv[2] if len(argv) > 2 else '-'
-    mst = MultiSylT(argv[3] if len(argv) > 3 else '-')
+    mst = MultiSylT(argv[3] if len(argv) > 3 else '-',
+                    argv[4] if len(argv) > 4 else 'en')
     success = True
     i = 0
-    for line in fileinput.input(argv[4:]):
+    for line in fileinput.input(argv[5:]):
         i += 1
         try:
             length = int(meter.pop())
@@ -53,7 +55,9 @@ def main(argv):
     return 0 if success else 1
 
 
-def syllabizeLine(line, n, mst):
+def syllabizeLine(line, n, mst, lang=None):
+    if lang and lang != mst.lang:
+        mst.changeLang(lang)
     sentences = []
     ts = []
     words = [x for x in line.split(' ') if x != '']
@@ -96,9 +100,11 @@ def warning(msg):
 
 
 class MultiSylT(object):
-    def __init__(self, dictName):
+    def __init__(self, dictName, lang=None):
+        # Sonority Sequencing Tokenizer defaults to 26 latin letters,
+        # english pronunciation.
         self.SSP = SyllableTokenizer()
-        self.pyphen = pyphen.Pyphen(lang='nl_NL')
+        self.changeLang(lang)
         self.dict = {"words": []}
         if (dictName == '-'):
             dictName = os.path.dirname(__file__) + "/dict.yaml"
@@ -107,7 +113,15 @@ class MultiSylT(object):
                 self.dict = yaml.safe_load(f)
         except BaseException:
             error("%s could not be loaded." % dictName)
+        # CMU Pronunciation dictionary includes 119K+ english words plus some
+        # proper nouns using the latin alphabet, occasionally with punctuation.
         self.d = cmudict.dict()
+
+    def changeLang(self, lang):
+        if lang not in pyphen.LANGUAGES:
+            lang = 'en'
+        self.pyphen = pyphen.Pyphen(lang=lang)
+        self.lang = lang
 
     def multiTokenize(self, originalWord):
         """ Return options for tokenizing a word. """
@@ -119,10 +133,29 @@ class MultiSylT(object):
 
         # Otherwise, use an algorithm to get word split up into syllables
         tokenized = self.SSP.tokenize(word)
-        sylCounts = self.nsyl(word)
         splitter = "\t"
         hyphenated = self.pyphen.inserted(word, splitter).split(splitter)
 
+        if self.lang == 'en':
+            tokenizations = self._addMatchingSylCount(
+                word, tokenizations, tokenized, hyphenated)
+        elif self.lang == 'es':
+            if hyphenated not in tokenizations:
+                tokenizations.append(hyphenated)
+            # Sonority Sequencing doesn't work well with strong and weak vowels
+            esTokenized = self._spanishTokenize(word)
+            if esTokenized not in tokenizations:
+                tokenizations.append(esTokenized)
+        else:
+            if tokenized not in tokenizations:
+                tokenizations.append(tokenized)
+            if hyphenated not in tokenizations:
+                tokenizations.append(hyphenated)
+        return list(map(self.reformat, tokenizations, [
+                    originalWord for x in range(0, len(tokenizations))]))
+
+    def _addMatchingSylCount(self, word, tokenizations, tokenized, hyphenated):
+        sylCounts = self.nsyl(word)
         # If the tokenized or hyphenated version has the same number of
         # syllables as one of the CMU STT pronunciations, but we don't
         # already have that syllable-count represented, include it.
@@ -132,7 +165,6 @@ class MultiSylT(object):
         lt = len(tokenized)
         if(lt in sylCounts and lt not in map(len, tokenizations)):
             tokenizations.append(tokenized)
-
         if(1 in sylCounts and [word] not in tokenizations):
             tokenizations.append([word])
 
@@ -143,8 +175,34 @@ class MultiSylT(object):
                     + (" or ".join(map(str, sylCounts)) or "???")
                     )
             tokenizations.append(hyphenated)
-        return list(map(self.reformat, tokenizations, [
-                    originalWord for x in range(0, len(tokenizations))]))
+        return tokenizations
+
+    def _spanishTokenize(self, word):
+        """ Make sure spanish hyphenated syllable counts are correct
+        https://www.spanishdict.com/guide/spanish-syllables-and-syllabification-rules
+        """
+        # Accented vowels always get their own syllable.
+        accentedVowels = "áéíóú"
+        # Two strong vowels together are split into different syllables.
+        strongVowels = "aeo"
+        # Weak vowels can blend with each other, or with strong vowels.
+        weakVowels = "iuü"
+        vowels = accentedVowels + strongVowels + weakVowels
+
+        # Split certain vowel pairs, and let SSP do the rest.
+        newWord = ""
+        prevLetter = " "
+        for letter in word:
+            if (letter in vowels and prevLetter in accentedVowels) or \
+               (letter in accentedVowels and prevLetter in vowels) or \
+               (letter in strongVowels and prevLetter in strongVowels):
+                newWord += "-" + letter
+            else:
+                newWord += letter
+            prevLetter = letter
+        # TODO: Fix tokenization for double-r and double-l
+        tokenized = self.SSP.tokenize(newWord)
+        return list(filter(lambda syl: syl != '-', tokenized))
 
     def deformat(self, word):
         return re.sub(
