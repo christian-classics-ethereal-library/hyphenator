@@ -19,7 +19,7 @@ def meterify(paragraph):
     meter = ''
     for line in paragraph.split("\n"):
         line = ftt.removeLilyCommands(line)
-        if line:
+        if line and not re.search(r"[{}=\\]+", line):
             meter += process_line(line)
     return meter.split("\n")
 
