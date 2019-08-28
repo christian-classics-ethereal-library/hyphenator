@@ -3,8 +3,8 @@ words:
   - ["\uc624"]
   "\u00a1a":
   - ["\u00a1a"]
-  "a\u2019":
-  - ["a\u2019"]
+  "a'":
+  - ["a'"]
   "a":
   - ["a"]
   "\u00e0":
@@ -17,8 +17,8 @@ words:
   - ["aar", "de"]
   "aaron":
   - ["aar", "on"]
-  "aaron\u2019s":
-  - ["aar", "on\u2019s"]
+  "aaron's":
+  - ["aar", "on's"]
   "abide":
   - ["a", "bide"]
   "abides":
@@ -50,14 +50,12 @@ words:
   - ["a", "bra", "ham"]
   "abraham's":
   - ["a", "braham's"]
-  "abraham\u2019s":
-  - ["a", "braham\u2019s"]
-  "abr\u2019am\u2019s":
-  - ["a", "br\u2019am\u2019s"]
-  "abr\u2019ham":
-  - ["a", "br\u2019ham"]
-  "abr\u2019ham\u2019s":
-  - ["a", "br\u2019ham\u2019s"]
+  "abr'am's":
+  - ["a", "br'am's"]
+  "abr'ham":
+  - ["a", "br'ham"]
+  "abr'ham's":
+  - ["a", "br'ham's"]
   "abroad":
   - ["a", "broad"]
   "absolute":
@@ -102,8 +100,6 @@ words:
   - ["acts"]
   "adam's":
   - ["ad", "am's"]
-  "adam\u2019s":
-  - ["ad", "am\u2019s"]
   "addicted":
   - ["ad", "dict", "ed"]
   "addiction":
@@ -202,8 +198,8 @@ words:
   - ["ah"]
   "ahead":
   - ["a", "head"]
-  "\u2018ah\u00e9\u00e9h":
-  - ["\u2018ah", "\u00e9\u00e9h"]
+  "'ah\u00e9\u00e9h":
+  - ["'ah", "\u00e9\u00e9h"]
   "aho":
   - ["a", "ho"]
   "ai":
@@ -244,8 +240,8 @@ words:
   - ["a", "lak"]
   "al":
   - ["al"]
-  "\u2019alam":
-  - ["\u2019a", "lam"]
+  "'alam":
+  - ["'a", "lam"]
   "alarm":
   - ["a", "larm"]
   "alarms":
@@ -344,8 +340,8 @@ words:
   - ["a", "ma"]
   "am":
   - ["am"]
-  "ama\u2019t":
-  - ["a", "ma\u2019t"]
+  "ama't":
+  - ["a", "ma't"]
   "amazed":
   - ["a", "mazed"]
   "amazing":
@@ -389,8 +385,8 @@ words:
   - ["ang"]
   "angel":
   - ["an", "gel"]
-  "angels\u2019":
-  - ["an", "gels\u2019"]
+  "angels'":
+  - ["an", "gels'"]
   "angels":
   - ["an", "gels"]
   "anger":
@@ -488,8 +484,8 @@ words:
   - ["ar", "a", "ji"]
   "araw":
   - ["a", "raw"]
-  "archangel\u2019s":
-  - ["arch", "an", "gel\u2019s"]
+  "archangel's":
+  - ["arch", "an", "gel's"]
   "archangels":
   - ["arch", "an", "gels"]
   "arches":
@@ -500,8 +496,8 @@ words:
   - ["ar", "dor"]
   "are":
   - ["are"]
-  "aren\u2019t":
-  - ["aren\u2019t"]
+  "aren't":
+  - ["aren't"]
   "argument":
   - ["ar", "gu", "ment"]
   "aright":
@@ -693,12 +689,12 @@ words:
   - ["ba", "bel"]
   "baby":
   - ["ba", "by"]
-  "baby\u2019s":
-  - ["ba", "by\u2019s"]
+  "baby's":
+  - ["ba", "by's"]
   "back":
   - ["back"]
-  "badd\u2019st":
-  - ["badd\u2019st"]
+  "badd'st":
+  - ["badd'st"]
   "bade":
   - ["bade"]
   "ball":
@@ -734,8 +730,6 @@ words:
   - ["bap", "ti", "sm"]
   "baptist's":
   - ["bap", "tist's"]
-  "baptist\u2019s":
-  - ["bap", "tist\u2019s"]
   "baptize":
   - ["bap", "tize"]
   "baptized":
@@ -805,8 +799,8 @@ words:
   "beauty":
   - ["beauty"]
   - ["beau", "ty"]
-  "beauty\u2019s":
-  - ["beau", "ty\u2019s"]
+  "beauty's":
+  - ["beau", "ty's"]
   "be":
   - ["be"]
   "became":
@@ -841,8 +835,8 @@ words:
   - ["be", "friends"]
   "began":
   - ["be", "gan"]
-  "beggar\u2019d":
-  - ["beg", "gar\u2019d"]
+  "beggar'd":
+  - ["beg", "gar'd"]
   "beggared":
   - ["beg", "gared"]
   "begged":
@@ -885,8 +879,6 @@ words:
   - ["be", "liev", "er"]
   "believer's":
   - ["be", "liev", "er's"]
-  "believer\u2019s":
-  - ["be", "liev", "er\u2019s"]
   "believes":
   - ["be", "lieves"]
   "believing":
@@ -949,8 +941,6 @@ words:
   - ["beth", "le", "hem"]
   "bethlehem's":
   - ["beth", "le", "hem's"]
-  "bethlehem\u2019s":
-  - ["beth", "le", "hem\u2019s"]
   "betide":
   - ["be", "tide"]
   "betrayal":
@@ -972,8 +962,8 @@ words:
   - ["bi", "ble"]
   "biblia":
   - ["bi", "blia"]
-  "bich\u2019i\u2019":
-  - ["bi", "ch\u2019i\u2019"]
+  "bich'i'":
+  - ["bi", "ch'i'"]
   "bid":
   - ["bid"]
   "biddest":
@@ -982,8 +972,6 @@ words:
   - ["bid", "ding"]
   "bidd'st":
   - ["bidd'st"]
-  "bidd\u2019st":
-  - ["bidd\u2019st"]
   "bids":
   - ["bids"]
   "bidst":
@@ -1291,8 +1279,8 @@ words:
   - ["brook", "beds"]
   "brooks":
   - ["brooks"]
-  "bro\u2019t":
-  - ["bro\u2019t"]
+  "bro't":
+  - ["bro't"]
   "brother":
   - ["bro", "ther"]
   - ["broth", "er"]
@@ -1395,13 +1383,9 @@ words:
   - ["cal", "var", "y"]
   "calvary's":
   - ["cal", "va", "ry's"]
-  "calvary\u2019s":
-  - ["cal", "va", "ry\u2019s"]
-  - ["cal", "vary\u2019s"]
+  - ["cal", "vary's"]
   "calv'ry's":
   - ["cal", "v'ry's"]
-  "calv\u2019ry\u2019s":
-  - ["cal", "v\u2019ry\u2019s"]
   "came":
   - ["came"]
   "camel":
@@ -1410,15 +1394,13 @@ words:
   - ["camest"]
   "camps":
   - ["camps"]
-  "cam\u2019st":
-  - ["cam\u2019st"]
+  "cam'st":
+  - ["cam'st"]
   "canaan":
   - ["ca", "naan"]
   "canaan's":
   - ["ca", "naan's"]
-  "canaan\u2019s":
-  - ["ca", "naan\u2019s"]
-  - ["can", "aan\u2019s"]
+  - ["can", "aan's"]
   "ca\u00f1adas":
   - ["ca", "\u00f1a", "das"]
   "can":
@@ -1441,8 +1423,8 @@ words:
   - ["can", "tan"]
   "cantar":
   - ["can", "tar"]
-  "can\u2019t":
-  - ["can\u2019t"]
+  "can't":
+  - ["can't"]
   "cant":
   - ["cant"]
   "cantemos":
@@ -1453,12 +1435,12 @@ words:
   - ["can", "to~y"]
   "captain":
   - ["cap", "tain"]
-  "captain\u2019s":
-  - ["cap", "tain\u2019s"]
+  "captain's":
+  - ["cap", "tain's"]
   "captive":
   - ["cap", "tive"]
-  "captives\u2019":
-  - ["cap", "tives\u2019"]
+  "captives'":
+  - ["cap", "tives'"]
   "captives":
   - ["cap", "tives"]
   "captivity":
@@ -1561,8 +1543,8 @@ words:
   - ["cham", "bers"]
   "champion":
   - ["cham", "pion"]
-  "champion\u2019s":
-  - ["cham", "pion\u2019s"]
+  "champion's":
+  - ["cham", "pion's"]
   "ch\u00e1nahgo":
   - ["ch\u00e1", "nah", "go"]
   "chance":
@@ -1639,8 +1621,8 @@ words:
   - ["chief"]
   "child":
   - ["child"]
-  "childhood\u2019s":
-  - ["child", "hood\u2019s"]
+  "childhood's":
+  - ["child", "hood's"]
   "childless":
   - ["child", "less"]
   "childlike":
@@ -1649,10 +1631,8 @@ words:
   - ["chil", "dren"]
   "children's":
   - ["chil", "dren's"]
-  "children\u2019s":
-  - ["chil", "dren\u2019s"]
-  "child\u2019s":
-  - ["child\u2019s"]
+  "child's":
+  - ["child's"]
   "chill":
   - ["chill"]
   "chilling":
@@ -1686,8 +1666,8 @@ words:
   - ["cho", "us"]
   "christchild":
   - ["christ", "child"]
-  "\u2018christ":
-  - ["\u2018christ"]
+  "'christ":
+  - ["'christ"]
   "christ":
   - ["christ"]
   "christendom":
@@ -1700,14 +1680,12 @@ words:
   - ["christ", "mas"]
   "christ's":
   - ["christ's"]
-  "christ\u2019s":
-  - ["christ\u2019s"]
   "ch\u00fa":
   - ["ch\u00fa"]
   "church":
   - ["church"]
-  "church\u2019s":
-  - ["chur", "ch\u2019s"]
+  "church's":
+  - ["chur", "ch's"]
   "ciegos":
   - ["cie", "gos"]
   "cielo":
@@ -1728,8 +1706,8 @@ words:
   - ["cit", "i", "zens"]
   "city":
   - ["cit", "y"]
-  "city\u2019s":
-  - ["cit", "y\u2019s"]
+  "city's":
+  - ["cit", "y's"]
   "clad":
   - ["clad"]
   "claim":
@@ -2014,8 +1992,8 @@ words:
   - ["con", "quers"]
   "conquest":
   - ["con", "quest"]
-  "conqu\u2019ring":
-  - ["con", "qu\u2019ring"]
+  "conqu'ring":
+  - ["con", "qu'ring"]
   "conscience":
   - ["con", "science"]
   "consciously":
@@ -2122,8 +2100,8 @@ words:
   - ["count", "less"]
   "country":
   - ["coun", "try"]
-  "country\u2019s":
-  - ["coun", "try\u2019s"]
+  "country's":
+  - ["coun", "try's"]
   "counts":
   - ["counts"]
   "courage":
@@ -2149,9 +2127,9 @@ words:
   - ["cov", "ered"]
   "covet":
   - ["cov", "et"]
-  "cov\u2019nant":
-  - ["cov", "\u2019nant"]
-  - ["cov\u2019", "nant"]
+  "cov'nant":
+  - ["cov", "'nant"]
+  - ["cov'", "nant"]
   "cradle":
   - ["cra", "dle"]
   "cradles":
@@ -2185,22 +2163,18 @@ words:
   - ["cre", "a", "tion"]
   "creation's":
   - ["cre", "a", "tion's"]
-  "creation\u2019s":
-  - ["cre", "a", "tion\u2019s"]
   "creative":
   - ["cre", "a", "tive"]
   "creator":
   - ["cre", "a", "tor"]
-  "creator\u2019s":
-  - ["cre", "a", "tor\u2019s"]
+  "creator's":
+  - ["cre", "a", "tor's"]
   "creature":
   - ["crea", "ture"]
-  "creature\u2019s":
-  - ["crea", "ture\u2019s"]
+  "creature's":
+  - ["crea", "ture's"]
   "creatures'":
   - ["crea", "tures'"]
-  "creatures\u2019":
-  - ["crea", "tures\u2019"]
   "creatures":
   - ["creatures"]
   - ["crea", "tures"]
@@ -2292,8 +2266,8 @@ words:
   - ["cut"]
   "cymbal":
   - ["cym", "bal"]
-  "cymbal\u2019s":
-  - ["cym", "bal\u2019s"]
+  "cymbal's":
+  - ["cym", "bal's"]
   "cymbals'":
   - ["cym", "bals'"]
   "cymbals":
@@ -2319,8 +2293,6 @@ words:
   - ["dan", "ger"]
   "danger's":
   - ["dan", "ger's"]
-  "danger\u2019s":
-  - ["dan", "ger\u2019s"]
   "dangers":
   - ["dan", "gers"]
   "daniel":
@@ -2363,9 +2335,8 @@ words:
   - ["da", "vid"]
   - ["dav", "id"]
   "david's":
+  - ["da", "vid's"]
   - ["dav", "id's"]
-  "david\u2019s":
-  - ["da", "vid\u2019s"]
   "davies":
   - ["davies"]
   "daw":
@@ -2390,8 +2361,8 @@ words:
   - ["day"]
   "daylight":
   - ["day", "light"]
-  "day\u2019s":
-  - ["day\u2019s"]
+  "day's":
+  - ["day's"]
   "days":
   - ["days"]
   "dayspring":
@@ -2408,8 +2379,8 @@ words:
   - ["dead", "end"]
   "deadly":
   - ["dead", "ly"]
-  "dead\u2019s":
-  - ["dead\u2019s"]
+  "dead's":
+  - ["dead's"]
   "deaf":
   - ["deaf"]
   "deal":
@@ -2440,8 +2411,6 @@ words:
   - ["death", "less"]
   "death's":
   - ["death's"]
-  "death\u2019s":
-  - ["death\u2019s"]
   "debt":
   - ["debt"]
   "debtor":
@@ -2568,8 +2537,8 @@ words:
   - ["de", "liv", "ered"]
   "deliverer":
   - ["de", "liv", "erer"]
-  "deliv\u2019rer":
-  - ["de", "liv", "\u2019rer"]
+  "deliv'rer":
+  - ["de", "liv", "'rer"]
   "demands":
   - ["de", "mands"]
   "dem":
@@ -2681,8 +2650,8 @@ words:
   - ["deus"]
   "device":
   - ["de", "vice"]
-  "devil\u2019s":
-  - ["dev", "il\u2019s"]
+  "devil's":
+  - ["dev", "il's"]
   "devils":
   - ["dev", "ils"]
   "devise":
@@ -2737,8 +2706,8 @@ words:
   - ["dig", "no"]
   "digno~es":
   - ["dig", "no~es"]
-  "diits\u2019":
-  - ["diits\u2019"]
+  "diits'":
+  - ["diits'"]
   "dim":
   - ["dim"]
   "diminished":
@@ -2778,9 +2747,9 @@ words:
   - ["dis", "cern", "ing"]
   "discernment":
   - ["dis", "cern", "ment"]
-  "disciples\u2019":
-  - ["di", "sci", "ples\u2019"]
-  - ["dis", "ci", "ples\u2019"]
+  "disciples'":
+  - ["di", "sci", "ples'"]
+  - ["dis", "ci", "ples'"]
   "disciples":
   - ["dis", "ci", "ples"]
   "discipline":
@@ -2853,8 +2822,8 @@ words:
   - ["dis", "turb"]
   "dit":
   - ["dit"]
-  "ditts\u2019":
-  - ["ditts\u2019"]
+  "ditts'":
+  - ["ditts'"]
   "diversity":
   - ["di", "ver", "si", "ty"]
   "divided":
@@ -2902,8 +2871,8 @@ words:
   - ["do", "mi", "num"]
   "done":
   - ["done"]
-  "don\u2019t":
-  - ["don\u2019t"]
+  "don't":
+  - ["don't"]
   "doo":
   - ["doo"]
   "doom":
@@ -3030,12 +2999,10 @@ words:
   - ["ea", "ger"]
   "eagle":
   - ["ea", "gle"]
-  "eagle\u2019s":
-  - ["ea", "gle\u2019s"]
+  "eagle's":
+  - ["ea", "gle's"]
   "eagles'":
   - ["ea", "gles'"]
-  "eagles\u2019":
-  - ["ea", "gles\u2019"]
   "eagles":
   - ["ea", "gles"]
   "eaglewings":
@@ -3052,10 +3019,10 @@ words:
   - ["earn", "est", "ly"]
   "ears":
   - ["ears"]
-  "earth,\u2019":
-  - ["earth,\u2019"]
-  "earth\u2019":
-  - ["earth\u2019"]
+  "earth,'":
+  - ["earth,'"]
+  "earth'":
+  - ["earth'"]
   "earth":
   - ["earth"]
   "earthly":
@@ -3064,8 +3031,6 @@ words:
   - ["earth", "quake"]
   "earth's":
   - ["earth's"]
-  "earth\u2019s":
-  - ["earth\u2019s"]
   "ease":
   - ["ease"]
   "east":
@@ -3075,8 +3040,8 @@ words:
   - ["east", "er"]
   "eastern":
   - ["east", "ern"]
-  "easter\u2019s":
-  - ["eas", "ter\u2019s"]
+  "easter's":
+  - ["eas", "ter's"]
   "eat":
   - ["eat"]
   "ebbs":
@@ -3100,38 +3065,36 @@ words:
   - ["ec", "sta", "sies"]
   "ecstatic":
   - ["ec", "stat", "ic"]
-  "eden\u2019s":
-  - ["e", "den\u2019s"]
+  "eden's":
+  - ["e", "den's"]
   "e":
   - ["e"]
   "\u00ea":
   - ["\u00ea"]
   "ee":
   - ["ee"]
-  "e\u2019en":
-  - ["e\u2019en"]
+  "e'en":
+  - ["e'en"]
   "een":
   - ["een"]
   "e'er":
   - ["e'er"]
-  "e\u2019er":
-  - ["e\u2019er"]
   "eer":
   - ["eer"]
-  "eesh\u2019\u00ed\u0317\u00ed\u0317":
-  - ["eesh\u2019", "\u00ed\u0317\u00ed\u0317"]
+  "eesh'\u00ed\u0317\u00ed\u0317":
+  - ["eesh'", "\u00ed\u0317\u00ed\u0317"]
   "effort":
   - ["ef", "fort"]
   "egypt":
   - ["e", "gypt"]
-  "egypt\u2019s":
-  - ["e", "gypt\u2019s"]
+  "egypt's":
+  - ["e", "gypt's"]
   "e~homens":
   - ["e~ho", "mens"]
   "ehr":
   - ["ehr"]
-  "\u2018\u00e9\u00ed":
-  - ["\u2018\u00e9\u00ed"]
+  "'\u00e9\u00ed":
+  - ["'\u00e9\u00ed"]
   "ein":
   - ["ein"]
   "einig":
@@ -3146,8 +3109,8 @@ words:
   - ["\u00e9l"]
   "elijah":
   - ["e", "li", "jah"]
-  "elijah\u2019s":
-  - ["e", "li", "jah\u2019s"]
+  "elijah's":
+  - ["e", "li", "jah's"]
   "elisha":
   - ["e", "li", "sha"]
   "ell":
@@ -3175,8 +3138,8 @@ words:
   "emmanuel":
   - ["em", "man", "uel"]
   - ["em", "man", "u", "el"]
-  "emmanuel\u2019s":
-  - ["em", "man", "uel\u2019s"]
+  "emmanuel's":
+  - ["em", "man", "uel's"]
   "emmaus":
   - ["em", "ma", "us"]
   "empires":
@@ -3404,16 +3367,14 @@ words:
   - ["e", "vil", "do", "ers"]
   "evil":
   - ["e", "vil"]
-  "evil\u2019s":
-  - ["e", "vil\u2019s"]
+  "evil's":
+  - ["e", "vil's"]
   "ev'ry":
   - ["ev", "'ry"]
-  "ev\u2019ry":
-  - ["ev", "\u2019ry"]
-  "ev\u2019rything":
-  - ["ev", "\u2019ry", "thing"]
-  "ev\u2019rywhere":
-  - ["ev", "\u2019ry", "where"]
+  "ev'rything":
+  - ["ev", "'ry", "thing"]
+  "ev'rywhere":
+  - ["ev", "'ry", "where"]
   "ewig":
   - ["ew", "ig"]
   "ewigkeit":
@@ -3549,8 +3510,6 @@ words:
   - ["faith", "less"]
   "faith's":
   - ["faith's"]
-  "faith\u2019s":
-  - ["faith\u2019s"]
   "fallen":
   - ["fal", "len"]
   - ["fall", "en"]
@@ -3600,8 +3559,6 @@ words:
   - ["fa", "ther", "like"]
   "father's":
   - ["fa", "ther's"]
-  "father\u2019s":
-  - ["fa", "ther\u2019s"]
   "fathers":
   - ["fa", "thers"]
   "fatness":
@@ -3831,8 +3788,8 @@ words:
   "flower":
   - ["flower"]
   - ["flow", "er"]
-  "flower\u2019s":
-  - ["flow", "er\u2019s"]
+  "flower's":
+  - ["flow", "er's"]
   "flowers":
   - ["flowers"]
   - ["flow", "ers"]
@@ -3845,16 +3802,14 @@ words:
   - ["flow"]
   "flowing":
   - ["flow", "ing"]
-  "flow\u2019ret":
-  - ["flow\u2019r", "et"]
+  "flow'ret":
+  - ["flow'r", "et"]
   "flow'r":
   - ["flow'r"]
-  "flow\u2019r":
-  - ["flow\u2019r"]
-  "flow\u2019rs":
-  - ["flow\u2019rs"]
-  "flow\u2019ry":
-  - ["flow", "\u2019ry"]
+  "flow'rs":
+  - ["flow'rs"]
+  "flow'ry":
+  - ["flow", "'ry"]
   "flows":
   - ["flows"]
   "flute":
@@ -3898,10 +3853,10 @@ words:
   - ["fol", "low", "ing"]
   "follows":
   - ["fol", "lows"]
-  "foll\u2019wer":
-  - ["fol", "l\u2019wer"]
-  "foll\u2019wing":
-  - ["fol", "l\u2019wing"]
+  "foll'wer":
+  - ["fol", "l'wer"]
+  "foll'wing":
+  - ["fol", "l'wing"]
   "folly":
   - ["fol", "ly"]
   "fondly":
@@ -3940,8 +3895,6 @@ words:
   - ["forc", "es"]
   "fore'er":
   - ["for", "e'er"]
-  "fore\u2019er":
-  - ["for", "e\u2019er"]
   "forehead":
   - ["fore", "head"]
   "foreign":
@@ -4069,8 +4022,8 @@ words:
   - ["freed"]
   "freedom":
   - ["free", "dom"]
-  "freedom\u2019s":
-  - ["free", "dom\u2019s"]
+  "freedom's":
+  - ["free", "dom's"]
   "free":
   - ["free"]
   "freeing":
@@ -4172,8 +4125,8 @@ words:
   - ["gain"]
   "gaining":
   - ["gain", "ing"]
-  "\u2019gainst":
-  - ["\u2019gainst"]
+  "'gainst":
+  - ["'gainst"]
   "gainst":
   - ["gainst"]
   "gale":
@@ -4217,10 +4170,10 @@ words:
   - ["gaw"]
   "gaze":
   - ["gaze"]
-  "gee.\u2019":
-  - ["gee.\u2019"]
-  "gee\u2019":
-  - ["gee\u2019"]
+  "gee.'":
+  - ["gee.'"]
+  "gee'":
+  - ["gee'"]
   "geest":
   - ["geest"]
   "geist":
@@ -4234,8 +4187,8 @@ words:
   "generous":
   - ["gen", "erous"]
   - ["gen", "er", "ous"]
-  "gennesaret\u2019s":
-  - ["gen", "nes", "aret\u2019s"]
+  "gennesaret's":
+  - ["gen", "nes", "aret's"]
   "gente":
   - ["gen", "te"]
   "gentes":
@@ -4257,8 +4210,8 @@ words:
   - ["geth", "sem", "a", "ne"]
   "gewiss":
   - ["ge", "wiss"]
-  "ghost!\u2019":
-  - ["ghost!\u2019"]
+  "ghost!'":
+  - ["ghost!'"]
   "ghost":
   - ["ghost"]
   "gift":
@@ -4289,8 +4242,8 @@ words:
   - ["give", "th"]
   "giving":
   - ["giv", "ing"]
-  "giv\u2019n":
-  - ["giv\u2019n"]
+  "giv'n":
+  - ["giv'n"]
   "gladdens":
   - ["glad", "dens"]
   "glade":
@@ -4367,8 +4320,6 @@ words:
   - ["god", "ly"]
   "god's":
   - ["god's"]
-  "god\u2019s":
-  - ["god\u2019s"]
   "gods":
   - ["gods"]
   "godspoken":
@@ -4379,8 +4330,8 @@ words:
   - ["goes"]
   "go":
   - ["go"]
-  "goin\u2019a":
-  - ["goin\u2019", "a"]
+  "goin'a":
+  - ["goin'", "a"]
   "going":
   - ["going"]
   - ["go", "ing"]
@@ -4581,8 +4532,8 @@ words:
   - ["ha"]
   "hailed":
   - ["hailed"]
-  "\u2018hail":
-  - ["\u2018hail"]
+  "'hail":
+  - ["'hail"]
   "hail":
   - ["hail"]
   "hain":
@@ -4663,8 +4614,8 @@ words:
   - ["has", "tening"]
   "hast":
   - ["hast"]
-  "hast\u2019ning":
-  - ["has", "t\u2019ning"]
+  "hast'ning":
+  - ["has", "t'ning"]
   "hatak":
   - ["ha", "tak"]
   "hate":
@@ -4731,8 +4682,8 @@ words:
   - ["hearth"]
   "heartrenewing":
   - ["heart", "re", "new", "ing"]
-  "heart\u2019s":
-  - ["heart\u2019s"]
+  "heart's":
+  - ["heart's"]
   "hearts":
   - ["hearts"]
   "heat":
@@ -4741,14 +4692,12 @@ words:
   - ["hea", "then"]
   "heave":
   - ["heave"]
-  "heavenand":
-  - ["heaven", "and"]
   "heaven":
   - ["heaven"]
   - ["hea", "ven"]
   - ["heav", "en"]
-  "heav\u2019enly":
-  - ["heav\u2019en", "ly"]
+  "heav'enly":
+  - ["heav'en", "ly"]
   "heavenly":
   - ["heav", "enly"]
   - ["heav", "en", "ly"]
@@ -4756,12 +4705,9 @@ words:
   "heavensent":
   - ["heav", "en", "sent"]
   "heaven's":
+  - ["hea", "ven's"]
   - ["heav", "en's"]
   - ["heaven's"]
-  "heaven\u2019s":
-  - ["hea", "ven\u2019s"]
-  - ["heav", "en\u2019s"]
-  - ["heaven\u2019s"]
   "heavens":
   - ["heavens"]
   - ["heav", "ens"]
@@ -4771,18 +4717,14 @@ words:
   - ["heav", "iest"]
   "heav'n":
   - ["heav'n"]
-  "heav\u2019n":
-  - ["heav\u2019n"]
   "heav'nly":
   - ["heav'n", "ly"]
-  "heav\u2019nly":
-  - ["heav\u2019n", "ly"]
-  "heav\u2019n\u2019s":
-  - ["heav\u2019n\u2019s"]
-  "heav\u2019ns":
-  - ["heav\u2019ns"]
-  "heavn\u2019s":
-  - ["heavn\u2019s"]
+  "heav'n's":
+  - ["heav'n's"]
+  "heav'ns":
+  - ["heav'ns"]
+  "heavn's":
+  - ["heavn's"]
   "heavy":
   - ["hea", "vy"]
   - ["heav", "y"]
@@ -4791,8 +4733,8 @@ words:
   - ["heav", "y", "lad", "en"]
   "hebrew":
   - ["he", "brew"]
-  "hebrew\u2019s":
-  - ["he", "brew\u2019s"]
+  "hebrew's":
+  - ["he", "brew's"]
   "hebrews":
   - ["he", "brews"]
   "heeded":
@@ -4801,8 +4743,8 @@ words:
   - ["heed", "eth"]
   "heed":
   - ["heed"]
-  "h\u2019ee":
-  - ["h\u2019ee"]
+  "h'ee":
+  - ["h'ee"]
   "hee":
   - ["hee"]
   "heer":
@@ -4829,16 +4771,12 @@ words:
   - ["held"]
   "he'll":
   - ["he'll"]
-  "he\u2019ll":
-  - ["he\u2019ll"]
   "hell":
   - ["hell"]
   "hellish":
   - ["hell", "ish"]
   "hell's":
   - ["hell's"]
-  "hell\u2019s":
-  - ["hell\u2019s"]
   "helped":
   - ["helped"]
   "helper":
@@ -4881,26 +4819,24 @@ words:
   - ["here"]
   "here's":
   - ["here's"]
-  "here\u2019s":
-  - ["here\u2019s"]
   "her":
   - ["her"]
   "heritage":
   - ["her", "i", "tage"]
   "hermon":
   - ["her", "mon"]
-  "hermon\u2019s":
-  - ["her", "mon\u2019s"]
-  "herod\u2019s":
-  - ["her", "od\u2019s"]
+  "hermon's":
+  - ["her", "mon's"]
+  "herod's":
+  - ["her", "od's"]
   "heroes":
   - ["he", "roes"]
   "herr":
   - ["herr"]
   "herzlich":
   - ["herz", "lich"]
-  "he\u2019s":
-  - ["he\u2019s"]
+  "he's":
+  - ["he's"]
   "hey":
   - ["hey"]
   "hi~ahdahnuhdo":
@@ -5012,8 +4948,6 @@ words:
   - ["hope"]
   "hope's":
   - ["hope's"]
-  "hope\u2019s":
-  - ["hope\u2019s"]
   "hopes":
   - ["hopes"]
   "hoping":
@@ -5052,8 +4986,8 @@ words:
   - ["hov", "ering"]
   "hovers":
   - ["hov", "ers"]
-  "hov\u2019ring":
-  - ["hov", "\u2019ring"]
+  "hov'ring":
+  - ["hov", "'ring"]
   "however":
   - ["how", "ev", "er"]
   "how":
@@ -5124,8 +5058,8 @@ words:
   - ["id", "e", "o"]
   "ideooo":
   - ["id", "e", "o", "o", "o"]
-  "i\u2019d":
-  - ["i\u2019d"]
+  "i'd":
+  - ["i'd"]
   "idly":
   - ["i", "dly"]
   "idol":
@@ -5153,8 +5087,6 @@ words:
   - ["ill", "got", "ten"]
   "i'll":
   - ["i'll"]
-  "i\u2019ll":
-  - ["i\u2019ll"]
   "ill":
   - ["ill"]
   "illness":
@@ -5171,13 +5103,11 @@ words:
   - ["im", "age"]
   "i'm":
   - ["i'm"]
-  "i\u2019m":
-  - ["i\u2019m"]
   "immanuel":
   - ["im", "man", "u", "el"]
   - ["im", "man", "ue", "l"]
-  "immanuel\u2019s":
-  - ["im", "man", "uel\u2019s"]
+  "immanuel's":
+  - ["im", "man", "uel's"]
   "immense":
   - ["im", "mense"]
   "immermeer":
@@ -5335,8 +5265,8 @@ words:
   - ["in", "ter", "wov", "en"]
   "into":
   - ["in", "to"]
-  "int\u2019rest":
-  - ["in", "t\u2019rest"]
+  "int'rest":
+  - ["in", "t'rest"]
   "invited":
   - ["in", "vit", "ed"]
   "invites":
@@ -5353,8 +5283,8 @@ words:
   - ["ir", "ri", "gate"]
   "isaiah":
   - ["i", "sa", "iah"]
-  "isaiah\u2019s":
-  - ["i", "sai", "ah\u2019s"]
+  "isaiah's":
+  - ["i", "sai", "ah's"]
   "ishmminti":
   - ["ishm", "min", "ti"]
   "is":
@@ -5364,8 +5294,8 @@ words:
   "israel":
   - ["is", "rael"]
   - ["is", "ra", "el"]
-  "israel\u2019s":
-  - ["is", "rael\u2019s"]
+  "israel's":
+  - ["is", "rael's"]
   "ist":
   - ["ist"]
   "it":
@@ -5374,14 +5304,12 @@ words:
   - ["i", "to"]
   "itself":
   - ["it", "self"]
-  "it\u2019s":
-  - ["it\u2019s"]
+  "it's":
+  - ["it's"]
   "its":
   - ["its"]
   "i've":
   - ["i've"]
-  "i\u2019ve":
-  - ["i\u2019ve"]
   "ivory":
   - ["i", "vo", "ry"]
   "iwahpamda":
@@ -5412,10 +5340,8 @@ words:
   - ["jes", "se"]
   "jesse's":
   - ["jes", "se's"]
-  "jesse\u2019s":
-  - ["jes", "se\u2019s"]
-  "jesus\u2019":
-  - ["je", "sus\u2019"]
+  "jesus'":
+  - ["je", "sus'"]
   "jesus":
   - ["je", "sus"]
   - ["jes", "us"]
@@ -5437,22 +5363,20 @@ words:
   - ["joins"]
   "joke":
   - ["joke"]
-  "jooba\u2019":
-  - ["joo", "ba\u2019"]
+  "jooba'":
+  - ["joo", "ba'"]
   "joob\u00e1":
   - ["joo", "b\u00e1"]
   "jordan":
   - ["jor", "dan"]
   "jordan's":
   - ["jor", "dan's"]
-  "jordan\u2019s":
-  - ["jor", "dan\u2019s"]
   "joseph":
   - ["jo", "seph"]
   "journey":
   - ["jour", "ney"]
-  "journey\u2019s":
-  - ["jour", "ney\u2019s"]
+  "journey's":
+  - ["jour", "ney's"]
   "journeys":
   - ["jour", "neys"]
   "joyful":
@@ -5487,16 +5411,16 @@ words:
   - ["judg", "ing"]
   "judgment":
   - ["judg", "ment"]
-  "judgment\u2019s":
-  - ["judg", "ment\u2019s"]
+  "judgment's":
+  - ["judg", "ment's"]
   "judgments":
   - ["judg", "ments"]
   "juicios":
   - ["jui", "cios"]
   "jump":
   - ["jump"]
-  "jusqu\u2019":
-  - ["jusqu\u2019"]
+  "jusqu'":
+  - ["jusqu'"]
   "justice":
   - ["jus", "tice"]
   "justicia":
@@ -5507,8 +5431,8 @@ words:
   - ["just"]
   "justly":
   - ["just", "ly"]
-  "k\u2019ad":
-  - ["k\u2019ad"]
+  "k'ad":
+  - ["k'ad"]
   "ka":
   - ["ka"]
   "kamay":
@@ -5521,16 +5445,16 @@ words:
   - ["kan", "yang"]
   "kas":
   - ["kas"]
-  "k\u2019ee":
-  - ["k\u2019ee"]
+  "k'ee":
+  - ["k'ee"]
   "kee":
   - ["kee"]
   "keen":
   - ["keen"]
   "keeper":
   - ["keep", "er"]
-  "keeper\u2019s":
-  - ["keep", "er\u2019s"]
+  "keeper's":
+  - ["keep", "er's"]
   "keepeth":
   - ["keep", "eth"]
   "keeping":
@@ -5587,8 +5511,6 @@ words:
   - ["king", "dom"]
   "kingdom's":
   - ["king", "dom's"]
-  "kingdom\u2019s":
-  - ["king", "dom\u2019s"]
   "kingdoms":
   - ["king", "doms"]
   "king":
@@ -5619,8 +5541,8 @@ words:
   - ["knew"]
   "knocking":
   - ["knock", "ing"]
-  "knockin\u2019":
-  - ["knock", "in\u2019"]
+  "knockin'":
+  - ["knock", "in'"]
   "knocks":
   - ["knocks"]
   "knowest":
@@ -5661,8 +5583,8 @@ words:
   "laden":
   - ["la", "den"]
   - ["lad", "en"]
-  "l\u00e4d\u2019t":
-  - ["l\u00e4d\u2019t"]
+  "l\u00e4d't":
+  - ["l\u00e4d't"]
   "la~enhiesta":
   - ["la~en", "hie", "sta"]
   "la~escoria":
@@ -5691,8 +5613,8 @@ words:
   - ["lamb", "kin"]
   "lamb":
   - ["lamb"]
-  "lamb\u2019s":
-  - ["lamb\u2019s"]
+  "lamb's":
+  - ["lamb's"]
   "lambs":
   - ["lambs"]
   "lame":
@@ -5758,8 +5680,6 @@ words:
   - ["law"]
   "law's":
   - ["law's"]
-  "law\u2019s":
-  - ["law\u2019s"]
   "laws":
   - ["laws"]
   "lay":
@@ -5830,13 +5750,13 @@ words:
   - ["lent", "en"]
   "leper":
   - ["lep", "er"]
-  "leper\u2019s":
-  - ["le", "per\u2019s"]
-  - ["lep", "er\u2019s"]
+  "leper's":
+  - ["le", "per's"]
+  - ["lep", "er's"]
   "les":
   - ["les"]
-  "l\u2019esprit":
-  - ["l\u2019es", "prit"]
+  "l'esprit":
+  - ["l'es", "prit"]
   "less":
   - ["less"]
   "lesson":
@@ -5896,8 +5816,6 @@ words:
   - ["life"]
   "life's":
   - ["life's"]
-  "life\u2019s":
-  - ["life\u2019s"]
   "lifted":
   - ["lift", "ed"]
   "lifteth":
@@ -5908,8 +5826,8 @@ words:
   - ["lift"]
   "lifts":
   - ["lifts"]
-  "ligaya\u2019t":
-  - ["li", "ga", "ya\u2019t"]
+  "ligaya't":
+  - ["li", "ga", "ya't"]
   "lightens":
   - ["light", "ens"]
   "light":
@@ -5965,9 +5883,9 @@ words:
   - ["lis", "ten"]
   "listens":
   - ["lis", "tens"]
-  "list\u2019ning":
-  - ["lis", "t\u2019ning"]
-  - ["list", "\u2019ning"]
+  "list'ning":
+  - ["lis", "t'ning"]
+  - ["list", "'ning"]
   "lithe":
   - ["lithe"]
   "lit":
@@ -6047,16 +5965,14 @@ words:
   - ["lo", "or"]
   "loose":
   - ["loose"]
-  "loosen\u2019d":
-  - ["loos", "en\u2019d"]
+  "loosen'd":
+  - ["loos", "en'd"]
   "loosened":
   - ["loos", "ened"]
   "lord":
   - ["lord"]
   "lord's":
   - ["lord's"]
-  "lord\u2019s":
-  - ["lord\u2019s"]
   "lords":
   - ["lords"]
   "lore":
@@ -6102,8 +6018,6 @@ words:
   - ["lov", "er"]
   "love's":
   - ["love's"]
-  "love\u2019s":
-  - ["love\u2019s"]
   "loves":
   - ["loves"]
   "lovingkindness":
@@ -6148,8 +6062,8 @@ words:
   - ["made"]
   "madest":
   - ["mad", "est"]
-  "madman\u2019s":
-  - ["mad", "man\u2019s"]
+  "madman's":
+  - ["mad", "man's"]
   "maestro":
   - ["maes", "tro"]
   "magnified":
@@ -6189,10 +6103,8 @@ words:
   "maker":
   - ["mak", "er"]
   "maker's":
+  - ["ma", "ker's"]
   - ["mak", "er's"]
-  "maker\u2019s":
-  - ["ma", "ker\u2019s"]
-  - ["mak", "er\u2019s"]
   "makes":
   - ["makes"]
   "making":
@@ -6229,8 +6141,8 @@ words:
   - ["man", "sion"]
   "mansions":
   - ["man", "sions"]
-  "man\u2019s":
-  - ["man\u2019s"]
+  "man's":
+  - ["man's"]
   "mantle":
   - ["man", "tle"]
   "many~a":
@@ -6281,14 +6193,14 @@ words:
   - ["mar", "vel", "ous"]
   "marvels":
   - ["marvels"]
-  "marv\u2019lous":
-  - ["mar", "v\u2019lous"]
+  "marv'lous":
+  - ["mar", "v'lous"]
   "mary":
   - ["ma", "ry"]
   - ["mar", "y"]
-  "mary\u2019s":
-  - ["ma", "ry\u2019s"]
-  - ["mar", "y\u2019s"]
+  "mary's":
+  - ["ma", "ry's"]
+  - ["mar", "y's"]
   "mas":
   - ["mas"]
   "m\u00e1s":
@@ -6379,10 +6291,8 @@ words:
   - ["mem", "o", "ry"]
   "memory's":
   - ["mem", "ory's"]
-  "memory\u2019s":
-  - ["mem", "ory\u2019s"]
-  "mem\u2019ry":
-  - ["mem", "\u2019ry"]
+  "mem'ry":
+  - ["mem", "'ry"]
   "mend":
   - ["mend"]
   "men":
@@ -6399,8 +6309,6 @@ words:
   - ["mer", "cy"]
   "mercy's":
   - ["mer", "cy's"]
-  "mercy\u2019s":
-  - ["mer", "cy\u2019s"]
   "merely":
   - ["merely"]
   "mere":
@@ -6420,8 +6328,8 @@ words:
   - ["mes", "sen", "gers"]
   "messiah":
   - ["mes", "si", "ah"]
-  "messiah\u2019s":
-  - ["mes", "si", "ah\u2019s"]
+  "messiah's":
+  - ["mes", "si", "ah's"]
   "methodist":
   - ["methodist"]
   "met":
@@ -6432,8 +6340,8 @@ words:
   - ["me", "va"]
   "mga":
   - ["m", "ga"]
-  "m\u2019ha~estat":
-  - ["m\u2019ha~es", "tat"]
+  "m'ha~estat":
+  - ["m'ha~es", "tat"]
   "mi~amigo~anhelado":
   - ["mi~a", "mi", "go~an", "he", "la", "do"]
   "mi~amigo":
@@ -6442,8 +6350,8 @@ words:
   - ["mich"]
   "middle":
   - ["mid", "dle"]
-  "\u2019mid":
-  - ["\u2019mid"]
+  "'mid":
+  - ["'mid"]
   "mid":
   - ["mid"]
   "midnight":
@@ -6490,8 +6398,6 @@ words:
   - ["mind"]
   "mind's":
   - ["mind's"]
-  "mind\u2019s":
-  - ["mind\u2019s"]
   "minds":
   - ["minds"]
   "mine":
@@ -6555,8 +6461,8 @@ words:
   - ["mo", "ments"]
   "monarch":
   - ["mon", "arch"]
-  "monarch\u2019s":
-  - ["mo", "narch\u2019s"]
+  "monarch's":
+  - ["mo", "narch's"]
   "money":
   - ["mon", "ey"]
   "mon":
@@ -6591,8 +6497,6 @@ words:
   - ["mor", "tar"]
   "moses'":
   - ["mo", "ses'"]
-  "moses\u2019":
-  - ["mo", "ses\u2019"]
   "moses":
   - ["moses"]
   - ["mo", "ses"]
@@ -6604,11 +6508,9 @@ words:
   - ["moth", "er"]
   "mother's":
   - ["mo", "ther's"]
-  "mother\u2019s":
-  - ["mo", "ther\u2019s"]
-  - ["moth", "er\u2019s"]
-  "mothers\u2019":
-  - ["moth", "ers\u2019"]
+  - ["moth", "er's"]
+  "mothers'":
+  - ["moth", "ers'"]
   "mothers":
   - ["moth", "ers"]
   "motivate":
@@ -6706,8 +6608,8 @@ words:
   - ["mys", "ti", "cal"]
   "mystic":
   - ["mys", "tic"]
-  "myst\u2019ry":
-  - ["mys", "t\u2019ry"]
+  "myst'ry":
+  - ["mys", "t'ry"]
   "naam":
   - ["naam"]
   "nada":
@@ -6748,8 +6650,8 @@ words:
   - ["named"]
   "name":
   - ["name"]
-  "name\u2019s":
-  - ["name\u2019s"]
+  "name's":
+  - ["name's"]
   "names":
   - ["names"]
   "na":
@@ -6760,8 +6662,8 @@ words:
   - ["na", "tal"]
   "nation":
   - ["na", "tion"]
-  "nations\u2019":
-  - ["na", "tions\u2019"]
+  "nations'":
+  - ["na", "tions'"]
   "nations":
   - ["nations"]
   - ["na", "tions"]
@@ -6769,8 +6671,8 @@ words:
   - ["na", "tive"]
   "nature":
   - ["na", "ture"]
-  "nature\u2019s":
-  - ["na", "ture\u2019s"]
+  "nature's":
+  - ["na", "ture's"]
   "naught":
   - ["naught"]
   "navate":
@@ -6781,16 +6683,14 @@ words:
   - ["nay"]
   "nazareth":
   - ["naz", "a", "reth"]
-  "\u2018nearer":
-  - ["\u2018near", "er"]
+  "'nearer":
+  - ["'near", "er"]
   "nearer":
   - ["near", "er"]
   "near":
   - ["near"]
   "'neath":
   - ["'neath"]
-  "\u2019neath":
-  - ["\u2019neath"]
   "neath":
   - ["neath"]
   "needful":
@@ -6807,20 +6707,18 @@ words:
   - ["need", "y"]
   "ne'er":
   - ["ne'er"]
-  "ne\u2019er":
-  - ["ne\u2019er"]
   "neglect":
   - ["ne", "glect"]
   "neh":
   - ["neh"]
   "neighbor":
   - ["neigh", "bor"]
-  "neighbor\u2019s":
-  - ["neigh", "bor\u2019s"]
-  "neighbors\u2019":
-  - ["neigh", "bors\u2019"]
-  "n\u2019eije":
-  - ["n\u2019ei", "je"]
+  "neighbor's":
+  - ["neigh", "bor's"]
+  "neighbors'":
+  - ["neigh", "bors'"]
+  "n'eije":
+  - ["n'ei", "je"]
   "neither":
   - ["nei", "ther"]
   "ne":
@@ -6863,12 +6761,12 @@ words:
   - ["night", "ly"]
   "night":
   - ["night"]
-  "night\u2019s":
-  - ["night\u2019s"]
+  "night's":
+  - ["night's"]
   "nights":
   - ["nights"]
-  "nihook\u00e1\u00e1\u2019":
-  - ["ni", "hoo", "k\u00e1\u00e1\u2019"]
+  "nihook\u00e1\u00e1'":
+  - ["ni", "hoo", "k\u00e1\u00e1'"]
   "niio":
   - ["ni", "io"]
   "nimayan":
@@ -6892,8 +6790,8 @@ words:
   - ["njo", "o"]
   "noah":
   - ["no", "ah"]
-  "noah\u2019s":
-  - ["no", "ah\u2019s"]
+  "noah's":
+  - ["no", "ah's"]
   "nobleness":
   - ["no", "ble", "ness"]
   "nobler":
@@ -6954,8 +6852,8 @@ words:
   - ["now", "ell"]
   "now":
   - ["now"]
-  "\u0144t\u2019\u00e9\u00e9":
-  - ["\u0144t\u2019", "\u00e9\u00e9"]
+  "\u0144t'\u00e9\u00e9":
+  - ["\u0144t'", "\u00e9\u00e9"]
   "nuclear":
   - ["nu", "clear"]
   "nuestro~amigo":
@@ -6976,8 +6874,8 @@ words:
   - ["nu"]
   "nursery":
   - ["nur", "sery"]
-  "nurs\u2019ry":
-  - ["nur", "s\u2019ry"]
+  "nurs'ry":
+  - ["nur", "s'ry"]
   "nurtured":
   - ["nur", "tured"]
   "nurturing":
@@ -7024,22 +6922,18 @@ words:
   - ["o\u0113"]
   "o'er":
   - ["o'er"]
-  "o\u2019er":
-  - ["o\u2019er"]
-  "o\u2019ershade":
-  - ["o\u2019er", "shade"]
+  "o'ershade":
+  - ["o'er", "shade"]
   "o'ertake":
   - ["o'er", "take"]
-  "o\u2019ertake":
-  - ["o\u2019er", "take"]
-  "o\u2019ertakes":
-  - ["o\u2019er", "takes"]
+  "o'ertakes":
+  - ["o'er", "takes"]
   "o'erthrown":
   - ["o'er", "thrown"]
-  "o\u2019erthrows":
-  - ["o\u2019er", "throws"]
-  "o\u2019erwhelm":
-  - ["o\u2019er", "whelm"]
+  "o'erthrows":
+  - ["o'er", "throws"]
+  "o'erwhelm":
+  - ["o'er", "whelm"]
   "offended":
   - ["of", "fend", "ed"]
   "offender":
@@ -7065,11 +6959,11 @@ words:
   - ["of", "fers"]
   "off":
   - ["off"]
-  "off\u2019ring":
-  - ["of", "f\u2019ring"]
-  - ["off\u2019", "ring"]
-  "off\u2019rings":
-  - ["of", "f\u2019rings"]
+  "off'ring":
+  - ["of", "f'ring"]
+  - ["off'", "ring"]
+  "off'rings":
+  - ["of", "f'rings"]
   "of":
   - ["of"]
   "often":
@@ -7103,8 +6997,8 @@ words:
   - ["onece"]
   "one":
   - ["one"]
-  "one\u2019s":
-  - ["one\u2019s"]
+  "one's":
+  - ["one's"]
   "ones":
   - ["ones"]
   "only":
@@ -7134,9 +7028,9 @@ words:
   - ["o", "pen"]
   "opens":
   - ["o", "pens"]
-  "op\u2019ning":
-  - ["o", "p\u2019ning"]
-  - ["op", "\u2019ning"]
+  "op'ning":
+  - ["o", "p'ning"]
+  - ["op", "'ning"]
   "op":
   - ["op"]
   "oppressed":
@@ -7159,8 +7053,8 @@ words:
   - ["or", "derest"]
   "order":
   - ["or", "der"]
-  "ord\u2019rest":
-  - ["or", "d\u2019rest"]
+  "ord'rest":
+  - ["or", "d'rest"]
   "oremos":
   - ["o", "re", "mos"]
   "organ":
@@ -7176,8 +7070,8 @@ words:
   "other":
   - ["other"]
   - ["oth", "er"]
-  "other\u2019s":
-  - ["oth", "er\u2019s"]
+  "other's":
+  - ["oth", "er's"]
   "others":
   - ["oth", "ers"]
   "otros":
@@ -7396,8 +7290,8 @@ words:
   - ["peace", "ful"]
   "peacemaker":
   - ["peace", "mak", "er"]
-  "\u2018peace":
-  - ["\u2018peace"]
+  "'peace":
+  - ["'peace"]
   "peace":
   - ["peace"]
   "peak":
@@ -7437,8 +7331,8 @@ words:
   "people":
   - ["people"]
   - ["peo", "ple"]
-  "people\u2019s":
-  - ["peo", "ple\u2019s"]
+  "people's":
+  - ["peo", "ple's"]
   "peoples":
   - ["peo", "ples"]
   "perception":
@@ -7481,8 +7375,8 @@ words:
   - ["per", "se", "cu", "tion"]
   "person":
   - ["per", "son"]
-  "person\u2019s":
-  - ["per", "son\u2019s"]
+  "person's":
+  - ["per", "son's"]
   "pervades":
   - ["per", "vades"]
   "perverse":
@@ -7497,8 +7391,8 @@ words:
   - ["pe", "ti", "tion"]
   "pharaoh":
   - ["pha", "raoh"]
-  "pharaoh\u2019s":
-  - ["pha", "raoh\u2019s"]
+  "pharaoh's":
+  - ["pha", "raoh's"]
   "phonetic":
   - ["phonetic"]
   "physician":
@@ -7520,8 +7414,8 @@ words:
   - ["pies"]
   "piging":
   - ["pig", "ing"]
-  "pilate\u2019s":
-  - ["pi", "late\u2019s"]
+  "pilate's":
+  - ["pi", "late's"]
   "pilgrimage":
   - ["pil", "grim", "age"]
   "pilgrim":
@@ -7546,8 +7440,8 @@ words:
   - ["pipes"]
   "pi":
   - ["pi"]
-  "pisgah\u2019s":
-  - ["pis", "gah\u2019s"]
+  "pisgah's":
+  - ["pis", "gah's"]
   "pity":
   - ["pi", "ty"]
   - ["pit", "y"]
@@ -7643,9 +7537,9 @@ words:
   - ["point", "ing"]
   "point":
   - ["point"]
-  "pois\u2019nous":
-  - ["poi", "s\u2019nous"]
-  - ["pois", "\u2019nous"]
+  "pois'nous":
+  - ["poi", "s'nous"]
+  - ["pois", "'nous"]
   "poisonous":
   - ["poi", "sonous"]
   - ["pois", "onous"]
@@ -7704,14 +7598,12 @@ words:
   - ["pow", "er"]
   "powers":
   - ["powers"]
-  "pow\u2019rful":
-  - ["pow\u2019r", "ful"]
+  "pow'rful":
+  - ["pow'r", "ful"]
   "pow'r":
   - ["pow'r"]
-  "pow\u2019r":
-  - ["pow\u2019r"]
-  "pow\u2019rs":
-  - ["pow\u2019rs"]
+  "pow'rs":
+  - ["pow'rs"]
   "practice":
   - ["prac", "tice"]
   "praised":
@@ -7733,10 +7625,10 @@ words:
   - ["pray", "ing"]
   "pray":
   - ["pray"]
-  "pray\u2019r":
-  - ["pray\u2019r"]
-  "pray\u2019rs":
-  - ["pray\u2019rs"]
+  "pray'r":
+  - ["pray'r"]
+  "pray'rs":
+  - ["pray'rs"]
   "preaching":
   - ["preach", "ing"]
   "preach":
@@ -7822,8 +7714,8 @@ words:
   - ["prints"]
   "prisiones":
   - ["pri", "sio", "nes"]
-  "pris\u2019ner":
-  - ["pris", "\u2019ner"]
+  "pris'ner":
+  - ["pris", "'ner"]
   "prisoner":
   - ["pri", "soner"]
   - ["pris", "oner"]
@@ -7905,14 +7797,12 @@ words:
   - ["proph", "et"]
   "prophet's":
   - ["proph", "et's"]
-  "prophet\u2019s":
-  - ["proph", "et\u2019s"]
-  "prophets\u2019":
-  - ["proph", "ets\u2019"]
+  "prophets'":
+  - ["proph", "ets'"]
   "prophets":
   - ["proph", "ets"]
-  "prophets\u2019s":
-  - ["proph", "ets\u2019s"]
+  "prophets's":
+  - ["proph", "ets's"]
   "prosperity":
   - ["pro", "sper", "i", "ty"]
   "prosper":
@@ -7959,8 +7849,8 @@ words:
   - ["pro", "voked"]
   "pruning":
   - ["prun", "ing"]
-  "psalmists\u2019":
-  - ["psalm", "ists\u2019"]
+  "psalmists'":
+  - ["psalm", "ists'"]
   "psalm":
   - ["psalm"]
   "psalms":
@@ -8070,8 +7960,8 @@ words:
   - ["quick", "en"]
   "quickly":
   - ["quick", "ly"]
-  "quick\u2019ning":
-  - ["quick", "\u2019ning"]
+  "quick'ning":
+  - ["quick", "'ning"]
   "quick":
   - ["quick"]
   "quien":
@@ -8132,8 +8022,8 @@ words:
   - ["rang"]
   "ranks":
   - ["ranks"]
-  "ransom\u2019d":
-  - ["ran", "som\u2019d"]
+  "ransom'd":
+  - ["ran", "som'd"]
   "ransomed":
   - ["ran", "somed"]
   "ransom":
@@ -8245,8 +8135,6 @@ words:
   - ["re", "deem", "er"]
   "redeemer's":
   - ["re", "deem", "er's"]
-  "redeemer\u2019s":
-  - ["re", "deem", "er\u2019s"]
   "redeeming":
   - ["re", "deem", "ing"]
   "redeem":
@@ -8257,8 +8145,8 @@ words:
   - ["r\u00e9", "demp", "teur"]
   "redemption":
   - ["re", "demp", "tion"]
-  "redemption\u2019s":
-  - ["re", "demp", "tion\u2019s"]
+  "redemption's":
+  - ["re", "demp", "tion's"]
   "redentor":
   - ["re", "den", "tor"]
   "red":
@@ -8625,16 +8513,16 @@ words:
   - ["risk", "ing"]
   "risks":
   - ["risks"]
-  "ris\u2019n":
-  - ["ris\u2019n"]
+  "ris'n":
+  - ["ris'n"]
   "rite":
   - ["rite"]
   "riven":
   - ["riv", "en"]
   "river":
   - ["riv", "er"]
-  "river\u2019s":
-  - ["riv", "er\u2019s"]
+  "river's":
+  - ["riv", "er's"]
   "rivers":
   - ["riv", "ers"]
   "road":
@@ -8820,8 +8708,8 @@ words:
   "salvation":
   - ["salvation"]
   - ["sal", "va", "tion"]
-  "salvation\u2019s":
-  - ["sal", "va", "tion\u2019s"]
+  "salvation's":
+  - ["sal", "va", "tion's"]
   "samaritan":
   - ["sa", "mar", "i", "tan"]
   "same":
@@ -8854,16 +8742,14 @@ words:
   - ["sap", "lings"]
   "sarah":
   - ["sar", "ah"]
-  "sarah\u2019s":
-  - ["sa", "rah\u2019s"]
+  "sarah's":
+  - ["sa", "rah's"]
   "sa":
   - ["sa"]
   "satan":
   - ["sa", "tan"]
   "satan's":
   - ["sa", "tan's"]
-  "satan\u2019s":
-  - ["sa", "tan\u2019s"]
   "satisfied":
   - ["sat", "is", "fied"]
   "satisfies":
@@ -8892,12 +8778,10 @@ words:
   - ["sav", "ior", "son"]
   "savior's":
   - ["sav", "ior's"]
-  "savior\u2019s":
-  - ["sav", "ior\u2019s"]
   "saviour":
   - ["sav", "iour"]
-  "saviour\u2019s":
-  - ["sav", "iour\u2019s"]
+  "saviour's":
+  - ["sav", "iour's"]
   "savor":
   - ["sa", "vor"]
   "saw":
@@ -8936,22 +8820,22 @@ words:
   - ["scope"]
   "scorned":
   - ["scorned"]
-  "scorners\u2019":
-  - ["scorn", "ers\u2019"]
+  "scorners'":
+  - ["scorn", "ers'"]
   "scorning":
   - ["scorn", "ing"]
   "scorn":
   - ["scorn"]
-  "scripture\u2019s":
-  - ["scrip", "ture\u2019s"]
+  "scripture's":
+  - ["scrip", "ture's"]
   "scroll":
   - ["scroll"]
   "sculptor":
   - ["sculp", "tor"]
   "scythe":
   - ["scythe"]
-  "seal\u2019d":
-  - ["seal\u2019d"]
+  "seal'd":
+  - ["seal'd"]
   "sealed":
   - ["sealed"]
   "se~alegra~el":
@@ -9000,8 +8884,8 @@ words:
   - ["seeds"]
   "seeing":
   - ["see", "ing"]
-  "seeker\u2019s":
-  - ["seek", "er\u2019s"]
+  "seeker's":
+  - ["seek", "er's"]
   "seeking":
   - ["seek", "ing"]
   "seek":
@@ -9060,8 +8944,8 @@ words:
   - ["sends"]
   "se\u00f1or":
   - ["se", "\u00f1or"]
-  "s\u2019en":
-  - ["s\u2019en"]
+  "s'en":
+  - ["s'en"]
   "sen":
   - ["sen"]
   "sense":
@@ -9097,8 +8981,8 @@ words:
   - ["ser", "vant", "hood"]
   "servant":
   - ["ser", "vant"]
-  "servant\u2019s":
-  - ["ser", "vant\u2019s"]
+  "servant's":
+  - ["ser", "vant's"]
   "servants":
   - ["ser", "vants"]
   - ["serv", "ants"]
@@ -9133,8 +9017,8 @@ words:
   - ["sev", "ering"]
   "sever":
   - ["sev", "er"]
-  "sev\u2019nfold":
-  - ["sev\u2019n", "fold"]
+  "sev'nfold":
+  - ["sev'n", "fold"]
   "shackled":
   - ["shack", "led"]
   "shack":
@@ -9210,8 +9094,8 @@ words:
   - ["sh\u00e9", "n\u00e1", "hoos", "dzin"]
   "shepherd":
   - ["shep", "herd"]
-  "shepherd\u2019s":
-  - ["shep", "herd\u2019s"]
+  "shepherd's":
+  - ["shep", "herd's"]
   "shepherds":
   - ["shep", "herds"]
   "she":
@@ -9276,8 +9160,8 @@ words:
   - ["show", "ing"]
   "shown":
   - ["shown"]
-  "show\u2019rs":
-  - ["show\u2019rs"]
+  "show'rs":
+  - ["show'rs"]
   "show":
   - ["show"]
   "shows":
@@ -9343,8 +9227,8 @@ words:
   - ["si", "lent", "ly"]
   "silent":
   - ["si", "lent"]
-  "siloam\u2019s":
-  - ["si", "lo", "am\u2019s"]
+  "siloam's":
+  - ["si", "lo", "am's"]
   "silver":
   - ["sil", "ver"]
   "simple":
@@ -9357,8 +9241,6 @@ words:
   - ["sim"]
   "sinai's":
   - ["si", "nai's"]
-  "sinai\u2019s":
-  - ["si", "nai\u2019s"]
   "sincerely":
   - ["sin", "cere", "ly"]
   "sincere":
@@ -9396,8 +9278,6 @@ words:
   - ["sin", "ner"]
   "sinner's":
   - ["sin", "ner's"]
-  "sinner\u2019s":
-  - ["sin", "ner\u2019s"]
   "sinners":
   - ["sin", "ners"]
   "sinning":
@@ -9408,8 +9288,6 @@ words:
   - ["sin"]
   "sin's":
   - ["sin's"]
-  "sin\u2019s":
-  - ["sin\u2019s"]
   "sins":
   - ["sins"]
   "sister":
@@ -9481,8 +9359,6 @@ words:
   - ["slum", "bers"]
   "slumb'ring":
   - ["slum", "b'ring"]
-  "slumb\u2019ring":
-  - ["slum", "b\u2019ring"]
   "slums":
   - ["slums"]
   "smallest":
@@ -9542,8 +9418,8 @@ words:
   - ["so", "la"]
   "soldados":
   - ["sol", "da", "dos"]
-  "soldier\u2019s":
-  - ["sol", "dier\u2019s"]
+  "soldier's":
+  - ["sol", "dier's"]
   "soldiers":
   - ["sol", "diers"]
   "sold":
@@ -9567,8 +9443,8 @@ words:
   - ["solve"]
   "sombras":
   - ["som", "bras"]
-  "somebody\u2019s":
-  - ["some", "bod", "y\u2019s"]
+  "somebody's":
+  - ["some", "bod", "y's"]
   "someday":
   - ["some", "day"]
   "some":
@@ -9589,8 +9465,8 @@ words:
   - ["son", "net"]
   "son":
   - ["son"]
-  "son\u2019s":
-  - ["son\u2019s"]
+  "son's":
+  - ["son's"]
   "sons":
   - ["sons"]
   "soonest":
@@ -9615,12 +9491,10 @@ words:
   - ["sor", "row"]
   "sorrow's":
   - ["sor", "row's"]
-  "sorrow\u2019s":
-  - ["sor", "row\u2019s"]
   "sorrows":
   - ["sor", "rows"]
-  "sorr\u2019wing":
-  - ["sor", "r\u2019wing"]
+  "sorr'wing":
+  - ["sor", "r'wing"]
   "so":
   - ["so"]
   "s\u00f3":
@@ -9631,8 +9505,8 @@ words:
   - ["soul", "cheer", "ing"]
   "soul":
   - ["soul"]
-  "soul\u2019s":
-  - ["soul\u2019s"]
+  "soul's":
+  - ["soul's"]
   "souls":
   - ["souls"]
   "sounded":
@@ -9641,8 +9515,8 @@ words:
   - ["sound", "ing"]
   "sound":
   - ["sound"]
-  "sound\u2019s":
-  - ["sound\u2019s"]
+  "sound's":
+  - ["sound's"]
   "sounds":
   - ["sounds"]
   "source":
@@ -9653,8 +9527,8 @@ words:
   - ["sov", "ereign"]
   "sovereignty":
   - ["sov", "ereign", "ty"]
-  "sov\u2019reign":
-  - ["sov", "\u2019reign"]
+  "sov'reign":
+  - ["sov", "'reign"]
   "sowing":
   - ["sow", "ing"]
   "sown":
@@ -9723,8 +9597,6 @@ words:
   - ["spir", "it"]
   "spirit's":
   - ["spir", "it's"]
-  "spirit\u2019s":
-  - ["spir", "it\u2019s"]
   "spirits":
   - ["spir", "its"]
   "spite":
@@ -9760,8 +9632,8 @@ words:
   - ["spread"]
   "spreads":
   - ["spreads"]
-  "spread\u2019st":
-  - ["spread\u2019st"]
+  "spread'st":
+  - ["spread'st"]
   "spreadst":
   - ["spreadst"]
   "springing":
@@ -9784,8 +9656,8 @@ words:
   - ["s"]
   "stable":
   - ["sta", "ble"]
-  "\u2019stablished":
-  - ["\u2019stab", "lished"]
+  "'stablished":
+  - ["'stab", "lished"]
   "stablished":
   - ["stab", "lished"]
   "staff":
@@ -9802,9 +9674,9 @@ words:
   - ["stall"]
   "stammering":
   - ["stam", "mering"]
-  "stamm\u2019ring":
-  - ["stam", "m\u2019ring"]
-  - ["stamm\u2019r", "ing"]
+  "stamm'ring":
+  - ["stam", "m'ring"]
+  - ["stamm'r", "ing"]
   "standards":
   - ["stan", "dards"]
   "standard":
@@ -10055,8 +9927,8 @@ words:
   - ["sud", "den"]
   "suffered":
   - ["suf", "fered"]
-  "sufferer\u2019s":
-  - ["suf", "ferer\u2019s"]
+  "sufferer's":
+  - ["suf", "ferer's"]
   "suffering":
   - ["suf", "fering"]
   - ["suf", "fer", "ing"]
@@ -10066,8 +9938,8 @@ words:
   - ["suf", "fer"]
   "suffice":
   - ["suf", "fice"]
-  "suff\u2019ring":
-  - ["suf", "f\u2019ring"]
+  "suff'ring":
+  - ["suf", "f'ring"]
   "suframos":
   - ["su", "fra", "mos"]
   "suggest":
@@ -10076,12 +9948,10 @@ words:
   - ["su~ho", "nor"]
   "summer's":
   - ["sum", "mer's"]
-  "summer\u2019s":
-  - ["sum", "mer\u2019s"]
   "summer":
   - ["sum", "mer"]
-  "summit\u2019s":
-  - ["sum", "mit\u2019s"]
+  "summit's":
+  - ["sum", "mit's"]
   "summons":
   - ["sum", "mons"]
   "summon":
@@ -10096,8 +9966,8 @@ words:
   - ["sun", "set"]
   "sunshine":
   - ["sun", "shine"]
-  "sun\u2019s":
-  - ["sun\u2019s"]
+  "sun's":
+  - ["sun's"]
   "suns":
   - ["suns"]
   "sun":
@@ -10229,8 +10099,6 @@ words:
   - ["sword", "bring", "er"]
   "swords'":
   - ["swords'"]
-  "swords\u2019":
-  - ["swords\u2019"]
   "swords":
   - ["swords"]
   "sword":
@@ -10251,8 +10119,8 @@ words:
   - ["ta", "ble"]
   "tableturning":
   - ["ta", "ble", "turn", "ing"]
-  "t\u2019adore":
-  - ["t\u2019a", "do", "re"]
+  "t'adore":
+  - ["t'a", "do", "re"]
   "tah":
   - ["tah"]
   "taken":
@@ -10315,8 +10183,8 @@ words:
   - ["taught"]
   "taunts":
   - ["taunts"]
-  "t\u2019aw":
-  - ["t\u2019aw"]
+  "t'aw":
+  - ["t'aw"]
   "taw":
   - ["taw"]
   "teacher":
@@ -10379,10 +10247,8 @@ words:
   - ["temp", "ted"]
   - ["tempt", "ed"]
   "tempter's":
+  - ["temp", "ter's"]
   - ["tempt", "er's"]
-  "tempter\u2019s":
-  - ["temp", "ter\u2019s"]
-  - ["tempt", "er\u2019s"]
   "tempter":
   - ["tempt", "er"]
   "tempting":
@@ -10461,12 +10327,12 @@ words:
   - ["thank"]
   "than":
   - ["than"]
-  "th\u2019apostles":
-  - ["th\u2019a", "pos", "tles"]
-  "th\u2019archangel\u2019s":
-  - ["th\u2019arch", "an", "gel\u2019s"]
-  "that\u2019s":
-  - ["that\u2019s"]
+  "th'apostles":
+  - ["th'a", "pos", "tles"]
+  "th'archangel's":
+  - ["th'arch", "an", "gel's"]
+  "that's":
+  - ["that's"]
   "that":
   - ["that"]
   "the~almighty":
@@ -10477,8 +10343,8 @@ words:
   - ["the~arch", "an", "gel's"]
   "the~eternal":
   - ["the~e", "ter", "nal"]
-  "thee!\u2019":
-  - ["thee!\u2019"]
+  "thee!'":
+  - ["thee!'"]
   "thee":
   - ["thee"]
   "the~immortal":
@@ -10505,24 +10371,22 @@ words:
   - ["there", "fore"]
   "therein":
   - ["there", "in"]
-  "there\u2019ll":
-  - ["there\u2019ll"]
-  "there\u2019s":
-  - ["there\u2019s"]
+  "there'll":
+  - ["there'll"]
+  "there's":
+  - ["there's"]
   "there":
   - ["there"]
-  "there\u2019ve":
-  - ["there\u2019ve"]
+  "there've":
+  - ["there've"]
   "these":
   - ["these"]
   "th'eternal":
   - ["th'e", "ter", "nal"]
-  "th\u2019eternal":
-  - ["th\u2019e", "ter", "nal"]
   "the":
   - ["the"]
-  "they\u2019re":
-  - ["they\u2019re"]
+  "they're":
+  - ["they're"]
   "they":
   - ["they"]
   "thick":
@@ -10531,8 +10395,8 @@ words:
   - ["thief"]
   "thieves":
   - ["thieves"]
-  "th\u2019immortal":
-  - ["th\u2019im", "mor", "tal"]
+  "th'immortal":
+  - ["th'im", "mor", "tal"]
   "thine":
   - ["thine"]
   "things":
@@ -10569,12 +10433,12 @@ words:
   - ["thorn"]
   "those":
   - ["those"]
-  "tho\u2019":
-  - ["tho\u2019"]
-  "tho\u2019ts":
-  - ["tho\u2019ts"]
-  "tho\u2019t":
-  - ["tho\u2019t"]
+  "tho'":
+  - ["tho'"]
+  "tho'ts":
+  - ["tho'ts"]
+  "tho't":
+  - ["tho't"]
   "though":
   - ["though"]
   "thoughtless":
@@ -10596,8 +10460,8 @@ words:
   "threaten":
   - ["threa", "ten"]
   - ["threat", "en"]
-  "threat\u2019ning":
-  - ["threat", "\u2019ning"]
+  "threat'ning":
+  - ["threat", "'ning"]
   "threefold":
   - ["three", "fold"]
   "three":
@@ -10636,12 +10500,10 @@ words:
   - ["throngs"]
   "throng":
   - ["throng"]
-  "thro\u2019out":
-  - ["thro\u2019", "out"]
+  "thro'out":
+  - ["thro'", "out"]
   "thro'":
   - ["thro'"]
-  "thro\u2019":
-  - ["thro\u2019"]
   "throughout":
   - ["through", "out"]
   "through":
@@ -10654,8 +10516,8 @@ words:
   - ["thrust"]
   "thru":
   - ["thru"]
-  "th\u2019unbroken":
-  - ["th\u2019un", "bro", "ken"]
+  "th'unbroken":
+  - ["th'un", "bro", "ken"]
   "thunderclouds":
   - ["thun", "der", "clouds"]
   "thunders":
@@ -10693,8 +10555,8 @@ words:
   - ["tijd"]
   "till":
   - ["till"]
-  "\u2019til":
-  - ["\u2019til"]
+  "'til":
+  - ["'til"]
   "timbrel":
   - ["tim", "brel"]
   "timeless":
@@ -10715,8 +10577,6 @@ words:
   - ["tire"]
   "'tis":
   - ["'tis"]
-  "\u2019tis":
-  - ["\u2019tis"]
   "ti":
   - ["ti"]
   "titles":
@@ -10725,8 +10585,8 @@ words:
   - ["to", "aw", "bay"]
   "toda":
   - ["to", "da"]
-  "today,\u2019":
-  - ["to", "day,\u2019"]
+  "today,'":
+  - ["to", "day,'"]
   "today":
   - ["to", "day"]
   "todos":
@@ -10745,8 +10605,8 @@ words:
   - ["told"]
   "tomb":
   - ["tomb"]
-  "tomorrow\u2019s":
-  - ["to", "mor", "row\u2019s"]
+  "tomorrow's":
+  - ["to", "mor", "row's"]
   "tomorrow":
   - ["to", "mor", "row"]
   "tones":
@@ -10805,12 +10665,12 @@ words:
   - ["tow", "er"]
   "town":
   - ["town"]
-  "tow\u2019ring":
-  - ["tow\u2019r", "ing"]
-  "tow\u2019r":
-  - ["tow\u2019r"]
-  "trac\u2019d":
-  - ["trac\u2019d"]
+  "tow'ring":
+  - ["tow'r", "ing"]
+  "tow'r":
+  - ["tow'r"]
+  "trac'd":
+  - ["trac'd"]
   "traced":
   - ["traced"]
   "traces":
@@ -10874,8 +10734,8 @@ words:
   - ["tread"]
   "treason":
   - ["trea", "son"]
-  "treas\u2019ry":
-  - ["trea", "s\u2019ry"]
+  "treas'ry":
+  - ["trea", "s'ry"]
   "treasured":
   - ["trea", "sured"]
   "treasurestore":
@@ -11021,9 +10881,9 @@ words:
   - ["tsi", "sa"]
   "tsis":
   - ["tsis"]
-  "tsow\u2019haw":
-  - ["tsow", "\u2019haw"]
-  - ["tsow\u2019", "haw"]
+  "tsow'haw":
+  - ["tsow", "'haw"]
+  - ["tsow'", "haw"]
   "tsu":
   - ["tsu"]
   "tsuyo":
@@ -11062,14 +10922,12 @@ words:
   - ["t\u00fa"]
   "'twas":
   - ["'twas"]
-  "\u2019twas":
-  - ["\u2019twas"]
   "twelve":
   - ["twelve"]
   "twilight":
   - ["twi", "light"]
-  "\u2019twill":
-  - ["\u2019twill"]
+  "'twill":
+  - ["'twill"]
   "twinkling":
   - ["twink", "ling"]
   "twitch":
@@ -11080,10 +10938,8 @@ words:
   - ["tyr", "an", "ny"]
   "tyrant's":
   - ["ty", "rant's"]
-  "tyrant\u2019s":
-  - ["ty", "rant\u2019s"]
-  "tyrants\u2019":
-  - ["ty", "rants\u2019"]
+  "tyrants'":
+  - ["ty", "rants'"]
   "\u016bi":
   - ["\u016bi"]
   "um":
@@ -11398,23 +11254,21 @@ words:
   - ["vic", "to", "rious"]
   - ["vic", "to", "ri", "ous"]
   - ["vic", "tor", "ious"]
-  "victor\u2019s":
-  - ["vic", "tor\u2019s"]
+  "victor's":
+  - ["vic", "tor's"]
   "victors":
   - ["vic", "tors"]
   "victor":
   - ["vic", "tor"]
-  "victory\u2019s":
-  - ["vic", "tory\u2019s"]
+  "victory's":
+  - ["vic", "tory's"]
   "victory":
   - ["vic", "tory"]
   - ["vic", "to", "ry"]
-  "vict\u2019ry\u2019s":
-  - ["vic", "t\u2019ry\u2019s"]
+  "vict'ry's":
+  - ["vic", "t'ry's"]
   "vict'ry":
   - ["vic", "t'ry"]
-  "vict\u2019ry":
-  - ["vic", "t\u2019ry"]
   "vida~as\u00ed":
   - ["vi", "da~as\u00ed"]
   "vida~es":
@@ -11427,8 +11281,8 @@ words:
   - ["vig", "ils"]
   "vigorous":
   - ["vig", "orous"]
-  "vig\u2019rous":
-  - ["vig", "\u2019rous"]
+  "vig'rous":
+  - ["vig", "'rous"]
   "vilest":
   - ["vil", "est"]
   "vile":
@@ -11449,8 +11303,8 @@ words:
   - ["vio", "lence"]
   "violent":
   - ["vi", "o", "lent"]
-  "virgin\u2019s":
-  - ["vir", "gin\u2019s"]
+  "virgin's":
+  - ["vir", "gin's"]
   "virgins":
   - ["vir", "gins"]
   "virgin":
@@ -11552,12 +11406,10 @@ words:
   - ["wan", "ders"]
   "wander":
   - ["wan", "der"]
-  "wand\u2019rer":
-  - ["wan", "d\u2019rer"]
+  "wand'rer":
+  - ["wan", "d'rer"]
   "wand'ring":
   - ["wan", "d'ring"]
-  "wand\u2019ring":
-  - ["wan", "d\u2019ring"]
   "wane":
   - ["wane"]
   "wanting":
@@ -11586,8 +11438,6 @@ words:
   - ["war", "riors"]
   "war's":
   - ["war's"]
-  "war\u2019s":
-  - ["war\u2019s"]
   "wars":
   - ["wars"]
   "war":
@@ -11598,8 +11448,8 @@ words:
   - ["wash", "ing"]
   "wash":
   - ["wash"]
-  "wasn\u2019t":
-  - ["was", "n\u2019t"]
+  "wasn't":
+  - ["was", "n't"]
   "wasted":
   - ["wast", "ed"]
   "wastemada":
@@ -11635,14 +11485,14 @@ words:
   - ["wa", "ter", "life"]
   "waterside":
   - ["wa", "ter", "side"]
-  "water\u2019s":
-  - ["wa", "ter\u2019s"]
+  "water's":
+  - ["wa", "ter's"]
   "waters":
   - ["wa", "ters"]
   "water":
   - ["wa", "ter"]
-  "wat\u2019ry":
-  - ["wat\u2019r", "y"]
+  "wat'ry":
+  - ["wat'r", "y"]
   "waves":
   - ["waves"]
   "wave":
@@ -11655,8 +11505,8 @@ words:
   - ["wax"]
   "ways":
   - ["ways"]
-  "\u2019way":
-  - ["\u2019way"]
+  "'way":
+  - ["'way"]
   "way":
   - ["way"]
   "weakest":
@@ -11690,8 +11540,8 @@ words:
   - ["web"]
   "wedding":
   - ["wed", "ding"]
-  "we\u2019d":
-  - ["we\u2019d"]
+  "we'd":
+  - ["we'd"]
   "weeds":
   - ["weeds"]
   "weeping":
@@ -11722,16 +11572,14 @@ words:
   - ["well", "spring"]
   "we'll":
   - ["we'll"]
-  "we\u2019ll":
-  - ["we\u2019ll"]
   "well":
   - ["well"]
   "wel":
   - ["wel"]
   "went":
   - ["went"]
-  "we\u2019re":
-  - ["we\u2019re"]
+  "we're":
+  - ["we're"]
   "were":
   - ["were"]
   "wert":
@@ -11744,22 +11592,22 @@ words:
   - ["west"]
   "wet":
   - ["wet"]
-  "we\u2019ve":
-  - ["we\u2019ve"]
+  "we've":
+  - ["we've"]
   "we":
   - ["we"]
   "wewe":
   - ["we", "we"]
   "whale":
   - ["whale"]
-  "whate\u2019er":
-  - ["what", "e\u2019er"]
+  "whate'er":
+  - ["what", "e'er"]
   "whatever":
   - ["what", "ev", "er"]
   "whatsoever":
   - ["what", "so", "ev", "er"]
-  "what\u2019s":
-  - ["what\u2019s"]
+  "what's":
+  - ["what's"]
   "what":
   - ["what"]
   "wheat":
@@ -11774,22 +11622,18 @@ words:
   - ["when"]
   "whereby":
   - ["where", "by"]
-  "wheree\u2019er":
-  - ["where", "e\u2019er"]
+  "wheree'er":
+  - ["where", "e'er"]
   "where'er":
   - ["wher", "e'er"]
-  "where\u2019er":
-  - ["wher", "e\u2019er"]
   "wherefore":
   - ["where", "fore"]
   "wherein":
   - ["where", "in"]
   "wheresoe'er":
   - ["where", "so", "e'er"]
-  "wheresoe\u2019er":
-  - ["where", "so", "e\u2019er"]
-  "where\u2019s":
-  - ["where\u2019s"]
+  "where's":
+  - ["where's"]
   "wherever":
   - ["wher", "ev", "er"]
   "where":
@@ -11816,8 +11660,8 @@ words:
   - ["whit", "er"]
   "white":
   - ["white"]
-  "whoe\u2019er":
-  - ["who", "e\u2019er"]
+  "whoe'er":
+  - ["who", "e'er"]
   "whoever":
   - ["who", "ev", "er"]
   "wholehearted":
@@ -11834,12 +11678,12 @@ words:
   - ["whom"]
   "whose":
   - ["whose"]
-  "whosoe\u2019er":
-  - ["who", "so", "e\u2019er"]
+  "whosoe'er":
+  - ["who", "so", "e'er"]
   "whosoever":
   - ["who", "so", "ev", "er"]
-  "who\u2019s":
-  - ["who\u2019s"]
+  "who's":
+  - ["who's"]
   "who":
   - ["who"]
   "why":
@@ -11893,8 +11737,8 @@ words:
   - ["wing"]
   "wins":
   - ["wins"]
-  "winter\u2019s":
-  - ["win", "ter\u2019s"]
+  "winter's":
+  - ["win", "ter's"]
   "winter":
   - ["win", "ter"]
   "win":
@@ -11907,8 +11751,6 @@ words:
   - ["wipe"]
   "wisdom's":
   - ["wis", "dom's"]
-  "wisdom\u2019s":
-  - ["wis", "dom\u2019s"]
   "wisdom":
   - ["wis", "dom"]
   "wise":
@@ -11997,8 +11839,6 @@ words:
   - ["work", "ing"]
   "work's":
   - ["work's"]
-  "work\u2019s":
-  - ["work\u2019s"]
   "works":
   - ["works"]
   "work":
@@ -12007,8 +11847,6 @@ words:
   - ["world", "ly"]
   "world's":
   - ["world's"]
-  "world\u2019s":
-  - ["world\u2019s"]
   "worlds":
   - ["worlds"]
   "world":
@@ -12041,8 +11879,8 @@ words:
   - ["worth", "y"]
   "wotanin":
   - ["wo", "tan", "in"]
-  "wouldn\u2019t":
-  - ["would", "n\u2019t"]
+  "wouldn't":
+  - ["would", "n't"]
   "wouldst":
   - ["wouldst"]
   "would":
@@ -12151,12 +11989,12 @@ words:
   - ["y\u00f3\u00f3", "\u00ed\u00edy\u00e1"]
   "yore":
   - ["yore"]
-  "you\u2019ll":
-  - ["you\u2019ll"]
+  "you'll":
+  - ["you'll"]
   "young":
   - ["young"]
-  "you\u2019re":
-  - ["you\u2019re"]
+  "you're":
+  - ["you're"]
   "yourself":
   - ["your", "self"]
   "yours":
@@ -12167,8 +12005,8 @@ words:
   - ["youth", "ful"]
   "youth":
   - ["youth"]
-  "you\u2019ve":
-  - ["you\u2019ve"]
+  "you've":
+  - ["you've"]
   "you":
   - ["you"]
   "yowaku\u2014tomo":
@@ -12197,8 +12035,6 @@ words:
   - ["zij"]
   "zion's":
   - ["zi", "on's"]
-  "zion\u2019s":
-  - ["zi", "on\u2019s"]
   "zion":
   - ["zi", "on"]
   "zoon":
