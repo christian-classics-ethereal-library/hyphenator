@@ -54,6 +54,7 @@ def test_deformat_function():
     mst = textToFlex.MultiSylT('tests/dict.yaml')
     assert "all" == mst.deformat('All?')
     assert "calv'ry's" == mst.deformat("Calv\u2019ry\u2019s")
+    assert "'tis" == mst.deformat("\u2018tis")
 
 
 def test_reformat_function():
@@ -64,3 +65,5 @@ def test_reformat_function():
         ["cal", "v'ry's"], "Calv\u2019ry\u2019s")
     assert ["Cal", "v'ry\u2019s"] == mst.reformat(
         ["cal", "v'ry's"], "Calv'ry\u2019s")
+    ordered = "\u2018'\u2019"
+    assert [ordered] == mst.reformat(["'''"], ordered)
