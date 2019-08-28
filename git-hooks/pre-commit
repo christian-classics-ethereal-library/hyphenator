@@ -9,9 +9,9 @@ set PYTESTFILES (printf '%s\n' $PYFILES | grep '^tests/test_')
 
 
 if test "$PYFILES"
-    if not python3 -m pycodestyle --ignore=E902 $PYFILES > /dev/null
+    if not python3 -m pycodestyle --ignore=E902,W503 $PYFILES > /dev/null
         python3 -m autopep8 -aa --in-place $PYFILES;
-        python3 -m pycodestyle --ignore=E902 $PYFILES;
+        python3 -m pycodestyle --ignore=E902,W503 $PYFILES;
         # If this one didn't fail, print out a message so they know the previous one did.
         # (autopep changes need to be staged).
         and echo "pycodestyle failed, please stage changes made by autopep8.";

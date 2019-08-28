@@ -93,3 +93,17 @@ def test_spanish_syllabize():
     result = textToFlex.syllabizeLine(line, 10, mst)
     assert 'es' == mst.lang
     assert "San -- ti -- fi -- ca -- do se -- a tu nom -- bre" in result
+
+
+def test_cjk_syllabize():
+    mst = textToFlex.MultiSylT('tests/dict.yaml', lang='zh')
+    c = '聖哉，聖哉，聖哉，慈悲全能主宰，'
+    result = textToFlex.syllabizeLine(c, 12, mst, lang='zh')
+    assert '聖 -- 哉， 聖 -- 哉， 聖 -- 哉， 慈 -- 悲 -- 全 -- 能 -- 主 -- 宰，' \
+        in result
+    j = "よろずのくにびと、 "
+    result = textToFlex.syllabizeLine(j, 8, mst, lang='ja')
+    assert "よ -- ろ -- ず -- の -- く -- に -- び -- と、" in result
+    k = "너희는 먼저- 추의 나라위"
+    result = textToFlex.syllabizeLine(k, 10, mst, lang='ko')
+    assert "너 -- 희 -- 는 먼 -- 저- 추 -- 의 나 -- 라 -- 위" in result
