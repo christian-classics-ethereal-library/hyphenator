@@ -24,7 +24,7 @@ class Install(_install):
 
 setup(
     name="Hyphenator",
-    version="0.1.2",
+    version="0.1.3",
     description="Split words into syllables based on meter, etc.",
     maintainer="zdecook",
     maintainer_email="zdecook@ccel.org",

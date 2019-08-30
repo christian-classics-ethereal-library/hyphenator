@@ -1,0 +1,27 @@
+#!/usr/bin/env fish
+#
+# Symlink this hook to .git/hooks/pre-commit for it to work as a pre-commit hook.
+
+set FILES (git diff-index --cached HEAD | cut -f2)
+set PYFILES (printf '%s\n' $FILES | grep '\.py$')
+echo $PYFILES
+set PYTESTFILES (printf '%s\n' $PYFILES | grep '^tests/test_')
+
+
+if test "$PYFILES"
+    if not python3 -m pycodestyle --ignore=E902,W503 $PYFILES > /dev/null
+        python3 -m autopep8 -aa --in-place $PYFILES;
+        python3 -m pycodestyle --ignore=E902,W503 $PYFILES;
+        # If this one didn't fail, print out a message so they know the previous one did.
+        # (autopep changes need to be staged).
+        and echo "pycodestyle failed, please stage changes made by autopep8.";
+        exit 1
+    end
+end
+
+if test "$PYTESTFILES"
+    python3 -m pytest $PYTESTFILES
+    or exit 1
+end
+
+exit 0

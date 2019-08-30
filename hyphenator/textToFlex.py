@@ -5,6 +5,7 @@ import os.path
 import pyphen
 import re
 import sys
+import unicodedata
 import yaml
 
 from nltk.corpus import cmudict
@@ -58,16 +59,34 @@ def main(argv):
 def syllabizeLine(line, n, mst, lang=None):
     if lang and lang != mst.lang:
         mst.changeLang(lang)
-    sentences = []
-    ts = []
-    words = [x for x in line.split(' ') if x != '']
-    for word in words:
-        if(word.strip(wordSyl.puncs) == ''):
-            warning("Word '%s' consists only of punctuation" % word)
-        else:
-            ts.append(mst.multiTokenize(word))
-    recurse('', ts, n, sentences)
-    return sentences
+    if lang in ['zh', 'ja', 'ko'] and not romanized(line):
+        # multiTokenize is not needed: CJK is usually 1 syllable per character.
+        sentence = ""
+        prevPunc = True
+        for character in line:
+            # P = Punctuation, S = Symbol, Z = Separator
+            if unicodedata.category(character)[0] in 'PSZ':
+                if unicodedata.category(character)[0] != 'Z':
+                    sentence += character
+                prevPunc = True
+            elif prevPunc:
+                sentence += " " + character
+                prevPunc = False
+            else:
+                sentence += " -- " + character
+                prevPunc = False
+        return [sentence.strip(' -')]
+    else:
+        sentences = []
+        ts = []
+        words = [x for x in line.split(' ') if x != '']
+        for word in words:
+            if(word.strip(wordSyl.puncs) == ''):
+                warning("Word '%s' consists only of punctuation" % word)
+            else:
+                ts.append(mst.multiTokenize(word))
+        recurse('', ts, n, sentences)
+        return sentences
 
 
 def recurse(string, ts, n, sentences):
@@ -79,6 +98,11 @@ def recurse(string, ts, n, sentences):
         elif(len(tokenization) < n):
             newstring = string + ' -- '.join(tokenization) + ' '
             recurse(newstring, ts[1:], n - len(tokenization), sentences)
+
+
+def romanized(line):
+    """Return true if this uses latin characters."""
+    return bool(re.match(r"[a-zA-Z]", line))
 
 
 def message(key, msg):
