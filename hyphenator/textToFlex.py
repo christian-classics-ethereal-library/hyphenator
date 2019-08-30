@@ -109,11 +109,12 @@ def recurse(string, ts, n, sentences, lang):
                     r"\1~\2",
                     string,
                     count=1)
-                if newstring == string:
+                if newstring.count('~') != (string.count('~') + 1):
                     # No syllable could be smashed, so we give up.
                     return
+                string = newstring
                 n = n + 1
-            newstring = newstring + ' -- '.join(tokenization) + ' '
+            newstring = string + ' -- '.join(tokenization) + ' '
             recurse(newstring, ts[1:], n - len(tokenization), sentences, lang)
 
 
