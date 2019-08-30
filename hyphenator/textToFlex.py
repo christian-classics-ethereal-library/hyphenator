@@ -31,8 +31,8 @@ def main(argv):
     # ['4','3','2','1'].
     meter = argv[1].split('.')[::-1]
     templateFile = argv[2] if len(argv) > 2 else '-'
-    mst = MultiSylT(argv[3] if len(argv) > 3 else '-',
-                    argv[4] if len(argv) > 4 else 'en')
+    lang = argv[4] if len(argv) > 4 else 'en'
+    mst = MultiSylT(argv[3] if len(argv) > 3 else '-', lang=lang)
     success = True
     i = 0
     for line in fileinput.input(argv[5:]):
@@ -43,7 +43,7 @@ def main(argv):
             error("Out of lines in meter.")
             return
         line = line.replace("\n", "")
-        syllabized = syllabizeLine(line, length, mst)
+        syllabized = syllabizeLine(line, length, mst, lang=lang)
         if(syllabized):
             print(syllabized[0])
             if(len(syllabized) > 1):
@@ -101,21 +101,29 @@ def recurse(string, ts, n, sentences, lang):
         elif lang in ['es']:
             # This tokenization doesn't fit, or there are more words left,
             # So we need to smash some syllables together.
-            vowels = r"aeiouáéíóúü"
+            vowels = r"aeiouáéíóúüy"
+            # In Spanish, the H has no sound.
+            ignores = "h"
+            newstring = string + ' -- '.join(tokenization) + ' '
+            oldstring = newstring
+            newN = n
             # Smash syllables until there's enough room for this word.
-            while n < len(tokenization):
+            while newN < len(tokenization):
                 newstring = re.sub(
-                    r"([" + vowels + "]) ([" + vowels + r"])",
+                    r"([" + vowels + "][" + ignores + "]?)"
+                    + " "
+                    + "([" + ignores + "]?[" + vowels + r"])",
                     r"\1~\2",
-                    string,
-                    count=1)
-                if newstring.count('~') != (string.count('~') + 1):
+                    oldstring,
+                    count=1,
+                    flags=re.IGNORECASE)
+                if newstring.count('~') != (oldstring.count('~') + 1):
                     # No syllable could be smashed, so we give up.
                     return
-                string = newstring
-                n = n + 1
-            newstring = string + ' -- '.join(tokenization) + ' '
-            recurse(newstring, ts[1:], n - len(tokenization), sentences, lang)
+                oldstring = newstring
+                newN = newN + 1
+            recurse(newstring, ts[1:], newN
+                    - len(tokenization), sentences, lang)
 
 
 def romanized(line):
@@ -182,12 +190,15 @@ class MultiSylT(object):
             tokenizations = self._addMatchingSylCount(
                 word, tokenizations, tokenized, hyphenated)
         elif self.lang == 'es':
-            if hyphenated not in tokenizations:
-                tokenizations.append(hyphenated)
             # Sonority Sequencing doesn't work well with strong and weak vowels
             esTokenized = self._spanishTokenize(word)
             if esTokenized not in tokenizations:
                 tokenizations.append(esTokenized)
+            # Hunspell tokenizations are not as accurate as our tokenized ones:
+            # only include them if the syllable count matches.
+            if hyphenated not in tokenizations and len(
+                    hyphenated) == len(esTokenized):
+                tokenizations.append(hyphenated)
         else:
             if tokenized not in tokenizations:
                 tokenizations.append(tokenized)
