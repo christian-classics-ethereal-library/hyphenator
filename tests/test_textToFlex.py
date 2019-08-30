@@ -94,6 +94,11 @@ def test_spanish_syllabize():
     assert 'es' == mst.lang
     assert "San -- ti -- fi -- ca -- do se -- a tu nom -- bre" in result
 
+    # Smash words together
+    line = "Tú el alfarero, yo el barro soy."
+    result = textToFlex.syllabizeLine(line, 9, mst, lang='es')
+    assert "Tú~el al -- fa -- re -- ro, yo~el ba -- rro soy." in result
+
 
 def test_cjk_syllabize():
     mst = textToFlex.MultiSylT('tests/dict.yaml', lang='zh')

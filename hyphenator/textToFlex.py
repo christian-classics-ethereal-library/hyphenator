@@ -85,19 +85,36 @@ def syllabizeLine(line, n, mst, lang=None):
                 warning("Word '%s' consists only of punctuation" % word)
             else:
                 ts.append(mst.multiTokenize(word))
-        recurse('', ts, n, sentences)
+        recurse('', ts, n, sentences, lang)
         return sentences
 
 
-def recurse(string, ts, n, sentences):
-    if(n < 0 or len(ts) == 0):
+def recurse(string, ts, n, sentences, lang):
+    if len(ts) == 0:
+        if n == 0:
+            sentences.append(string.strip(' '))
         return
     for tokenization in ts[0]:
-        if(len(tokenization) == n and len(ts) == 1):
-            sentences.append(string + ' -- '.join(tokenization))
-        elif(len(tokenization) < n):
+        if(len(tokenization) <= n):
             newstring = string + ' -- '.join(tokenization) + ' '
-            recurse(newstring, ts[1:], n - len(tokenization), sentences)
+            recurse(newstring, ts[1:], n - len(tokenization), sentences, lang)
+        elif lang in ['es']:
+            # This tokenization doesn't fit, or there are more words left,
+            # So we need to smash some syllables together.
+            vowels = r"aeiouáéíóúü"
+            # Smash syllables until there's enough room for this word.
+            while n < len(tokenization):
+                newstring = re.sub(
+                    r"([" + vowels + "]) ([" + vowels + r"])",
+                    r"\1~\2",
+                    string,
+                    count=1)
+                if newstring == string:
+                    # No syllable could be smashed, so we give up.
+                    return
+                n = n + 1
+            newstring = newstring + ' -- '.join(tokenization) + ' '
+            recurse(newstring, ts[1:], n - len(tokenization), sentences, lang)
 
 
 def romanized(line):
