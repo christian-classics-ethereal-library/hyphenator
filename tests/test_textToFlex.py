@@ -95,6 +95,22 @@ def test_spanish_syllabize():
     assert "San -- ti -- fi -- ca -- do se -- a tu nom -- bre" in result
 
 
+def test_smash_words_together():
+    mst = textToFlex.MultiSylT('tests/dict.yaml', lang='es')
+    line = "Tú el alfarero, yo el barro soy."
+    result = textToFlex.syllabizeLine(line, 9, mst, lang='es')
+    assert "Tú~el al -- fa -- re -- ro, yo~el ba -- rro soy." in result
+    result = textToFlex.syllabizeLine(line, 8, mst, lang='es')
+    assert [] == result
+
+
+def test_smash_words_ignore_character():
+    mst = textToFlex.MultiSylT('tests/dict.yaml', lang='es')
+    line = "te adorará todo hombre"
+    result = textToFlex.syllabizeLine(line, 7, mst, lang='es')
+    assert "te~a -- do -- ra -- rá to -- do~hom -- bre" in result
+
+
 def test_cjk_syllabize():
     mst = textToFlex.MultiSylT('tests/dict.yaml', lang='zh')
     c = '聖哉，聖哉，聖哉，慈悲全能主宰，'

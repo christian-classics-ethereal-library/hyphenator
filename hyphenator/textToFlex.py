@@ -31,8 +31,8 @@ def main(argv):
     # ['4','3','2','1'].
     meter = argv[1].split('.')[::-1]
     templateFile = argv[2] if len(argv) > 2 else '-'
-    mst = MultiSylT(argv[3] if len(argv) > 3 else '-',
-                    argv[4] if len(argv) > 4 else 'en')
+    lang = argv[4] if len(argv) > 4 else 'en'
+    mst = MultiSylT(argv[3] if len(argv) > 3 else '-', lang=lang)
     success = True
     i = 0
     for line in fileinput.input(argv[5:]):
@@ -43,7 +43,7 @@ def main(argv):
             error("Out of lines in meter.")
             return
         line = line.replace("\n", "")
-        syllabized = syllabizeLine(line, length, mst)
+        syllabized = syllabizeLine(line, length, mst, lang=lang)
         if(syllabized):
             print(syllabized[0])
             if(len(syllabized) > 1):
@@ -85,19 +85,54 @@ def syllabizeLine(line, n, mst, lang=None):
                 warning("Word '%s' consists only of punctuation" % word)
             else:
                 ts.append(mst.multiTokenize(word))
-        recurse('', ts, n, sentences)
+        recurse('', ts, n, sentences, lang)
         return sentences
 
 
-def recurse(string, ts, n, sentences):
-    if(n < 0 or len(ts) == 0):
+def recurse(string, ts, n, sentences, lang):
+    """Appends correctly syllabized strings into a list.
+
+    arguments:
+    string -- the syllabized string so far
+    ts -- a list of tokenizations of the words this sentence needs to use.
+    n -- The number of syllables that need to be filled.
+    sentences -- list appended with correctly syllablized strings.
+    lang -- language code.
+    """
+    if len(ts) == 0:
+        if n == 0:
+            sentences.append(string.strip(' '))
         return
     for tokenization in ts[0]:
-        if(len(tokenization) == n and len(ts) == 1):
-            sentences.append(string + ' -- '.join(tokenization))
-        elif(len(tokenization) < n):
+        if(len(tokenization) <= n):
             newstring = string + ' -- '.join(tokenization) + ' '
-            recurse(newstring, ts[1:], n - len(tokenization), sentences)
+            recurse(newstring, ts[1:], n - len(tokenization), sentences, lang)
+        elif lang in ['es']:
+            # This tokenization doesn't fit, or there are more words left,
+            # So we need to smash some syllables together.
+            vowels = r"aeiouáéíóúüy"
+            # In Spanish, the H has no sound.
+            ignores = "h"
+            newstring = string + ' -- '.join(tokenization) + ' '
+            oldstring = newstring
+            newN = n
+            # Smash syllables until there's enough room for this word.
+            while newN < len(tokenization):
+                newstring = re.sub(
+                    r"([" + vowels + "][" + ignores + "]?)"
+                    + " "
+                    + "([" + ignores + "]?[" + vowels + r"])",
+                    r"\1~\2",
+                    oldstring,
+                    count=1,
+                    flags=re.IGNORECASE)
+                if newstring.count('~') != (oldstring.count('~') + 1):
+                    # No syllable could be smashed, so we give up.
+                    return
+                oldstring = newstring
+                newN = newN + 1
+            recurse(newstring, ts[1:], newN
+                    - len(tokenization), sentences, lang)
 
 
 def romanized(line):
@@ -164,12 +199,15 @@ class MultiSylT(object):
             tokenizations = self._addMatchingSylCount(
                 word, tokenizations, tokenized, hyphenated)
         elif self.lang == 'es':
-            if hyphenated not in tokenizations:
-                tokenizations.append(hyphenated)
             # Sonority Sequencing doesn't work well with strong and weak vowels
             esTokenized = self._spanishTokenize(word)
             if esTokenized not in tokenizations:
                 tokenizations.append(esTokenized)
+            # Hunspell tokenizations are not as accurate as our tokenized ones:
+            # only include them if the syllable count matches.
+            if hyphenated not in tokenizations and len(
+                    hyphenated) == len(esTokenized):
+                tokenizations.append(hyphenated)
         else:
             if tokenized not in tokenizations:
                 tokenizations.append(tokenized)
