@@ -90,6 +90,15 @@ def syllabizeLine(line, n, mst, lang=None):
 
 
 def recurse(string, ts, n, sentences, lang):
+    """Appends correctly syllabized strings into a list.
+
+    arguments:
+    string -- the syllabized string so far
+    ts -- a list of tokenizations of the words this sentence needs to use.
+    n -- The number of syllables that need to be filled.
+    sentences -- list appended with correctly syllablized strings.
+    lang -- language code.
+    """
     if len(ts) == 0:
         if n == 0:
             sentences.append(string.strip(' '))
