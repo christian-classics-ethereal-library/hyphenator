@@ -159,7 +159,7 @@ def warning(msg):
 
 
 class MultiSylT(object):
-    def __init__(self, dictName, lang=None):
+    def __init__(self, dictName='-', lang=None):
         # Sonority Sequencing Tokenizer defaults to 26 latin letters,
         # english pronunciation.
         self.SSP = SyllableTokenizer()
