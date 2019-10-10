@@ -64,6 +64,8 @@ words:
   - ["a", "bun", "dance"]
   "abundant":
   - ["a", "bun", "dant"]
+  "abuse":
+  - ["a", "buse"]
   "accents":
   - ["ac", "cents"]
   "accept":
@@ -342,6 +344,8 @@ words:
   - ["am"]
   "ama't":
   - ["a", "ma't"]
+  "amaze":
+  - ["a", "maze"]
   "amazed":
   - ["a", "mazed"]
   "amazing":
@@ -649,6 +653,8 @@ words:
   - ["a", "waits"]
   "awake":
   - ["a", "wake"]
+  "awakes":
+  - ["a", "wakes"]
   "awaking":
   - ["a", "wak", "ing"]
   "aware":
@@ -1362,6 +1368,8 @@ words:
   - ["ca", "ges"]
   "call":
   - ["call"]
+  "call'd":
+  - ["call'd"]
   "called":
   - ["called"]
   "callest":
@@ -3127,6 +3135,9 @@ words:
   - ["else", "where"]
   "elyon":
   - ["el", "yon"]
+  "emanuel":
+  - ["e", "man", "uel"]
+  - ["e", "man", "u", "el"]
   "embark":
   - ["em", "bark"]
   "embodied":
@@ -4927,6 +4938,9 @@ words:
   - ["home"]
   "homeless":
   - ["home", "less"]
+  "homeliest":
+  - ["home", "liest"]
+  - ["home", "li", "est"]
   "homes":
   - ["homes"]
   "honey":
@@ -6761,6 +6775,8 @@ words:
   - ["ng"]
   "nigh":
   - ["nigh"]
+  "nighty":
+  - ["night", "y"]
   "nightly":
   - ["night", "ly"]
   "night":
@@ -8645,6 +8661,8 @@ words:
   "sabaoth":
   - ["sa", "ba", "oth"]
   - ["sab", "a", "oth"]
+  "sabbaoth":
+  - ["sab", "ba", "oth"]
   "sabbath":
   - ["sab", "bath"]
   "sabe":
