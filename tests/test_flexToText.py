@@ -14,6 +14,11 @@ def test_flexToText(capsys):
 def test_textStripped():
     output = flexToText.flexToText(" \tA -- ma -- zing\r\n")
     assert "Amazing" == output
+    output = flexToText.flexToText(
+        "Praise _ _ to thine _ e -- ter -- _ nal  mer -- it,")
+    assert "Praise to thine eternal merit," == output
+    output = flexToText.flexToText("this __ may be __ our end -- less  song:")
+    assert "this may be our endless song:" == output
 
 
 def test_tildeRemoved():
@@ -28,3 +33,9 @@ def test_removeLilyCommands():
     output = flexToText.removeLilyCommands(
         "art \\unset ignoreMelismata ho -- ly;")
     assert "art ho -- ly;" == output
+    output = flexToText.removeLilyCommands(
+        "ye have seen his \\skip 1 na -- tal star:")
+    assert "ye have seen his na -- tal star:" == output
+#    output = flexToText.removeLilyCommands(
+#        'vi -- sions of "*rap" -- ture now burst on my sight;')
+#    assert "vi -- sions of *rap -- ture now burst on my sight;" == output

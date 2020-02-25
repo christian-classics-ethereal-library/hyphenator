@@ -10,7 +10,7 @@ def main(argv):
 
 
 def flexToText(text):
-    text = text.replace(' _ ', ' ')
+    text = re.sub("( _+)+ ", ' ', text)
     text = re.sub(r" +", " ", text)
     text = removeLilyCommands(text)
     text = text.replace(' -- ', '')
@@ -20,13 +20,22 @@ def flexToText(text):
 
 def removeLilyCommands(text):
     # Remove some lilypond commands that often appear inline with text
+    text = re.sub(r" *\\bold *", " ", text)
+    text = re.sub(r" *\\italic *", " ", text)
+    text = re.sub(r" *\\line *", " ", text)
+    text = re.sub(r" *\\markup *", " ", text)
     text = re.sub(r" *\\set\s+\S+\s*=\s*\S+ *", " ", text)
-    text = re.sub(r" *\\unset\s+\S+ *", " ", text)
+    text = re.sub(r" *\\skip *[0-9]+ *", " ", text)
     text = re.sub(r" *\\slurOff *", " ", text)
     text = re.sub(r" *\\slurOn *", " ", text)
+    # This is problematic, as smallCaps { Lord } != LORD
+    text = re.sub(r" *\\smallCaps *", " ", text)
     text = re.sub(r" *\\switch\S+ *", " ", text)
-    text = re.sub(r" *\\(line|italic|bold) *{? *", " ", text)
+    text = re.sub(r" *\\tiny *", " ", text)
+    text = re.sub(r" *\\unset\s+\S+ *", " ", text)
     text = re.sub(r" *} *", " ", text)
+    text = re.sub(r" *{ *", " ", text)
+    text = re.sub("( _+)+ ", ' ', text)
     return text
 
 
