@@ -21,9 +21,11 @@ def test_textStripped():
     assert "this may be our endless song:" == output
 
 
-def test_tildeRemoved():
+def test_tildeUnderscoreRemoved():
     output = flexToText.flexToText("no -- che de~a -- mor")
     assert "noche de amor" == output
+    output = flexToText.flexToText("but I am_the Dance, and_I still go on.")
+    assert "but I am the Dance, and I still go on." == output
 
 
 def test_removeLilyCommands():
