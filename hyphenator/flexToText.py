@@ -10,11 +10,12 @@ def main(argv):
 
 
 def flexToText(text):
-    text = re.sub("( _+)+ ", ' ', text)
-    text = re.sub(r" +", " ", text)
     text = removeLilyCommands(text)
+    text = re.sub(r" +", " ", text)
     text = text.replace(' -- ', '')
     text = text.replace('~', ' ')
+    # Mid-word underscores behave like tildes.
+    text = text.replace('_', ' ')
     return text.strip()
 
 
