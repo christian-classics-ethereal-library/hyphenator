@@ -284,6 +284,8 @@ words:
   - ["al", "le", "lu", "ia"]
   "alleluias":
   - ["al", "le", "lu", "ias"]
+  "alleluya":
+  - ["al", "le", "lu", "ya"]
   "allen":
   - ["al", "len"]
   "allglorious":
@@ -1682,6 +1684,8 @@ words:
   - ["'christ"]
   "christ":
   - ["christ"]
+  "christe":
+  - ["chri", "ste"]
   "christendom":
   - ["chris", "ten", "dom"]
   "christian":
@@ -3119,6 +3123,8 @@ words:
   - ["el"]
   "\u00e9l":
   - ["\u00e9l"]
+  "elieson":
+  - ["e", "lie", "son"]
   "elijah":
   - ["e", "li", "jah"]
   "elijah's":
@@ -4617,6 +4623,8 @@ words:
   - ["hart"]
   "harvest":
   - ["har", "vest"]
+  "harvest-home":
+  - ["har", "vest-", "home"]
   "harvests":
   - ["har", "vests"]
   "has":
@@ -5586,6 +5594,8 @@ words:
   - ["kun"]
   "kus":
   - ["kus"]
+  "kyrie":
+  - ["ky", "rie"]
   "kwe":
   - ["kwe"]
   "labor":
@@ -5918,6 +5928,8 @@ words:
   - ["live", "long"]
   "lives":
   - ["lives"]
+  "liveth":
+  - ["liv", "eth"]
   "living":
   - ["liv", "ing"]
   "llamada":
@@ -6327,6 +6339,8 @@ words:
   - ["mer", "cy"]
   "mercy's":
   - ["mer", "cy's"]
+  "mercy-seat":
+  - ["mer", "cy-", "seat"]
   "merely":
   - ["merely"]
   "mere":
@@ -6761,6 +6775,8 @@ words:
   - ["nev", "er"]
   "newborn":
   - ["new", "born"]
+  "new-born":
+  - ["new-", "born"]
   "newness":
   - ["new", "ness"]
   "new":
@@ -11088,6 +11104,8 @@ words:
   "universal":
   - ["u", "ni", "ver", "sal"]
   - ["un", "i", "ver", "sal"]
+  "universe":
+  - ["u", "ni", "verse"]
   "unknown":
   - ["un", "known"]
   "unless":
