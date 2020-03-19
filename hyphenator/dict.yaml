@@ -3123,8 +3123,9 @@ words:
   - ["el"]
   "\u00e9l":
   - ["\u00e9l"]
-  "elieson":
-  - ["e", "lie", "son"]
+  "eleison":
+  - ["e", "le", "i", "son"]
+  - ["e", "lei", "son"]
   "elijah":
   - ["e", "li", "jah"]
   "elijah's":
