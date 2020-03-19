@@ -64,6 +64,8 @@ words:
   - ["a", "bun", "dance"]
   "abundant":
   - ["a", "bun", "dant"]
+  "abuse":
+  - ["a", "buse"]
   "accents":
   - ["ac", "cents"]
   "accept":
@@ -282,6 +284,8 @@ words:
   - ["al", "le", "lu", "ia"]
   "alleluias":
   - ["al", "le", "lu", "ias"]
+  "alleluya":
+  - ["al", "le", "lu", "ya"]
   "allen":
   - ["al", "len"]
   "allglorious":
@@ -342,6 +346,8 @@ words:
   - ["am"]
   "ama't":
   - ["a", "ma't"]
+  "amaze":
+  - ["a", "maze"]
   "amazed":
   - ["a", "mazed"]
   "amazing":
@@ -649,6 +655,8 @@ words:
   - ["a", "waits"]
   "awake":
   - ["a", "wake"]
+  "awakes":
+  - ["a", "wakes"]
   "awaking":
   - ["a", "wak", "ing"]
   "aware":
@@ -1362,6 +1370,8 @@ words:
   - ["ca", "ges"]
   "call":
   - ["call"]
+  "call'd":
+  - ["call'd"]
   "called":
   - ["called"]
   "callest":
@@ -1674,6 +1684,8 @@ words:
   - ["'christ"]
   "christ":
   - ["christ"]
+  "christe":
+  - ["chri", "ste"]
   "christendom":
   - ["chris", "ten", "dom"]
   "christian":
@@ -3111,6 +3123,9 @@ words:
   - ["el"]
   "\u00e9l":
   - ["\u00e9l"]
+  "eleison":
+  - ["e", "le", "i", "son"]
+  - ["e", "lei", "son"]
   "elijah":
   - ["e", "li", "jah"]
   "elijah's":
@@ -3127,6 +3142,9 @@ words:
   - ["else", "where"]
   "elyon":
   - ["el", "yon"]
+  "emanuel":
+  - ["e", "man", "uel"]
+  - ["e", "man", "u", "el"]
   "embark":
   - ["em", "bark"]
   "embodied":
@@ -4606,6 +4624,8 @@ words:
   - ["hart"]
   "harvest":
   - ["har", "vest"]
+  "harvest-home":
+  - ["har", "vest-", "home"]
   "harvests":
   - ["har", "vests"]
   "has":
@@ -4927,6 +4947,9 @@ words:
   - ["home"]
   "homeless":
   - ["home", "less"]
+  "homeliest":
+  - ["home", "liest"]
+  - ["home", "li", "est"]
   "homes":
   - ["homes"]
   "honey":
@@ -5572,6 +5595,8 @@ words:
   - ["kun"]
   "kus":
   - ["kus"]
+  "kyrie":
+  - ["ky", "ri", "e"]
   "kwe":
   - ["kwe"]
   "labor":
@@ -5904,6 +5929,8 @@ words:
   - ["live", "long"]
   "lives":
   - ["lives"]
+  "liveth":
+  - ["liv", "eth"]
   "living":
   - ["liv", "ing"]
   "llamada":
@@ -6313,6 +6340,8 @@ words:
   - ["mer", "cy"]
   "mercy's":
   - ["mer", "cy's"]
+  "mercy-seat":
+  - ["mer", "cy-", "seat"]
   "merely":
   - ["merely"]
   "mere":
@@ -6747,6 +6776,8 @@ words:
   - ["nev", "er"]
   "newborn":
   - ["new", "born"]
+  "new-born":
+  - ["new-", "born"]
   "newness":
   - ["new", "ness"]
   "new":
@@ -6761,6 +6792,8 @@ words:
   - ["ng"]
   "nigh":
   - ["nigh"]
+  "nighty":
+  - ["night", "y"]
   "nightly":
   - ["night", "ly"]
   "night":
@@ -8645,6 +8678,8 @@ words:
   "sabaoth":
   - ["sa", "ba", "oth"]
   - ["sab", "a", "oth"]
+  "sabbaoth":
+  - ["sab", "ba", "oth"]
   "sabbath":
   - ["sab", "bath"]
   "sabe":
@@ -11070,6 +11105,8 @@ words:
   "universal":
   - ["u", "ni", "ver", "sal"]
   - ["un", "i", "ver", "sal"]
+  "universe":
+  - ["u", "ni", "verse"]
   "unknown":
   - ["un", "known"]
   "unless":

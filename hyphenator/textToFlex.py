@@ -189,6 +189,11 @@ class MultiSylT(object):
         # If the word exists in our dictionary, include those tokenizations.
         if(word in self.dict['words']):
             tokenizations += self.dict['words'][word]
+        # If the word exists in the dictionary (but as singular), include it.
+        elif(word[-1] == 's' and word[0:-1] in self.dict['words']):
+            for tk in self.dict['words'][word[0:-1]]:
+                tk[-1] = tk[-1] + 's'
+                tokenizations.append(tk)
 
         # Otherwise, use an algorithm to get word split up into syllables
         tokenized = self.SSP.tokenize(word)

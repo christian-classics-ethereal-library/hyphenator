@@ -33,6 +33,13 @@ def test_multiTokenize():
     assert ['of', 'fer', 'ing'] in off
 
 
+def test_multiTokenize_plural():
+    mst = textToFlex.MultiSylT('tests/dict.yaml')
+    off = list(mst.multiTokenize('offerings'))
+    assert ['off', 'erings'] in off
+    assert ['of', 'fer', 'ings'] in off
+
+
 def test_alternates():
     mst = textToFlex.MultiSylT('tests/dict.yaml')
     line = "offering offering"
