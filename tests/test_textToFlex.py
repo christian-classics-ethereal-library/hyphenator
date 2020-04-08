@@ -88,6 +88,7 @@ def test_reformat_function():
         ["cal", "v'ry's"], "Calv'ry\u2019s")
     ordered = "\u2018'\u2019"
     assert [ordered] == mst.reformat(["'''"], ordered)
+    assert ["'Tis"] == mst.reformat(["'tis"], "'Tis")
 
 
 def test_spanishTokenize():

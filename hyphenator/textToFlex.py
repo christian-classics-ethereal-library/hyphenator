@@ -289,6 +289,9 @@ class MultiSylT(object):
             tokenized[0] = tokenized[0].upper()
         elif(plainTemp and plainTemp[0].isupper()):
             tokenized[0] = tokenized[0][0].upper() + tokenized[0][1:]
+        elif(plainTemp and plainTemp[1].isupper() and len(tokenized[0]) > 1):
+            tokenized[0] = tokenized[0][0] + \
+                tokenized[0][1].upper() + tokenized[0][2:]
 
         # Prepend/append the punctuations
         match = re.search(r"^[" + wordSyl.puncs + r"]+", template)
