@@ -10620,6 +10620,8 @@ words:
   - ["ti"]
   "titles":
   - ["ti", "tles"]
+  "to-night":
+  - ["to-", "night"]
   "toawbay":
   - ["to", "aw", "bay"]
   "toda":
@@ -11844,10 +11846,13 @@ words:
   - ["womb"]
   "women":
   - ["wom", "en"]
+  "wond'ring":
+  - ["won", "d'ring"]
   "wonderful":
   - ["won", "der", "ful"]
   "wondering":
   - ["won", "dering"]
+  - ["won", "der", "ing"]
   "wonders":
   - ["won", "ders"]
   "wonder":
