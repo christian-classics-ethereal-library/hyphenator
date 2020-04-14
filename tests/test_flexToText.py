@@ -41,3 +41,6 @@ def test_removeLilyCommands():
     output = flexToText.removeLilyCommands(
         'vi -- sions of "*rap" -- ture now burst on my sight;')
     assert "vi -- sions of *rap -- ture now burst on my sight;" == output
+    output = flexToText.removeLilyCommands(
+        "a --\n%remove when separateStanzas=true\n _ \n%endremove\nmen")
+    assert "a --\n \n \n \nmen" == output

@@ -20,11 +20,14 @@ def flexToText(text):
 
 
 def removeLilyCommands(text):
-    # Remove some lilypond commands that often appear inline with text
+    # Remove some lilypond commands
+    # (Especially those that often appear inline with text)
     text = re.sub(r" *\\bold *", " ", text)
     text = re.sub(r" *\\italic *", " ", text)
     text = re.sub(r" *\\line *", " ", text)
     text = re.sub(r" *\\markup *", " ", text)
+    text = re.sub(r" *%remove when \w+!?=\w+ *", " ", text)
+    text = re.sub(r" *%endremove *", " ", text)
     text = re.sub(r" *\\set\s+\S+\s*=\s*\S+ *", " ", text)
     text = re.sub(r" *\\skip *[0-9]+ *", " ", text)
     text = re.sub(r" *\\slurOff *", " ", text)
