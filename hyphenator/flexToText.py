@@ -37,6 +37,7 @@ def removeLilyCommands(text):
     text = re.sub(r" *} *", " ", text)
     text = re.sub(r" *{ *", " ", text)
     text = re.sub("( _+)+ ", ' ', text)
+    text = re.sub(r'"(\*\w*)"', r'\1', text)
     return text
 
 

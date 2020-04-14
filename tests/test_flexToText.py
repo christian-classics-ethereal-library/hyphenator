@@ -38,6 +38,6 @@ def test_removeLilyCommands():
     output = flexToText.removeLilyCommands(
         "ye have seen his \\skip 1 na -- tal star:")
     assert "ye have seen his na -- tal star:" == output
-#    output = flexToText.removeLilyCommands(
-#        'vi -- sions of "*rap" -- ture now burst on my sight;')
-#    assert "vi -- sions of *rap -- ture now burst on my sight;" == output
+    output = flexToText.removeLilyCommands(
+        'vi -- sions of "*rap" -- ture now burst on my sight;')
+    assert "vi -- sions of *rap -- ture now burst on my sight;" == output
