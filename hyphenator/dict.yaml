@@ -4614,6 +4614,8 @@ words:
   - ["harm"]
   "harmony":
   - ["har", "mo", "ny"]
+  "harmony's":
+  - ["har", "mo", "ny's"]
   "harp":
   - ["harp"]
   "harps":
@@ -7177,6 +7179,8 @@ words:
   - ["ox", "en"]
   "ox":
   - ["ox"]
+  "pacem":
+  - ["pa", "cem"]
   "padre":
   - ["pad", "re"]
   "pagan":
@@ -7783,7 +7787,6 @@ words:
   "proclaiming":
   - ["pro", "claim", "ing"]
   "proclaim":
-  - ["proclaim"]
   - ["pro", "claim"]
   "proclaims":
   - ["pro", "claims"]
@@ -7892,6 +7895,8 @@ words:
   - ["psalm"]
   "psalms":
   - ["psalms"]
+  "psaltery":
+  - ["psal", "ter", "y"]
   "ps":
   - ["ps"]
   "publishing":
