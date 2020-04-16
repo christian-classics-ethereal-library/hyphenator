@@ -246,6 +246,8 @@ words:
   - ["'a", "lam"]
   "alarm":
   - ["a", "larm"]
+  "alarmed":
+  - ["a", "larmed"]
   "alarms":
   - ["a", "larms"]
   "alas":
@@ -460,6 +462,8 @@ words:
   - ["ao"]
   "apart":
   - ["a", "part"]
+  "apostolic":
+  - ["a", "pos", "tol", "ic"]
   "appall":
   - ["ap", "pall"]
   "apparel":
@@ -944,6 +948,8 @@ words:
   - ["be", "stows"]
   "bethel":
   - ["beth", "el"]
+  "bethleh'm":
+  - ["beth", "leh'm"]
   "bethlehem":
   - ["beth", "le", "hem"]
   - ["beth", "lehem"]
@@ -2724,6 +2730,8 @@ words:
   - ["dig", "no~es"]
   "diits'":
   - ["diits'"]
+  "diligence":
+  - ["di", "li", "gence"]
   "dim":
   - ["dim"]
   "diminished":
@@ -3355,6 +3363,8 @@ words:
   "eventide":
   - ["e", "ven", "tide"]
   - ["ev", "en", "tide"]
+  "even-tide":
+  - ["e", "ven-", "tide"]
   "everblessed":
   - ["ev", "er", "bless", "ed"]
   "evercircling":
@@ -3686,6 +3696,8 @@ words:
   - ["fil", "ho~e", "ter", "no"]
   "filled":
   - ["filled"]
+  "fill'd":
+  - ["fill'd"]
   "fill":
   - ["fill"]
   "filling":
@@ -3728,10 +3740,14 @@ words:
   - ["firm", "ly"]
   "firstborn":
   - ["first", "born"]
+  "first-born":
+  - ["first-", "born"]
   "first":
   - ["first"]
   "firstfruits":
   - ["first", "fruits"]
+  "first-fruits":
+  - ["first-", "fruits"]
   "fit":
   - ["fit"]
   "fitful":
@@ -3989,6 +4005,8 @@ words:
   - ["fort"]
   "forth":
   - ["forth"]
+  "forthtell":
+  - ["forth", "tell"]
   "forthwith":
   - ["forth", "with"]
   "fortify":
@@ -4873,6 +4891,8 @@ words:
   - ["hide"]
   "hides":
   - ["hides"]
+  "hideth":
+  - ["hid", "eth"]
   "hid":
   - ["hid"]
   "hiding":
@@ -6126,7 +6146,6 @@ words:
   "majesties":
   - ["maj", "es", "ties"]
   "majesty":
-  - ["majesty"]
   - ["ma", "jes", "ty"]
   - ["maj", "es", "ty"]
   "makeer":
@@ -6189,6 +6208,8 @@ words:
   - ["man", "y"]
   "mapagpalang":
   - ["ma", "pag", "pa", "lang"]
+  "maranatha":
+  - ["ma", "ra", "na", "tha"]
   "maravillosas":
   - ["ma", "ra", "vi", "llo", "sas"]
   "marching":
@@ -7022,8 +7043,8 @@ words:
   - ["o", "\u00edr"]
   "old":
   - ["old"]
-  "olivers":
-  - ["olivers"]
+  "olive":
+  - ["o", "live"]
   "olivet":
   - ["ol", "i", "vet"]
   "omnes":
@@ -8537,6 +8558,8 @@ words:
   - ["ri", "ots"]
   "ripen":
   - ["rip", "en"]
+  "ripened":
+  - ["rip", "ened"]
   "ripe":
   - ["ripe"]
   "risen":
@@ -11357,6 +11380,8 @@ words:
   - ["vir", "gins"]
   "virgin":
   - ["vir", "gin"]
+  "virgin-honour":
+  - ["vir", "gin-", "hon", "our"]
   "virtues":
   - ["vir", "tues"]
   "virtue":
@@ -11569,6 +11594,8 @@ words:
   - ["wean"]
   "weapons":
   - ["weap", "ons"]
+  "weareth":
+  - ["wear", "eth"]
   "wearied":
   - ["wea", "ried"]
   "weariness":
@@ -11904,6 +11931,8 @@ words:
   - ["world"]
   "wormwood":
   - ["worm", "wood"]
+  "worm-wood":
+  - ["worm-", "wood"]
   "worm":
   - ["worm"]
   "worn":
