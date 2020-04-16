@@ -289,7 +289,8 @@ class MultiSylT(object):
             tokenized[0] = tokenized[0].upper()
         elif(plainTemp and plainTemp[0].isupper()):
             tokenized[0] = tokenized[0][0].upper() + tokenized[0][1:]
-        elif(plainTemp and len(tokenized[0]) > 1 and plainTemp[1].isupper()):
+        elif(plainTemp and len(tokenized[0]) > 1 and len(plainTemp) > 1
+                and plainTemp[1].isupper()):
             tokenized[0] = tokenized[0][0] + \
                 tokenized[0][1].upper() + tokenized[0][2:]
 
