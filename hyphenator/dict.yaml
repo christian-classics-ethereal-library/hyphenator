@@ -1671,6 +1671,8 @@ words:
   - ["choked"]
   "choose":
   - ["choose"]
+  "chooseth":
+  - ["choos", "eth"]
   "choosing":
   - ["choos", "ing"]
   "chord":
@@ -3570,6 +3572,8 @@ words:
   "family":
   - ["fam", "ily"]
   - ["fam", "i", "ly"]
+  "famine":
+  - ["fam", "ine"]
   "farewell":
   - ["fare", "well"]
   "far":
@@ -5316,6 +5320,8 @@ words:
   - ["in", "to"]
   "int'rest":
   - ["in", "t'rest"]
+  "intuition":
+  - ["in", "tu", "i", "tion"]
   "invited":
   - ["in", "vit", "ed"]
   "invites":
@@ -10866,6 +10872,8 @@ words:
   "tristeza":
   - ["tri", "ste", "za"]
   - ["tris", "te", "za"]
+  "triumphal":
+  - ["tri", "um", "phal"]
   "triumphantly":
   - ["tri", "um", "phant", "ly"]
   "triumphant":
