@@ -286,6 +286,8 @@ words:
   - ["al", "le", "lu", "ia"]
   "alleluias":
   - ["al", "le", "lu", "ias"]
+  "allelujah":
+  - ["al", "le", "lu", "jah"]
   "alleluya":
   - ["al", "le", "lu", "ya"]
   "allen":
@@ -653,6 +655,8 @@ words:
   - ["a", "vailed"]
   "avails":
   - ["a", "vails"]
+  "avenge":
+  - ["a", "venge"]
   "await":
   - ["a", "wait"]
   "awaits":
@@ -3987,6 +3991,8 @@ words:
   - ["for", "ma", "ron"]
   "formed":
   - ["formed"]
+  "form'd":
+  - ["form'd"]
   "form":
   - ["form"]
   "forming":
@@ -4258,6 +4264,8 @@ words:
   - ["ghost!'"]
   "ghost":
   - ["ghost"]
+  "gideon":
+  - ["gi", "de", "on"]
   "gift":
   - ["gift"]
   "gifts":
@@ -6533,6 +6541,8 @@ words:
   - ["mon", "ter"]
   "moonbeams":
   - ["moon", "beams"]
+  "moon-beams":
+  - ["moon-", "beams"]
   "moonlight":
   - ["moon", "light"]
   "moon":
@@ -9576,6 +9586,8 @@ words:
   - ["sought"]
   "soulcheering":
   - ["soul", "cheer", "ing"]
+  "soul-restoring":
+  - ["soul-", "re", "stor", "ing"]
   "soul":
   - ["soul"]
   "soul's":
@@ -11092,6 +11104,8 @@ words:
   - ["un", "done"]
   "undo":
   - ["un", "do"]
+  "undying":
+  - ["un", "dy", "ing"]
   "und":
   - ["und"]
   "unending":
