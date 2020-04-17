@@ -3220,6 +3220,8 @@ words:
   - ["en", "dur", "ance"]
   "endure":
   - ["en", "dure"]
+  "endureth":
+  - ["en", "dur", "eth"]
   "endures":
   - ["en", "dures"]
   "enduring":
@@ -7731,7 +7733,6 @@ words:
   "preparing":
   - ["pre", "par", "ing"]
   "presence":
-  - ["presence"]
   - ["pre", "sence"]
   - ["pres", "ence"]
   "present":
