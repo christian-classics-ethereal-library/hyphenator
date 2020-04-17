@@ -145,6 +145,8 @@ words:
   - ["ad", "vo", "cate"]
   "afar":
   - ["a", "far"]
+  "a-feeding":
+  - ["a-", "feed", "ing"]
   "affection":
   - ["af", "fec", "tion"]
   "affirmation":
@@ -4387,8 +4389,8 @@ words:
   "goin'a":
   - ["goin'", "a"]
   "going":
-  - ["going"]
   - ["go", "ing"]
+  - ["going"]
   "golden":
   - ["gold", "en"]
   "gold":
