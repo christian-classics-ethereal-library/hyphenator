@@ -815,7 +815,6 @@ words:
   "beautiful":
   - ["beau", "ti", "ful"]
   "beauty":
-  - ["beauty"]
   - ["beau", "ty"]
   "beauty's":
   - ["beau", "ty's"]
@@ -9890,6 +9889,8 @@ words:
   - ["sto", "ry"]
   "straight":
   - ["straight"]
+  "straight-way":
+  - ["straight-", "way"]
   "strains":
   - ["strains"]
   "strain":
