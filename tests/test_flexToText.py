@@ -44,3 +44,5 @@ def test_removeLilyCommands():
     output = flexToText.removeLilyCommands(
         "a --\n%remove when separateStanzas=true\n _ \n%endremove\nmen")
     assert "a --\n \n \n \nmen" == output
+    output = flexToText.removeLilyCommands("__ start -- ing end _")
+    assert "start -- ing end" == output
