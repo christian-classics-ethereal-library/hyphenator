@@ -1776,6 +1776,8 @@ words:
   - ["cleanse"]
   "cleansed":
   - ["cleansed"]
+  "cleans'd":
+  - ["cleans'd"]
   "cleansing":
   - ["cleans", "ing"]
   "clear":
@@ -3407,6 +3409,8 @@ words:
   "every":
   - ["ev", "ery"]
   - ["eve", "ry"]
+  "ev'ry":
+  - ["ev", "'ry"]
   "everyone":
   - ["ev", "ery", "one"]
   "everything":
@@ -7208,6 +7212,10 @@ words:
   - ["o", "ver", "pow", "er"]
   "overpow'r":
   - ["o", "ver", "pow'r"]
+  "overspread":
+  - ["o", "ver", "spread"]
+  "over-spread":
+  - ["o", "ver-", "spread"]
   "overtake":
   - ["o", "ver", "take"]
   "overthrow":
@@ -7857,6 +7865,8 @@ words:
   "promised":
   - ["pro", "mised"]
   - ["prom", "ised"]
+  "promis'd":
+  - ["pro", "mis'd"]
   "promisefed":
   - ["prom", "ise", "fed"]
   "promise":
