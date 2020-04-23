@@ -10834,6 +10834,11 @@ words:
   - ["trav", "elers"]
   "traveler":
   - ["trav", "el", "er"]
+  "traveling":
+  - ["trav", "el", "ing"]
+  - ["trav", "eling"]
+  "trav'ling":
+  - ["trav'", "ling"]
   "travel":
   - ["trav", "el"]
   "traverse":
