@@ -3084,6 +3084,10 @@ words:
   - ["east", "ern"]
   "easter's":
   - ["eas", "ter's"]
+  "eastertide":
+  - ["eas", "ter", "tide"]
+  "easter-tide":
+  - ["eas", "ter-", "tide"]
   "eat":
   - ["eat"]
   "ebbs":
@@ -10569,6 +10573,8 @@ words:
   - ["threat", "en"]
   "threat'ning":
   - ["threat", "'ning"]
+  "three-day":
+  - ["three-", "day"]
   "threefold":
   - ["three", "fold"]
   "three":
