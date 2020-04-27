@@ -1593,6 +1593,8 @@ words:
   - ["chang", "es"]
   "changest":
   - ["chang", "est"]
+  "changeth":
+  - ["chang", "eth"]
   "changing":
   - ["chang", "ing"]
   "channel":
@@ -6108,6 +6110,8 @@ words:
   - ["love's"]
   "loves":
   - ["loves"]
+  "loveth":
+  - ["love", "eth"]
   "lovingkindness":
   - ["lov", "ing", "kind", "ness"]
   "loving":
