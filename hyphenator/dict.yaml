@@ -270,8 +270,12 @@ words:
   - ["all"]
   "allatoning":
   - ["all", "a", "ton", "ing"]
+  "all-atoning":
+  - ["all-", "a", "ton", "ing"]
   "allavailing":
   - ["all", "a", "vail", "ing"]
+  "all-availing":
+  - ["all-", "a", "vail", "ing"]
   "allblessed":
   - ["all", "blessed"]
   "allblessing":
@@ -657,6 +661,8 @@ words:
   - ["a", "vailed"]
   "avail'd":
   - ["a", "vail'd"]
+  "availing":
+  - ["a", "vail", "ing"]
   "avails":
   - ["a", "vails"]
   "avenge":
@@ -1280,6 +1286,8 @@ words:
   - ["brin", "da"]
   "bring":
   - ["bring"]
+  "bringer":
+  - ["bring", "er"]
   "bringing":
   - ["bring", "ing"]
   "brings":
@@ -1852,6 +1860,8 @@ words:
   - ["code"]
   "coeternal":
   - ["co", "e", "ter", "nal"]
+  "co-eternal":
+  - ["co-", "e", "ter", "nal"]
   "coeur":
   - ["coeur"]
   "coffin":
@@ -3031,6 +3041,8 @@ words:
   - ["dwell", "ers"]
   "dwelling":
   - ["dwell", "ing"]
+  "dwelling-place":
+  - ["dwell", "ing-", "place"]
   "dwells":
   - ["dwells"]
   "dwelt":
@@ -3412,6 +3424,8 @@ words:
   - ["ev", "er", "sure"]
   "everybody":
   - ["ev", "ery", "bod", "y"]
+  "ev'rybody":
+  - ["ev", "'ry", "bod", "y"]
   "every":
   - ["ev", "ery"]
   - ["eve", "ry"]
@@ -4430,6 +4444,10 @@ words:
   - ["good", "will"]
   "gospel":
   - ["gos", "pel"]
+  "gospel's":
+  - ["gos", "pel's"]
+  "gospel-trumpet":
+  - ["gos", "pel-", "trum", "pet"]
   "got":
   - ["got"]
   "gott":
@@ -4938,6 +4956,8 @@ words:
   - ["high", "est"]
   "high":
   - ["high"]
+  "high-priest":
+  - ["high-", "priest"]
   "highway":
   - ["high", "way"]
   "highways":
@@ -5952,6 +5972,11 @@ words:
   - ["line"]
   "linger":
   - ["lin", "ger"]
+  "lingering":
+  - ["lin", "gering"]
+  - ["lin", "ger", "ing"]
+  "ling'ring":
+  - ["lin", "g'ring"]
   "linking":
   - ["link", "ing"]
   "lion's":
@@ -8534,6 +8559,8 @@ words:
   - ["re", "verence"]
   - ["rev", "erence"]
   - ["rev", "er", "ence"]
+  "rev'rence":
+  - ["rev", "'rence"]
   "reverently":
   - ["rev", "erent", "ly"]
   "revere":
@@ -8812,6 +8839,8 @@ words:
   - ["sal", "ten"]
   "salt":
   - ["salt"]
+  "salute":
+  - ["sal", "ute"]
   "salvaci\u00f3":
   - ["sal", "va", "ci", "\u00f3"]
   "salvado":
@@ -8925,6 +8954,8 @@ words:
   - ["schilling"]
   "schwach":
   - ["schwach"]
+  "scoffer":
+  - ["scoff", "er"]
   "scoffing":
   - ["scoff", "ing"]
   "scope":
@@ -9205,6 +9236,8 @@ words:
   - ["sh\u00e9", "n\u00e1", "hoos", "dzin"]
   "shepherd":
   - ["shep", "herd"]
+  "shepherdess":
+  - ["shep", "herd", "ess"]
   "shepherd's":
   - ["shep", "herd's"]
   "shepherds":
@@ -9352,6 +9385,8 @@ words:
   - ["sim"]
   "sinai's":
   - ["si", "nai's"]
+  "sin-atoning":
+  - ["sin-", "a", "ton", "ing"]
   "sincerely":
   - ["sin", "cere", "ly"]
   "sincere":
@@ -9494,6 +9529,8 @@ words:
   - ["snatched"]
   "snowcrowned":
   - ["snow", "crowned"]
+  "snow-crowned":
+  - ["snow-", "crowned"]
   "snow":
   - ["snow"]
   "snowstorm":
@@ -10212,6 +10249,8 @@ words:
   - ["swirl", "ing"]
   "swordbringer":
   - ["sword", "bring", "er"]
+  "sword-bringer":
+  - ["sword-", "bring", "er"]
   "swords'":
   - ["swords'"]
   "swords":
@@ -11155,6 +11194,11 @@ words:
   - ["un", "fail", "ing", "ly"]
   "unfailing":
   - ["un", "fail", "ing"]
+  "unfaltering":
+  - ["un", "fal", "tering"]
+  - ["un", "fal", "ter", "ing"]
+  "unfalt'ring":
+  - ["un", "fal", "t'ring"]
   "unfathomable":
   - ["un", "fath", "om", "a", "ble"]
   "unfolding":
