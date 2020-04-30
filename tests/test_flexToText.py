@@ -46,3 +46,6 @@ def test_removeLilyCommands():
     assert "a --\n \n \n \nmen" == output
     output = flexToText.removeLilyCommands("__ start -- ing end _")
     assert "start -- ing end" == output
+    output = flexToText.removeLilyCommands(
+        'Though the low -- "li~est" form now veil you')
+    assert 'Though the low -- li~est form now veil you' == output
