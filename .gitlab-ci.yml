@@ -34,7 +34,7 @@ docs:
   dependencies:
     - test
   script:
-    - rm -rf /srv/coverage.gitlab.ccel.org/htdocs/hyphenator
-    - mv htmlcov/ /srv/coverage.gitlab.ccel.org/htdocs/hyphenator
+    - rm -rf ~/static/coverage/hyphenator
+    - mv htmlcov/ ~/static/coverage/hyphenator
   only:
     - master
