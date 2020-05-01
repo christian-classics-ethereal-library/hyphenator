@@ -470,6 +470,8 @@ words:
   - ["ao"]
   "apart":
   - ["a", "part"]
+  "apostles":
+  - ["a", "pos", "tles"]
   "apostolic":
   - ["a", "pos", "tol", "ic"]
   "appall":
@@ -6855,6 +6857,8 @@ words:
   - ["net"]
   "neverceasing":
   - ["nev", "er", "ceas", "ing"]
+  "never-dying":
+  - ["nev", "er-", "dy", "ing"]
   "neverending":
   - ["nev", "er", "end", "ing"]
   "neverfailing":
@@ -9739,6 +9743,11 @@ words:
   - ["spent"]
   "spheres":
   - ["spheres"]
+  "spiced":
+  - ["spiced"]
+  - ["spi", "ced"]
+  "spic\u00e8d":
+  - ["spi", "c\u00e8d"]
   "spilt":
   - ["spilt"]
   "spin":
@@ -9844,6 +9853,8 @@ words:
   - ["stanzas"]
   "starchild":
   - ["star", "child"]
+  "star-lit":
+  - ["star-", "lit"]
   "stark":
   - ["stark"]
   "starry":
