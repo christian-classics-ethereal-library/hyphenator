@@ -523,8 +523,8 @@ words:
   "aright":
   - ["a", "right"]
   "arise":
-  - ["arise"]
   - ["a", "rise"]
+  - ["arise"]
   "arisen":
   - ["a", "ris", "en"]
   "ark":
@@ -4306,6 +4306,7 @@ words:
   - ["ghost"]
   "gideon":
   - ["gi", "de", "on"]
+  - ["gi", "deon"]
   "gift":
   - ["gift"]
   "gifts":
@@ -6684,6 +6685,8 @@ words:
   - ["mul", "ti", "ply"]
   "multitudes":
   - ["mul", "ti", "tudes"]
+  "mumbalin'":
+  - ["mum", "bal", "in'"]
   "mundo~a":
   - ["mun", "do~a"]
   "mundo":
@@ -7127,6 +7130,8 @@ words:
   - ["onece"]
   "one":
   - ["one"]
+  "one-in-three":
+  - ["one-", "in-", "three"]
   "one's":
   - ["one's"]
   "ones":
@@ -10633,6 +10638,8 @@ words:
   - ["three-", "day"]
   "threefold":
   - ["three", "fold"]
+  "three-in-one":
+  - ["three-", "in-", "one"]
   "three":
   - ["three"]
   "threw":
@@ -10954,6 +10961,8 @@ words:
   - ["trib", "u", "la", "tion"]
   "tribute":
   - ["trib", "ute"]
+  "trickalin'":
+  - ["trick", "al", "in'"]
   "tried":
   - ["tried"]
   "tries":
