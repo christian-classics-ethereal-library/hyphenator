@@ -326,6 +326,8 @@ words:
   - ["a", "long"]
   "alooking":
   - ["a", "look", "ing"]
+  "a-looking":
+  - ["a-", "look", "ing"]
   "aloud":
   - ["a", "loud"]
   "already":
