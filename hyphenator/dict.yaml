@@ -944,6 +944,8 @@ words:
   - ["ben", "fei", "tor"]
   "bent":
   - ["bent"]
+  "beseemeth":
+  - ["be", "seem", "eth"]
   "beset":
   - ["be", "set"]
   "beside":
@@ -7141,8 +7143,10 @@ words:
   "ones":
   - ["ones"]
   "only":
-  - ["only"]
   - ["on", "ly"]
+  - ["only"]
+  "only-begotten":
+  - ["on", "ly-", "be", "got", "ten"]
   "on":
   - ["on"]
   "on\u015bimada":
