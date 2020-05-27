@@ -300,10 +300,14 @@ words:
   - ["al", "len"]
   "allglorious":
   - ["all", "glo", "rious"]
+  "all-glorious":
+  - ["all-", "glo", "rious"]
   "allgracious":
   - ["all", "gra", "cious"]
   "allsufficient":
   - ["all", "suf", "fi", "cient"]
+  "all-sufficient":
+  - ["all-", "suf", "fi", "cient"]
   "allure":
   - ["al", "lure"]
   "allures":
@@ -425,6 +429,8 @@ words:
   - ["anne"]
   "annointed":
   - ["an", "noint", "ed"]
+  "anointing":
+  - ["a", "noint", "ing"]
   "announce":
   - ["an", "nounce"]
   "announces":
@@ -1730,6 +1736,8 @@ words:
   - ["chris", "tian"]
   "christians":
   - ["chris", "tians"]
+  "christly":
+  - ["christ", "ly"]
   "christmas":
   - ["christ", "mas"]
   "christ's":
@@ -2425,6 +2433,8 @@ words:
   - ["days"]
   "dayspring":
   - ["day", "spring"]
+  "day-spring":
+  - ["day-", "spring"]
   "dazed":
   - ["dazed"]
   "dazzling":
@@ -2597,14 +2607,16 @@ words:
   - ["de", "liv", "erer"]
   "deliv'rer":
   - ["de", "liv", "'rer"]
+  "delusive":
+  - ["de", "lu", "sive"]
   "demands":
   - ["de", "mands"]
   "dem":
   - ["dem"]
   "den":
   - ["den"]
-  "denials":
-  - ["de", "ni", "als"]
+  "denial":
+  - ["de", "ni", "al"]
   "denied":
   - ["de", "nied"]
   "denies":
@@ -2912,6 +2924,8 @@ words:
   - ["do"]
   "does":
   - ["does"]
+  "doeth":
+  - ["do", "eth"]
   "doing":
   - ["do", "ing"]
   "doings":
@@ -3133,6 +3147,8 @@ words:
   - ["ec", "stat", "ic"]
   "eden's":
   - ["e", "den's"]
+  "edom":
+  - ["e", "dom"]
   "e":
   - ["e"]
   "\u00ea":
@@ -3652,6 +3668,8 @@ words:
   "favor":
   - ["fa", "vor"]
   - ["fav", "or"]
+  "favour":
+  - ["fa", "vour"]
   "feared":
   - ["feared"]
   "fear":
@@ -4049,6 +4067,8 @@ words:
   - ["for", "sake"]
   "forsaken":
   - ["for", "sak", "en"]
+  "forsaketh":
+  - ["for", "sak", "eth"]
   "forsaking":
   - ["for", "sak", "ing"]
   "forsook":
@@ -4227,6 +4247,8 @@ words:
   - ["gale"]
   "gales":
   - ["gales"]
+  "galilean":
+  - ["gal", "i", "le", "an"]
   "galilee":
   - ["gal", "i", "lee"]
   "gall":
@@ -5486,6 +5508,8 @@ words:
   - ["jor", "dan's"]
   "joseph":
   - ["jo", "seph"]
+  "joseph's":
+  - ["jo", "seph's"]
   "journey":
   - ["jour", "ney"]
   "journey's":
@@ -5750,6 +5774,8 @@ words:
   - ["lan", "guage"]
   "languish":
   - ["lan", "guish"]
+  "lantern-light":
+  - ["lan", "tern-", "light"]
   "la~oscuridad":
   - ["la~os", "cu", "ri", "dad"]
   "lap":
@@ -5935,6 +5961,8 @@ words:
   - ["life's"]
   "lifted":
   - ["lift", "ed"]
+  "liftest":
+  - ["lift", "est"]
   "lifteth":
   - ["lift", "eth"]
   "lifting":
@@ -6063,6 +6091,8 @@ words:
   - ["long", "er"]
   "longexpected":
   - ["long", "ex", "pect", "ed"]
+  "long-expected":
+  - ["long-", "ex", "pect", "ed"]
   "longger":
   - ["long", "ger"]
   "longing":
@@ -6252,6 +6282,8 @@ words:
   - ["ma", "nga"]
   "manger":
   - ["man", "ger"]
+  "manger-bed":
+  - ["man", "ger-", "bed"]
   "manifest":
   - ["man", "i", "fest"]
   "mankind":
@@ -6491,6 +6523,8 @@ words:
   - ["midst"]
   "midwinter":
   - ["mid", "win", "ter"]
+  "mid-winter":
+  - ["mid-", "win", "ter"]
   "midwives":
   - ["mid", "wives"]
   "mightily":
@@ -7246,6 +7280,8 @@ words:
   - ["out", "ward"]
   "overcome":
   - ["o", "ver", "come"]
+  "overcometh":
+  - ["o", "ver", "com", "eth"]
   "overflow":
   - ["o", "ver", "flow"]
   "overflows":
@@ -7318,6 +7354,8 @@ words:
   "palaces":
   - ["pa", "la", "ces"]
   - ["pal", "a", "ces"]
+  "palestine":
+  - ["pa", "le", "stine"]
   "palm":
   - ["palm"]
   "palms":
@@ -8135,6 +8173,10 @@ words:
   - ["rac", "es"]
   "radiance":
   - ["ra", "diance"]
+  - ["ra", "di", "ance"]
+  "radiancy":
+  - ["ra", "dian", "cy"]
+  - ["ra", "di", "an", "cy"]
   "radiant":
   - ["ra", "diant"]
   "rage":
@@ -8578,6 +8620,8 @@ words:
   - ["rev", "er", "ence"]
   "rev'rence":
   - ["rev", "'rence"]
+  "rev'rently":
+  - ["rev", "'rent", "ly"]
   "reverently":
   - ["rev", "erent", "ly"]
   "revere":
@@ -9319,6 +9363,8 @@ words:
   - ["shower"]
   "showers":
   - ["show", "ers"]
+  "showeth":
+  - ["show", "eth"]
   "showing":
   - ["show", "ing"]
   "shown":
@@ -9445,6 +9491,8 @@ words:
   - ["sin", "ner's"]
   "sinners":
   - ["sin", "ners"]
+  "sinners'":
+  - ["sin", "ners'"]
   "sinning":
   - ["sin", "ning"]
   "sinsick":
@@ -9670,6 +9718,8 @@ words:
   - ["sought"]
   "soulcheering":
   - ["soul", "cheer", "ing"]
+  "soul-refreshing":
+  - ["soul-", "re", "fresh", "ing"]
   "soul-restoring":
   - ["soul-", "re", "stor", "ing"]
   "soul":
@@ -9680,6 +9730,8 @@ words:
   - ["souls"]
   "sounded":
   - ["sound", "ed"]
+  "soundeth":
+  - ["sound", "eth"]
   "sounding":
   - ["sound", "ing"]
   "sound":
@@ -11824,6 +11876,8 @@ words:
   - ["whelm", "ing"]
   "whence":
   - ["whence"]
+  "whene'er":
+  - ["when", "e'er"]
   "whenever":
   - ["when", "ev", "er"]
   "when":
