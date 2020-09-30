@@ -50,6 +50,10 @@ words:
   - ["a", "bra", "ham"]
   "abraham's":
   - ["a", "braham's"]
+  "abrah'm":
+  - ["a", "brah'm"]
+  "abr'am":
+  - ["a", "br'am"]
   "abr'am's":
   - ["a", "br'am's"]
   "abr'ham":
@@ -411,6 +415,8 @@ words:
   - ["an", "gels'"]
   "angels":
   - ["an", "gels"]
+  "angel-wings":
+  - ["an", "gel-", "wings"]
   "anger":
   - ["an", "ger"]
   "anges":
@@ -3131,6 +3137,8 @@ words:
   - ["eb", "en", "e", "zer"]
   "ecamon":
   - ["e", "ca", "mon"]
+  "echad":
+  - ["e", "chad"]
   "echo":
   - ["ech", "o"]
   "echoed":
@@ -3200,6 +3208,8 @@ words:
   - ["e", "li", "sha"]
   "ell":
   - ["ell"]
+  "elohim":
+  - ["el", "o", "him"]
   "eloquent":
   - ["el", "o", "quent"]
   "else":
@@ -5705,6 +5715,8 @@ words:
   - ["kun"]
   "kus":
   - ["kus"]
+  "k'yichudo":
+  - ["k'", "yi", "chu", "do"]
   "kyrie":
   - ["ky", "ri", "e"]
   "kwe":
@@ -5717,6 +5729,8 @@ words:
   - ["la", "bours"]
   "labs":
   - ["labs"]
+  "l'achduto":
+  - ["l'", "ach", "du", "to"]
   "lack":
   - ["lack"]
   "laden":
@@ -6890,6 +6904,8 @@ words:
   - ["nei", "ther"]
   "ne":
   - ["ne"]
+  "nelam":
+  - ["ne", "lam"]
   "neno":
   - ["ne", "no"]
   "ness":
@@ -6944,6 +6960,8 @@ words:
   - ["ni", "io"]
   "nimayan":
   - ["ni", "ma", "yan"]
+  "nimtza":
+  - ["nim", "tza"]
   "ning\u00fan":
   - ["nin", "g\u00fan"]
   "ni":
@@ -9178,6 +9196,8 @@ words:
   - ["ser", "aphs"]
   "serene":
   - ["se", "rene"]
+  "serener":
+  - ["se", "re", "ner"]
   "serenity":
   - ["se", "ren", "i", "ty"]
   "serpent":
@@ -11472,6 +11492,8 @@ words:
   - ["ve", "an"]
   "veil":
   - ["veil"]
+  "v'ein":
+  - ["v'", "ein"]
   "veins":
   - ["veins"]
   "vengo~a":
@@ -11617,6 +11639,8 @@ words:
   - ["vre", "de"]
   "vuestro~amor":
   - ["vues", "tro~a", "mor"]
+  "v'yishtabach":
+  - ["v'", "yish", "ta", "bach"]
   "waceya":
   - ["wa", "ce", "ya"]
   "waga":
@@ -12192,6 +12216,8 @@ words:
   - ["wrought"]
   "wrung":
   - ["wrung"]
+  "yachid":
+  - ["ya", "chid"]
   "yah":
   - ["yah"]
   "y~al":
